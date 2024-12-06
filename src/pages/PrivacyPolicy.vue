@@ -1,90 +1,194 @@
 <template>
     <div class="bg-dark top-padding">
-        <div class="text-center fw-bold py-5 text-white" style="background-color: black">
-            <p class="fs-1">Privacy Policy</p>
-        </div>
-        <div class="container py-5 rounded-top-5 bg-dark" style="margin-top: -40px;">
+       <TopSectionBanner/>
+        <div class="container py-5 rounded-top-5 bg-dark" >
             <div class="row justify-content-center">
                 <div class="col-12">
-                    <div class="card border-0 bg-dark text-white">
-                        <div class="card-body text-start">
-                            <p><strong>Fameset</strong> respects your privacy and is committed to protecting the
-                                personal
-                                information you share with us. This Privacy Policy outlines how we collect, use, share,
-                                and
-                                protect your information when you use our networking services and features, including
-                                Views,
-                                Achievements, Hearts, Promotes, Reactions, Reviews, and Testimonials.</p>
+                    <div class="card border-0 bg-dark text-white text-start">
+                        <div id="privacyAccordion">
+                            <!-- Introduction -->
+                            <div class="mb-3">
+                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro">
+                                    <strong>Introduction</strong>
+                                </button>
+                                <div id="collapseIntro" class="collapse show">
+                                    <p>
+                                        <strong>Fameset</strong> values your privacy and is dedicated to
+                                        protecting the personal information you provide.
+                                        This Privacy Policy explains the types of information we collect, how we
+                                        use it, the conditions under which we may share it, and the measures we
+                                        take to safeguard it.
+                                        By using our networking services and features—including Views,
+                                        Achievements, Hearts, Promotes, Reactions, Reviews, and Testimonials—you
+                                        agree to the practices described herein.
+                                    </p>
+                                </div>
+                            </div>
 
-                            <h3>1. Information We Collect</h3>
-                            <ul>
-                                <li>
-                                    <strong>Personal Information:</strong> When you register for our services, we may
-                                    collect
-                                    information such as your name, email address, phone number, business name, and
-                                    payment details.
-                                </li>
-                                <li>
-                                    <strong>Usage Data:</strong> We collect information about how you interact with our
-                                    website and
-                                    services, including profile Views, Reactions, and activity logs.
-                                </li>
-                            </ul>
+                            <!-- Information We Collect -->
+                            <div class="mb-3">
+                                <button class="btn text-white  border mb-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCollect" aria-expanded="true"
+                                    aria-controls="collapseCollect">
+                                    <strong>1. Information We Collect</strong>
+                                </button>
+                                <div id="collapseCollect" class="collapse show">
+                                    <p>We collect information to provide and improve our services effectively.
+                                        This includes:</p>
+                                    <ul>
+                                        <li>
+                                            <strong>Personal Information:</strong> This may include your name,
+                                            email address, phone number, business name, and payment details,
+                                            which are required during registration or when availing of our
+                                            services.
+                                        </li>
+                                        <li>
+                                            <strong>Usage Data:</strong> We gather data about how you interact
+                                            with our services, such as profile views, reactions, activity logs,
+                                            and engagement metrics, to enhance your experience and improve our
+                                            offerings.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                            <h3>2. How We Use Your Information</h3>
-                            <p>We use the information we collect for the following purposes:</p>
-                            <ul>
-                                <li>Providing and maintaining our networking services and features like Testimonials and
-                                    Reviews.</li>
-                                <li>Improving and customizing our website and services to better serve you.</li>
-                                <li>Communicating with you regarding updates, inquiries, and customer support.</li>
-                                <li>Analyzing user interaction with features such as Promotes and Reactions to enhance
-                                    your experience.</li>
-                                <li>Ensuring the security of our platform and preventing unauthorized access or fraud.
-                                </li>
-                            </ul>
+                            <!-- How We Use Your Information -->
+                            <div class="mb-3">
+                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseUse" aria-expanded="true" aria-controls="collapseUse">
+                                    <strong>2. How We Use Your Information</strong>
+                                </button>
+                                <div id="collapseUse" class="collapse show">
+                                    <p>We use the information collected for purposes such as:</p>
+                                    <ul>
+                                        <li>Providing and enhancing networking services and features, such as
+                                            Testimonials and Reviews.</li>
+                                        <li>Personalizing your experience by customizing services and
+                                            recommendations.</li>
+                                        <li>Communicating with you about service updates, inquiries, or customer
+                                            support issues.</li>
+                                        <li>Analyzing user behavior, such as Promotes and Reactions, to improve
+                                            platform usability and features.</li>
+                                        <li>Maintaining platform security and preventing fraud or unauthorized
+                                            access.</li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                            <h3>3. Sharing Your Information</h3>
-                            <p>We do not sell or trade your personal information to third parties. However, we may share
-                                your
-                                information with:</p>
-                            <ul>
-                                <li>Trusted service providers who assist in delivering our services.</li>
-                                <li>Legal authorities, if required by law or to protect our rights and safety.</li>
-                            </ul>
+                            <!-- Sharing Your Information -->
+                            <div class="mb-3">
+                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseShare" aria-expanded="true" aria-controls="collapseShare">
+                                    <strong>3. Sharing Your Information</strong>
+                                </button>
+                                <div id="collapseShare" class="collapse show">
+                                    <p>Your information is not sold or traded. We may share it under the
+                                        following circumstances:</p>
+                                    <ul>
+                                        <li>
+                                            <strong>Trusted Service Providers:</strong> To support the delivery
+                                            of our services, such as payment processing or data analysis, we
+                                            work with reliable partners.
+                                        </li>
+                                        <li>
+                                            <strong>Legal Compliance:</strong> If required by law or to protect
+                                            our rights and safety, we may disclose information to authorities or
+                                            legal entities.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                            <h3>4. Data Security</h3>
-                            <p>We implement industry-standard security measures to protect your personal information
-                                from
-                                unauthorized access, disclosure, or loss.</p>
+                            <!-- Data Security -->
+                            <div class="mb-3">
+                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSecurity" aria-expanded="true"
+                                    aria-controls="collapseSecurity">
+                                    <strong>4. Data Security</strong>
+                                </button>
+                                <div id="collapseSecurity" class="collapse show">
+                                    <p>
+                                        We adopt robust security measures to safeguard your personal data from
+                                        unauthorized access, loss, or misuse.
+                                        These include encryption protocols, secure server technologies, and
+                                        regular security audits to ensure the integrity of our platform.
+                                    </p>
+                                </div>
+                            </div>
 
-                            <h3>5. Your Rights</h3>
-                            <p>You have the following rights:</p>
-                            <ul>
-                                <li>Access and update your personal information through your account settings.</li>
-                                <li>Request deletion of your data, subject to legal obligations and technical
-                                    feasibility.</li>
-                                <li>Opt-out of promotional communications, while still receiving essential updates.</li>
-                            </ul>
+                            <!-- Your Rights -->
+                            <div class="mb-3">
+                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseRights" aria-expanded="true"
+                                    aria-controls="collapseRights">
+                                    <strong>5. Your Rights</strong>
+                                </button>
+                                <div id="collapseRights" class="collapse show">
+                                    <p>You have the right to manage your personal information and interactions
+                                        with our platform. These include:</p>
+                                    <ul>
+                                        <li>Accessing and updating your personal details via account settings.
+                                        </li>
+                                        <li>Requesting deletion of your data, subject to applicable legal and
+                                            technical constraints.</li>
+                                        <li>Opting out of promotional emails while continuing to receive
+                                            essential service updates.</li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                            <h3>6. Cookies</h3>
-                            <p>We use cookies and similar technologies to enhance your browsing experience. You can
-                                manage
-                                cookie preferences in your browser settings, though this may affect some features of the
-                                platform.</p>
+                            <!-- Cookies -->
+                            <div class="mb-3">
+                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCookies" aria-expanded="true"
+                                    aria-controls="collapseCookies">
+                                    <strong>6. Cookies</strong>
+                                </button>
+                                <div id="collapseCookies" class="collapse show">
+                                    <p>
+                                        Cookies and similar technologies help us enhance your browsing
+                                        experience.
+                                        You can manage your cookie preferences through your browser settings,
+                                        but disabling cookies may limit certain functionalities of the platform.
+                                    </p>
+                                </div>
+                            </div>
 
-                            <h3>7. Changes to This Privacy Policy</h3>
-                            <p>We may update this Privacy Policy from time to time. Significant changes will be
-                                communicated to
-                                you through updates on our website or via email.</p>
+                            <!-- Changes to This Privacy Policy -->
+                            <div class="mb-3">
+                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseChanges" aria-expanded="true"
+                                    aria-controls="collapseChanges">
+                                    <strong>7. Changes to This Privacy Policy</strong>
+                                </button>
+                                <div id="collapseChanges" class="collapse show">
+                                    <p>
+                                        Periodically, we may update this Privacy Policy to reflect changes in
+                                        our practices or services.
+                                        Any significant updates will be communicated through announcements on
+                                        our website or via email.
+                                    </p>
+                                </div>
+                            </div>
 
-                            <h3>8. Contact Us</h3>
-                            <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
-                            <div class="mt-3">
-                                <p><strong>Fameset</strong></p>
-                                <p>Email: <a href="mailto:support@fameset.com">support@fameset.in</a></p>
-                                <p>Phone: +91-8860012001</p>
-                                <p>Address: 2nd Floor, Block B1/632, Janakpuri, 110058, Delhi, India</p>
+                            <!-- Contact Us -->
+                            <div class="mb-3">
+                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseContact" aria-expanded="true"
+                                    aria-controls="collapseContact">
+                                    <strong>8. Contact Us</strong>
+                                </button>
+                                <div id="collapseContact" class="collapse show">
+                                    <p>
+                                        If you have questions or concerns about this Privacy Policy, please
+                                        reach out to us:<br>
+                                        <strong>Fameset</strong><br>
+                                        Email: <a href="mailto:support@fameset.com">support@fameset.in</a><br>
+                                        Phone: +91-8860012001<br>
+                                        Address: 2nd Floor, Block B1/632, Janakpuri, 110058, Delhi, India
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -97,8 +201,13 @@
 </template>
 
 <script>
+import TopSectionBanner from '@/components/TopSectionBanner.vue';
+
 export default {
     name: 'PrivacyPolicy',
+    components: {
+        TopSectionBanner
+    },
     data() {
         return {
 

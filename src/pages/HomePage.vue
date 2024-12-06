@@ -8,14 +8,15 @@
         <div class="my-5">
             <WhyChooseUs :description="whychooseUs" title="why choose us" v-observe />
         </div>
-        <div class="my-5">
-            <AutoScrolling v-observe />
-        </div>
+      
         <div class="my-5" id="second">
             <PriceSection v-observe />
         </div>
         <div class="my-5">
             <StepsForRegistration v-observe />
+        </div>
+        <div class="my-5">
+            <AutoScrolling v-observe />
         </div>
         <div class="my-5">
             <SalesFunnel v-observe />

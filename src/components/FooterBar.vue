@@ -10,10 +10,9 @@
                         <!-- <span class="text-capitalize text-white">business networking card</span> -->
                     </div>
                 </router-link>
-                <p class="mt-4 px-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nulla. Adipisci
-                    debitis
-                    assumenda
-                    porro illum ipsam harum, aliquam amet ducimus non accusamus tempora incidunt cupiditate nisi</p>
+                <p class="mt-4 px-2">Let's Charm
+                    Your Fame with
+                    Fameset</p>
             </div>
 
             <div class=" col-12 col-md-4 mb-3 text-center">

@@ -1,88 +1,185 @@
 <template>
-    <div class="bg-dark top-padding">
-        <div class="text-center fw-bold py-5 text-white" style="background-color:black">
-            <p class="fs-1">Term Of Use</p>
-        </div>
-        <div class="container py-5 rounded-top-5 bg-dark" style="margin-top: -40px;">
+    <div class="bg-dark top-padding"> 
+        <TopSectionBanner/>
+        <div class="container py-5 rounded-top-5 bg-dark" >
 
             <div class="card border-0 bg-dark text-white">
                 <div class="card-body text-start">
-                    <section>
-                        <h4>1. Introduction</h4>
-                        <p>Welcome to Fameset. These Terms of Use govern your use of our networking services and
-                            features such as Views, Achievements, Hearts, Promotes, Reactions, Reviews, and
-                            Testimonials, accessible from [Website URL]. By using our services, you agree to these terms
-                            in full. If you disagree with any part of these terms, you must not use our services.</p>
-                    </section>
+                    <div id="termsAccordion">
+                        <!-- Introduction -->
+                        <div class="mb-3">
+                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro">
+                                <strong>1. Introduction</strong>
+                            </button>
+                            <div id="collapseIntro" class="collapse show">
+                                <p>
+                                    Welcome to Fameset! These Terms of Use govern your access to and use of our
+                                    networking services, including features such as Views, Achievements, Hearts,
+                                    Promotes, Reactions, Reviews, and Testimonials, available at [Website URL].
+                                    By using our platform, you agree to comply with these terms. If you do not
+                                    agree, please refrain from using our services.
+                                </p>
+                            </div>
+                        </div>
 
-                    <section>
-                        <h4>2. License to Use</h4>
-                        <p>We grant you a limited, non-exclusive, non-transferable license to use our services, subject
-                            to these terms. This license is for the sole purpose of enabling you to enjoy the benefits
-                            of our networking platform as provided by Fameset.</p>
-                    </section>
+                        <!-- License to Use -->
+                        <div class="mb-3">
+                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLicense" aria-expanded="true" aria-controls="collapseLicense">
+                                <strong>2. License to Use</strong>
+                            </button>
+                            <div id="collapseLicense" class="collapse show">
+                                <p>
+                                    Fameset grants you a limited, non-exclusive, non-transferable license to use our
+                                    services solely for personal or professional networking purposes as provided by
+                                    Fameset. This license is subject to these Terms of Use and does not permit any
+                                    unauthorized commercial or derivative use of our platform.
+                                </p>
+                            </div>
+                        </div>
 
-                    <section>
-                        <h4>3. User Responsibilities</h4>
-                        <p>As a user, you agree to:</p>
-                        <ul>
-                            <li>Provide accurate and complete information when creating an account.</li>
-                            <li>Maintain the confidentiality of your account credentials.</li>
-                            <li>Use our services in compliance with all applicable laws and regulations.</li>
-                        </ul>
-                    </section>
+                        <!-- User Responsibilities -->
+                        <div class="mb-3">
+                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseResponsibilities" aria-expanded="true"
+                                aria-controls="collapseResponsibilities">
+                                <strong>3. User Responsibilities</strong>
+                            </button>
+                            <div id="collapseResponsibilities" class="collapse show">
+                                <p>As a user of Fameset, you agree to adhere to the following responsibilities:</p>
+                                <ul>
+                                    <li>Provide accurate, complete, and up-to-date information when creating or
+                                        maintaining an account.</li>
+                                    <li>Keep your account credentials confidential and notify us immediately of any
+                                        unauthorized access.</li>
+                                    <li>Ensure your usage complies with all applicable laws, regulations, and these
+                                        Terms of Use.</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                    <section>
-                        <h4>4. Prohibited Activities</h4>
-                        <p>You must not:</p>
-                        <ul>
-                            <li>Use the services for any unlawful purpose.</li>
-                            <li>Attempt to gain unauthorized access to our systems or networks.</li>
-                            <li>Distribute viruses, malware, or other harmful code through our platform.</li>
-                            <li>Engage in any activity that disrupts or interferes with the proper functioning of the
-                                platform.</li>
-                        </ul>
-                    </section>
+                        <!-- Prohibited Activities -->
+                        <div class="mb-3">
+                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseProhibited" aria-expanded="true"
+                                aria-controls="collapseProhibited">
+                                <strong>4. Prohibited Activities</strong>
+                            </button>
+                            <div id="collapseProhibited" class="collapse show">
+                                <p>To maintain the integrity of our platform, you must not engage in the following
+                                    activities:</p>
+                                <ul>
+                                    <li>Use our services for any illegal or unauthorized purpose.</li>
+                                    <li>Attempt to gain unauthorized access to our systems, user accounts, or
+                                        networks.</li>
+                                    <li>Distribute harmful software, including viruses or malware, through the
+                                        platform.</li>
+                                    <li>Conduct activities that disrupt the operation or performance of the
+                                        platform.</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                    <section>
-                        <h4>5. Intellectual Property</h4>
-                        <p>All content, features, and materials on the platform, including but not limited to Views,
-                            Achievements, Hearts, Promotes, Reactions, Reviews, and Testimonials, are the property of
-                            Fameset and are protected by Indian and international copyright laws.</p>
-                    </section>
+                        <!-- Intellectual Property -->
+                        <div class="mb-3">
+                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseIP" aria-expanded="true" aria-controls="collapseIP">
+                                <strong>5. Intellectual Property</strong>
+                            </button>
+                            <div id="collapseIP" class="collapse show">
+                                <p>
+                                    All content, features, and materials on Fameset, including but not limited to
+                                    Views, Achievements, Hearts, Promotes, Reactions, Reviews, and Testimonials, are
+                                    the intellectual property of Fameset. These assets are protected under Indian
+                                    and international copyright laws, and unauthorized use is strictly prohibited.
+                                </p>
+                            </div>
+                        </div>
 
-                    <section>
-                        <h4>6. Termination</h4>
-                        <p>We reserve the right to terminate or suspend your access to our services immediately, without
-                            prior notice or liability, for any reason, including a breach of these Terms of Use.</p>
-                    </section>
+                        <!-- Termination -->
+                        <div class="mb-3">
+                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTermination" aria-expanded="true"
+                                aria-controls="collapseTermination">
+                                <strong>6. Termination</strong>
+                            </button>
+                            <div id="collapseTermination" class="collapse show">
+                                <p>
+                                    Fameset reserves the right to suspend or terminate your access to our platform
+                                    at any time, without prior notice, if you breach these Terms of Use or engage in
+                                    prohibited activities. Termination does not limit our rights to seek remedies
+                                    for violations.
+                                </p>
+                            </div>
+                        </div>
 
-                    <section>
-                        <h4>7. Limitation of Liability</h4>
-                        <p>To the maximum extent permitted by law, Fameset shall not be liable for any indirect,
-                            incidental, special, consequential, or punitive damages, or any loss of profits, revenue,
-                            data, goodwill, or other intangible losses, arising from your use of our services.</p>
-                    </section>
+                        <!-- Limitation of Liability -->
+                        <div class="mb-3">
+                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLiability" aria-expanded="true"
+                                aria-controls="collapseLiability">
+                                <strong>7. Limitation of Liability</strong>
+                            </button>
+                            <div id="collapseLiability" class="collapse show">
+                                <p>
+                                    To the fullest extent permitted by law, Fameset disclaims liability for any
+                                    indirect, incidental, or consequential damages arising from your use of our
+                                    platform. This includes, but is not limited to, loss of data, profits, goodwill,
+                                    or any intangible losses.
+                                </p>
+                            </div>
+                        </div>
 
-                    <section>
-                        <h4>8. Changes to Terms</h4>
-                        <p>We may update these terms from time to time. Any changes will be posted on this page, and
-                            your continued use of the platform after such changes signifies your acceptance of the new
-                            terms.</p>
-                    </section>
+                        <!-- Changes to Terms -->
+                        <div class="mb-3">
+                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseChanges" aria-expanded="true" aria-controls="collapseChanges">
+                                <strong>8. Changes to Terms</strong>
+                            </button>
+                            <div id="collapseChanges" class="collapse show">
+                                <p>
+                                    These Terms of Use may be updated periodically to reflect changes in laws,
+                                    regulations, or our practices. Significant updates will be posted on our
+                                    platform, and continued use after changes signifies your agreement to the
+                                    revised terms.
+                                </p>
+                            </div>
+                        </div>
 
-                    <section>
-                        <h4>9. Governing Law</h4>
-                        <p>These terms shall be governed and construed in accordance with the laws of India, without
-                            regard to its conflict of law provisions. Any disputes shall be subject to the exclusive
-                            jurisdiction of the courts in Delhi, India.</p>
-                    </section>
+                        <!-- Governing Law -->
+                        <div class="mb-3">
+                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLaw" aria-expanded="true" aria-controls="collapseLaw">
+                                <strong>9. Governing Law</strong>
+                            </button>
+                            <div id="collapseLaw" class="collapse show">
+                                <p>
+                                    These terms are governed by the laws of India. Any disputes arising under or in
+                                    connection with these Terms of Use shall be subject to the exclusive
+                                    jurisdiction of the courts located in Delhi, India.
+                                </p>
+                            </div>
+                        </div>
 
-                    <section>
-                        <h4>10. Contact Us</h4>
-                        <p>If you have any questions about these Terms of Use, please contact us at <a
-                                href="mailto:support@fameset.com">support@fameset.com</a>.</p>
-                    </section>
+                        <!-- Contact Us -->
+                        <div class="mb-3">
+                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseContact" aria-expanded="true" aria-controls="collapseContact">
+                                <strong>10. Contact Us</strong>
+                            </button>
+                            <div id="collapseContact" class="collapse show">
+                                <p>
+                                    If you have any questions or concerns about these Terms of Use, feel free to
+                                    contact us:<br>
+                                    <strong>Fameset</strong><br>
+                                    Email: <a href="mailto:support@fameset.com">support@fameset.com</a><br>
+                                    Phone: +91-8860012001<br>
+                                    Address: 2nd Floor, Block B1/632, Janakpuri, 110058, Delhi, India
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -92,8 +189,13 @@
 </template>
 
 <script>
+import TopSectionBanner from '@/components/TopSectionBanner.vue';
+
 export default {
     name: 'TermOfUse',
+    components: {
+        TopSectionBanner
+    },
     data() {
         return {
 

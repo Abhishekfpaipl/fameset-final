@@ -2,11 +2,10 @@
     <div class="container">
         <h1 class="pt-3">Our Success Story</h1>
         <div class="row mt-5">
-            <div
-                class="col-12 col-md-4 position-relative  d-flex align-items-center justify-content-center pt-5">
+            <div class="col-12 col-md-4 position-relative  d-flex align-items-center justify-content-center pt-5">
                 <div class="card rounded-3">
-                    <div class="image rounded-3">
-                        <img href="#" :src="image" class="rounded-3" alt="Card image">
+                    <div class="image rounded-3 d-flex justify-content-center align-items-center">
+                        <img href="#" :src="image" class="rounded-3" alt="Card image" style="width: 50%">
                     </div>
                     <div class="content">
                         <h3 class="mt-4 pt-2">{{ title }}</h3>
@@ -15,23 +14,17 @@
                 </div>
             </div>
             <div class="col-12 col-md-8 mt-5 mt-md-0 text-start">
-                Covisor began as a small startup in 2015, founded by two brothers Ayush Gupta and Piyush Gupta with a shared
-                vision of helping businesses thrive in the digital age. Initially offering basic website design
+                Fameset began as a small startup in 2015, founded by two brothers, Ayush Gupta and Rohan Sharma, with a
+                shared vision of helping businesses thrive in the digital age. Initially offering basic website design
                 services, they quickly expanded their expertise to include digital marketing and custom software
-                development.
-                Their breakthrough came in 2017 when they landed a contract with a struggling local retail chain.
-                Covisor revamped the client's online presence, developed a user-friendly e-commerce platform, and
+                development. Their breakthrough came in 2017 when they landed a contract with a struggling local retail
+                chain. Fameset revamped the client's online presence, developed a user-friendly e-commerce platform, and
                 implemented a targeted digital marketing campaign. Within six months, the client's online sales
-                increased by 200%, and their overall revenue grew by 45%.
-                This success story spread quickly, attracting clients from various industries. Covisor's team grew from
-                2 to 20 employees in just two years. They became known for their innovative solutions and data-driven
-                approach to digital marketing.
-                <!-- In 2020, Covisor launched a proprietary AI-powered marketing analytics tool, which became a
-                game-changer for their clients and a significant revenue stream for the company. By 2023, Covisor had
-                offices in three major cities, a client base spanning 15 countries, and annual revenue exceeding $20
-                million. -->
-                Today, Covisor is recognized as an industry leader, known for its integrated approach to
-                digital services and commitment to driving measurable results for its clients.
+                increased by 200%, and their overall revenue grew by 45%. This success story spread quickly, attracting
+                clients from various industries. Fameset's team grew from 2 to 20 employees in just two years. They
+                became known for their innovative solutions and data-driven approach to digital marketing. Today,
+                Fameset is recognized as an industry leader, known for its integrated approach to digital services and
+                commitment to driving measurable results for its clients.
             </div>
         </div>
     </div>
@@ -44,9 +37,8 @@ export default {
     },
     data() {
         return {
-            image: 'img/about/ayush.jpg',
-            title: "Ayush Gupta",
-            post: "Managing Director"
+            image: 'img/logo.png',
+            title: "Fameset",
         }
     }
 

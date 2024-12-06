@@ -1,10 +1,6 @@
 <template>
-    <div class="text-bg-dark top-padding" >
-        <div class="text-white py-5" style=" background-color:black ;padding-bottom: 6rem !important;"
-            v-observe>
-            <h1 class="text-center mb-0 fw-bold">Contact Page</h1>
-            <p class="small mb-0 text-capitalize text-center">The secret of getting ahead, is getting started</p>
-        </div>
+    <div class="text-bg-dark top-padding" > 
+        <TopSectionBanner /> 
         <div class="container rounded-top-5 bg-dark" style="margin-top: -40px;" v-observe>
             <div class="row p-3">
                 <div class="col-12 col-md-6 pt-4 text-center">
@@ -51,10 +47,12 @@
 </template>
 
 <script>
+import TopSectionBanner from "@/components/TopSectionBanner.vue";
 import ContactForm from "@/components/ContactForm.vue";
 export default {
     name: "ContactPage",
     components: {
+        TopSectionBanner,
         ContactForm,
     },
     data() {

@@ -1,6 +1,6 @@
 <template>
-    <div class="">
-        <div class="container px-3 px-md-0">
+    <div class="" style="background-color: black;">
+        <div class="container p-3 pt-5 px-md-0">
             <h1 class="text-center text-capitalize">Lots of other features</h1>
             <h4 class="text-center text-capitalize">to manage your fame</h4>
             <div class="row d-flex justify-content-center pb-5 pt-2">

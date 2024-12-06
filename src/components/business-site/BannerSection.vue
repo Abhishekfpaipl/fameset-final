@@ -16,15 +16,15 @@
                         <div class="mt-3 text-center text-md-start">
                             <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Stay ahead in your market.</p>
                             <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Make a good impression.</p>
-                            <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Maximize lead conversion.</p>
-                            <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Boost sales and productivity.</p>
+                            <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Boost Your Network & Public Image.</p>
+                            <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Maximize your Business.</p>
                         </div> 
                         <RouterLink to="/free-trial">
-                            <div class="btn my-4 fs-5 fw-bold text-white btn-warning text-capitalize">
+                            <div class="btn my-4 fs-5 fw-bold text-white brand-btn text-capitalize">
                                 Get started
                             </div>
                         </RouterLink>
-                        <a href="#second"><i class="bi bi-chevron-down fs-1" style="color:var(--bg-tertiary)"></i></a> 
+                        <a href="#second" class><i class="bi bi-chevron-down fs-1" style="color:var(--bg-tertiary)"></i></a> 
                 </div>
             </div>
         </div>

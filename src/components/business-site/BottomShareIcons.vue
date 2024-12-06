@@ -90,7 +90,7 @@ export default {
     z-index: 9;
     position: fixed;
     bottom: 17%;
-    left: 10px;
+    right: 10px;
     cursor: pointer;
     padding: 5px !important
 }
@@ -98,8 +98,8 @@ export default {
 .phone {
     z-index: 9;
     position: fixed;
-    bottom: 10%;
-    left: 10px;
+    bottom: 25%;
+    right: 10px;
     cursor: pointer;
     padding: 5px
 }

@@ -12,12 +12,16 @@
                         tabindex="0">
                         <div class="d-md-flex justify-content-center gap-3">
                             <div v-for="(plan, index) in price.plans" :key="index"
-                                class="card mb-3 px-3 bg-dark text-white rounded-0"
-                                :class="{ 'recommended': index === 1 }">
+                                class="card mb-3 p-3 py-4 bg-dark text-white rounded border border-2 test-border"
+                                :class="{ 'recommended': index === 1 }" :style="[
+                                    { backgroundColor: index === 1 ? 'black !important' : '' },
+                                    { border: index === 1 ? '2px solid gold !important' : '' }
+                                ]">
 
-                                <div v-if="index === 1" class="position-absolute top-0 start-0 m-2 ms-0"
-                                    style="font-size: 12px;">
-                                    <span class='text-white bg-danger p-1 px-2 rounded-end-3'>Recommended</span>
+                                <div v-if="index === 1" class="position-absolute start-0 m-2 ms-0"
+                                    style="font-size: 12px; top: 1.5%;">
+                                    <span class='text-dark p-1 px-2 rounded-end-3'
+                                        style=" background-color: gold;">Recommended</span>
                                 </div>
 
                                 <div class="py-2 border-bottom fw-bold">{{
@@ -38,7 +42,8 @@
                                         <small class="text-start text-uppercase fw-bold my-2 text-primary">{{ plan.key
                                             }}</small>
                                         <li v-for="(feature, featureIndex) in plan.features" :key="featureIndex"
-                                            class="bg-dark text-white px-0 d-flex justify-content-between list-group-item text-start text-capitalize border-0">
+                                            class="bg-dark text-white px-0 d-flex justify-content-between list-group-item text-start text-capitalize border-0"
+                                            :style="{ backgroundColor: index === 1 ? 'black !important' : '' }">
                                             <div class="">
                                                 <i class="bi bi-check-circle text-success"></i>
                                                 <span class="px-2">
@@ -51,10 +56,11 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="card-footer bg-dark text-white p-0 border-top pt-2">
+                                <div class="card-footer bg-dark text-white p-0 border-top pt-2"
+                                    :style="{ backgroundColor: index === 1 ? 'black !important' : '' }">
                                     <p class="card-text text-capitalize smaller">{{ plan.description }}</p>
                                     <div class="d-flex justify-content-center gap-2 my-3">
-                                        <button class="btn btn-danger w-100">{{ plan.button }}</button>
+                                        <button class="btn fw-bold text-white w-100 brand-btn" >{{ plan.button }}</button>
                                     </div>
                                 </div>
                             </div>
@@ -112,7 +118,7 @@ export default {
                                     text: "Attributes",
                                     tooltip: "Highlight key skills or attributes that define your professional persona."
                                 }
-                            ] 
+                            ]
                         },
                         {
                             id: 2,
@@ -145,7 +151,7 @@ export default {
                                     text: "Website Widget",
                                     tooltip: "Integrate your digital card seamlessly into your website for easy access."
                                 }
-                            ] 
+                            ]
                         },
                         {
                             id: 3,
@@ -190,7 +196,7 @@ export default {
                                     text: "Testimonial",
                                     tooltip: "Display heartfelt testimonials from clients or customers to strengthen your reputation."
                                 }
-                            ] 
+                            ]
                         }
                     ]
                 },
@@ -247,5 +253,8 @@ export default {
     top: 70px;
     z-index: 10;
     background-color: white;
+} 
+.test-border {
+    border-color: black !important;
 }
 </style>

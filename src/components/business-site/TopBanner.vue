@@ -1,10 +1,7 @@
 <template>
     <div>
         <div class="position-relative" style="width:100%; height: 600px;">
-            <img src="/img/bannerDesktop.jpg" alt="" class="d-none d-md-block"
-                style="width: 100%; height: 100%; object-fit: cover;">
-            <img src="/img/bannerMobile.jpg" alt="" class="d-md-none"
-                style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="/img/deskbg.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
             <div class="center-content">
                 <h1 class="text-capitalize method1">
                     <span class="fw-bold text-uppercase">Let's Charm</span> <br> Your Fame with<br><span

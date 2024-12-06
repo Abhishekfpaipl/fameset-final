@@ -1,78 +1,174 @@
 <template>
     <div class="bg-dark top-padding">
-        <div class="text-center fw-bold py-5 text-white" style="background-color: black">
-            <p class="fs-1">Legal Warning</p>
-        </div>
-        <div class="container py-5 rounded-top-5 bg-dark" style="margin-top: -40px;">
-            <div class="card bg-dark text-white border-0">
+        <TopSectionBanner />
+        <div class="container py-5 rounded-top-5 bg-dark">
+            <div class="card  bg-dark text-white border-0">
+                <div class="card-header">
+                    <h5>Please read this legal warning ("Disclaimer") carefully before using Fameset’s Networking
+                        Services ("Services").</h5>
+                </div>
                 <div class="card-body text-start">
-                    <p><strong>Please read this legal warning ("Disclaimer") carefully before using Fameset’s Networking
-                            Services ("Services").</strong></p>
+                    <div id="accordion">
+                        <!-- Acceptance of Terms -->
+                        <div class="mb-3">
+                            <button class="btn text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTerms" aria-expanded="true" aria-controls="collapseTerms">
+                                <strong>1. Acceptance of Terms</strong>
+                            </button>
+                            <div id="collapseTerms" class="collapse show">
+                                <p>
+                                    By accessing and using the Services, you acknowledge that you have read and
+                                    understood the terms outlined in this Disclaimer. Your continued use of the
+                                    Services constitutes acceptance of these terms.
+                                    If you disagree with any portion of this Disclaimer, you are strictly prohibited
+                                    from accessing or using the Services.
+                                    This ensures that all users are aware of and adhere to the guidelines
+                                    established to maintain a transparent and legally sound usage framework.
+                                </p>
+                            </div>
+                        </div>
 
-                    <ol>
-                        <li>
-                            <strong>Acceptance of Terms:</strong> By accessing and using the Services, you agree to be
-                            bound by the terms and conditions set forth in this Disclaimer. If you do not agree with any
-                            part of this Disclaimer, you must not use the Services.
-                        </li>
-                        <li>
-                            <strong>No Warranty:</strong> The Services are provided "as is" and "as available," without
-                            any representations or warranties of any kind, express or implied. We do not warrant that
-                            the Services will be uninterrupted, error-free, or free of harmful components. We disclaim
-                            all warranties, including but not limited to, implied warranties of merchantability, fitness
-                            for a particular purpose, and non-infringement.
-                        </li>
-                        <li>
-                            <strong>Limitation of Liability:</strong> In no event shall we be liable for any direct,
-                            indirect, incidental, special, or consequential damages, or damages for loss of profits,
-                            revenue, data, or use, incurred by you or any third party, whether in an action in contract,
-                            tort, or otherwise, arising from your access to, or use of, the Services.
-                        </li>
-                        <li>
-                            <strong>Compliance with Laws:</strong> You agree to comply with all applicable laws and
-                            regulations when using the Services. It is your responsibility to ensure that your use of
-                            the Services does not violate any applicable laws or regulations.
-                        </li>
-                        <li>
-                            <strong>Intellectual Property:</strong> All intellectual property rights in and to the
-                            Services, including features such as Views, Achievements, Hearts, Promotes, Reactions,
-                            Reviews, and Testimonials, and all content and materials contained therein, are owned by us
-                            or our licensors. You are granted a limited, non-exclusive, non-transferable, revocable
-                            license to use the Services for its intended purpose, subject to the terms of this
-                            Disclaimer.
-                        </li>
-                        <li>
-                            <strong>Third-Party Services:</strong> The Services may contain links to third-party
-                            websites or services that are not owned or controlled by us. We have no control over, and
-                            assume no responsibility for, the content, privacy policies, or practices of any third-party
-                            websites or services.
-                        </li>
-                        <li>
-                            <strong>Modification and Termination:</strong> We reserve the right to modify or
-                            discontinue, temporarily or permanently, the Services or any features or portions thereof
-                            without prior notice. We also reserve the right to terminate your access to the Services at
-                            our sole discretion, without notice and without liability to you.
-                        </li>
-                        <li>
-                            <strong>Governing Law:</strong> This Disclaimer shall be governed by and construed in
-                            accordance with the laws of India, without regard to its conflict of law principles. Any
-                            disputes arising out of or in connection with this Disclaimer shall be subject to the
-                            exclusive jurisdiction of the courts located in Delhi, India.
-                        </li>
-                        <li>
-                            <strong>Contact Information:</strong> If you have any questions or concerns regarding this
-                            Disclaimer or the Services, please contact us at support@fameset.in.
-                        </li>
-                    </ol>
+                        <!-- No Warranty -->
+                        <div class="mb-3">
+                            <button class="btn text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseWarranty" aria-expanded="true"
+                                aria-controls="collapseWarranty">
+                                <strong>2. No Warranty</strong>
+                            </button>
+                            <div id="collapseWarranty" class="collapse show">
+                                <p>
+                                    The Services are provided on an "as is" and "as available" basis. We make no
+                                    guarantees regarding their uninterrupted operation, accuracy, or reliability.
+                                    Furthermore, we disclaim all implied warranties, including but not limited to,
+                                    warranties of merchantability, fitness for a particular purpose, and
+                                    non-infringement of third-party rights.
+                                    Users should rely on their discretion and due diligence when engaging with the
+                                    Services.
+                                </p>
+                            </div>
+                        </div>
 
-                    <p>By using our Services, you acknowledge that you have read, understood, and agree to be bound by
-                        this Disclaimer.</p>
+                        <!-- Limitation of Liability -->
+                        <div class="mb-3">
+                            <button class="btn text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLiability" aria-expanded="true"
+                                aria-controls="collapseLiability">
+                                <strong>3. Limitation of Liability</strong>
+                            </button>
+                            <div id="collapseLiability" class="collapse show">
+                                <p>
+                                    Under no circumstances shall we be held responsible for any direct or indirect
+                                    losses arising from the use of the Services.
+                                    This includes, but is not limited to, loss of data, profits, or business
+                                    opportunities.
+                                    Our liability is strictly limited to the fullest extent permitted by law. Users
+                                    should understand these limitations to assess their engagement with the
+                                    Services.
+                                </p>
+                            </div>
+                        </div>
 
-                    <div class="mt-4">
-                        <p><strong>Fameset</strong></p>
-                        <p>2nd Floor, Block B1/632,<br> Janakpuri, 110058, Delhi, India</p>
-                        <p>Email: <a href="mailto:support@fameset.com">support@fameset.com</a></p>
-                        <p>Phone: 8860012001</p>
+                        <!-- Compliance with Laws -->
+                        <div class="mb-3">
+                            <button class="btn text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLaws" aria-expanded="true" aria-controls="collapseLaws">
+                                <strong>4. Compliance with Laws</strong>
+                            </button>
+                            <div id="collapseLaws" class="collapse show">
+                                <p>
+                                    Users are responsible for ensuring that their activities on the platform comply
+                                    with all applicable laws and regulations.
+                                    Failing to do so may result in restricted access or other legal consequences.
+                                    This clause is critical in maintaining the platform's integrity and upholding
+                                    ethical practices.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Intellectual Property -->
+                        <div class="mb-3">
+                            <button class="btn text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseIP" aria-expanded="true" aria-controls="collapseIP">
+                                <strong>5. Intellectual Property</strong>
+                            </button>
+                            <div id="collapseIP" class="collapse show">
+                                <p>
+                                    All content and functionalities of the Services, including trademarks, designs,
+                                    and other intellectual property, are exclusively owned by us or licensed to us.
+                                    Users are granted a limited license to use these features strictly for the
+                                    intended purpose of the Services. Unauthorized use or distribution is strictly
+                                    prohibited.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Third-Party Services -->
+                        <div class="mb-3">
+                            <button class="btn text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThirdParty" aria-expanded="true"
+                                aria-controls="collapseThirdParty">
+                                <strong>6. Third-Party Services</strong>
+                            </button>
+                            <div id="collapseThirdParty" class="collapse show">
+                                <p>
+                                    The Services may include links to third-party websites or integrations.
+                                    While we facilitate these connections for user convenience, we do not endorse or
+                                    assume responsibility for third-party content, practices, or privacy policies.
+                                    Users interact with such third-party services at their own risk.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Modification and Termination -->
+                        <div class="mb-3">
+                            <button class="btn text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseModify" aria-expanded="true" aria-controls="collapseModify">
+                                <strong>7. Modification and Termination</strong>
+                            </button>
+                            <div id="collapseModify" class="collapse show">
+                                <p>
+                                    We reserve the right to alter, suspend, or terminate any part of the Services at
+                                    our discretion without prior notice.
+                                    This may include changes to functionality, design, or policies to ensure
+                                    continuous improvement or legal compliance.
+                                    Users are encouraged to review this Disclaimer periodically for updates.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Governing Law -->
+                        <div class="mb-3">
+                            <button class="btn text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseLaw" aria-expanded="true" aria-controls="collapseLaw">
+                                <strong>8. Governing Law</strong>
+                            </button>
+                            <div id="collapseLaw" class="collapse show">
+                                <p>
+                                    This Disclaimer and any disputes arising from the use of the Services are
+                                    governed by the laws of India.
+                                    All legal matters shall be resolved exclusively in the courts located in Delhi,
+                                    India. This ensures transparency and clarity in resolving potential conflicts.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div class="mb-3">
+                            <button class="btn text-white" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseContact" aria-expanded="true" aria-controls="collapseContact">
+                                <strong>9. Contact Information</strong>
+                            </button>
+                            <div id="collapseContact" class="collapse show">
+                                <p>
+                                    For any questions, concerns, or further information about this Disclaimer or our
+                                    Services, please reach out to us at:<br>
+                                    <strong>Fameset</strong><br>
+                                    2nd Floor, Block B1/632, Janakpuri, 110058, Delhi, India<br>
+                                    Email: <a href="mailto:support@fameset.com">support@fameset.com</a><br>
+                                    Phone: 8860012001
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -83,8 +179,12 @@
 </template>
 
 <script>
+import TopSectionBanner from "@/components/TopSectionBanner.vue"
 export default {
     name: 'LegalWarning',
+    components: {
+        TopSectionBanner
+    },
     data() {
         return {
 

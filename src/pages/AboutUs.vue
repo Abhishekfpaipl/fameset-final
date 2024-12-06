@@ -1,9 +1,7 @@
 <template>
     <div class="text-bg-dark  top-padding">
-        <div class="text-center fw-bold py-5 text-white" style="background-color: black " v-observe>
-            <p class="fs-1">About Us</p>
-        </div>
-        <div class="container rounded-top-5 bg-dark" style="margin-top: -40px;" v-observe>
+        <TopSectionBanner /> 
+        <div class="container rounded-top-5 bg-dark" v-observe>
             <SuccessStory :tests="tests" v-observe />
             <div class="my-5">
                 <InfoSection :techTeam="techTeam" :marketingTeam="marketingTeam" :managementTeam="managementTeam"
@@ -15,12 +13,13 @@
                 :categoryCount="10" place="projects completed" :placeCount="4000" image="/img/smile.svg"
                 title="know about us" path="/" v-observe />
         </div>
-        <div class= "">
+        <div class="">
             <PrivateCoaching :coaching="mission" title=" " />
         </div>
     </div>
 </template>
 <script>
+import TopSectionBanner from "@/components/TopSectionBanner.vue";
 import SuccessStory from "@/components/SuccessStory.vue";
 import InfoSection from "@/components/InfoSection.vue";
 import CustomCounter from "@/components/CustomCounter.vue";
@@ -28,6 +27,7 @@ import PrivateCoaching from "@/components/PrivateCoaching.vue";
 export default {
     name: "AboutUs",
     components: {
+        TopSectionBanner,
         SuccessStory,
         InfoSection,
         CustomCounter,
