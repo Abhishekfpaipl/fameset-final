@@ -14,8 +14,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-8 mt-5 mt-md-0 text-start">
-                Fameset began as a small startup in 2015, founded by two brothers, Ayush Gupta and Rohan Sharma, with a
-                shared vision of helping businesses thrive in the digital age. Initially offering basic website design
+                Fameset began as a small startup in 2015, founded by Aayushmann Gupta, with a vision of helping businesses thrive in the digital age. Initially offering basic website design
                 services, they quickly expanded their expertise to include digital marketing and custom software
                 development. Their breakthrough came in 2017 when they landed a contract with a struggling local retail
                 chain. Fameset revamped the client's online presence, developed a user-friendly e-commerce platform, and

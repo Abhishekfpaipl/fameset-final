@@ -1,5 +1,5 @@
 <template>
-  <div class="container bg-dark rounded my-5"> 
+  <div class="container bg-dark rounded my-5">
     <div class="how-it-works" :class="{ 'mobile-view': isMobile }">
       <div v-for="(step, index) in steps" :key="index" class="step-container">
         <div class="step-number">{{ index + 1 }}</div>
@@ -24,30 +24,31 @@ export default {
       isMobile: false,
       steps: [
         {
-          title: "Create Account",
-          description: "All you need is:",
-          details: [
-            "GSTIN (for GST sellers) or Enrolment ID / UIN (for non-GST sellers)",
-            "Bank Account"
+          "title": "Create Account",
+          "description": "Sign up with ease by providing:",
+          "details": [
+            "Basic personal or business information",
+            "Bank account details for payouts"
           ]
         },
         {
-          title: "List Products",
-          description: "List the products you want to sell in your supplier panel"
+          "title": "Set Up Your Fameset",
+          "description": "Customize and list your Fameset offerings with interactive features like contact details, social links, and branding."
         },
         {
-          title: "Get Orders",
-          description: "Start getting orders from crores of Indians actively shopping on our platform."
+          "title": "Start Receiving Orders",
+          "description": "Get orders from clients looking for personalized Fameset solutions to enhance their networking and branding."
         },
         {
-          title: "Lowest Cost Shipping",
-          description: "Products are shipped to customers at lowest costs"
+          "title": "Easy Sharing",
+          "description": "Famesets can be shared instantly via QR codes, links, or social media, increasing visibility and reach."
         },
         {
-          title: "Receive Payments",
-          description: "Payments are deposited directly to your bank account following a 7-day payment cycle from order delivery."
+          "title": "Receive Payments",
+          "description": "Enjoy seamless payment processing, with payouts directly deposited to your bank account within the agreed payment cycle."
         }
       ]
+
     };
   },
   mounted() {
@@ -113,7 +114,8 @@ export default {
   margin-bottom: 10px;
 }
 
-.step-content p, .step-content ul {
+.step-content p,
+.step-content ul {
   font-size: 14px;
 }
 

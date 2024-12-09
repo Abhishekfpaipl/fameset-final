@@ -3,7 +3,7 @@
 
         <div class="row row-cols-1 row-cols-md-3 g-2">
             <div v-for="(item, index) in fav" :key="index" class="col">
-                <div class="p-2 card bg-dark text-white shadow" >
+                <div class="p-2 card bg-dark text-white shadow">
                     <p class="fw-bold fs-1 mb-0 d-flex justify-content-center align-items-center"
                         style="color:var(--brand-color) !important;">
                         <AutoCounter :data="item.data" /><span>&nbsp;{{ item.info }}+</span>
@@ -26,20 +26,20 @@ export default {
                 {
                     data: 12,
                     info: 'K',
-                    label: 'Business Categories Coverage',
-
+                    label: 'Business Categories Covered by Fameset'
                 },
                 {
                     data: 19,
                     info: '',
-                    label: ' Countries Reach Worldwide'
+                    label: 'Countries Reached with Fameset'
                 },
                 {
                     data: 8,
                     info: 'B',
-                    label: 'Billions People Requirement'
-                },
-            ],
+                    label: 'Billions of People Using Fameset'
+                }, 
+            ]
+
         }
     }
 }

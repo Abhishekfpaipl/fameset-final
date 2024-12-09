@@ -1,5 +1,5 @@
 <template>
-    <div class="text-bg-dark">
+    <div class=" text-white" style="background-color:black;">
         <div class="">
             <img src="/img/careerBanner.jpg" alt="banner" class="d-none d-md-block"
                 style="width: 100%; height:700px; object-fit: cover; object-position: center;">
@@ -44,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <div class="container bg-dark py-5" v-observe>
+        <div class="container py-5" v-observe>
             <div class="row py-5">
                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
                     <img src="/img/career-benefit.svg" style="width: 500px; max-width: 80%" alt="">

@@ -17,14 +17,20 @@
 
         <div class="modal fade" id="queryModal" tabindex="-1" aria-labelledby="queryModalLabel" aria-hidden="true">
             <div class="modal-dialog ">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="rounded-circle wh-60 text-bg-dark d-flex justify-content-center align-items-center"
+                        data-bs-dismiss="modal" style="padding: 0px 6px !important;">
+                        <i class="bi bi-x fs-3"></i>
+                    </div>
+                </div>
                 <div class="modal-content">
                     <div class="modal-header d-flex justify-content-between align-items-center brand-bg">
+                        <h1 class="modal-title fs-5 text-white" id="queryModalLabel">Enquiry Now</h1>
                         <div class="d-flex gap-3 align-items-center">
-                            <h1 class="modal-title fs-5" id="queryModalLabel">Enquiry Now</h1>
                             <i class="bi bi-telephone method1 fs-4" @click="openDialer()"></i>
                             <i class="bi bi-whatsapp method1 fs-4" @click="openWhatsapp()"></i>
                         </div>
-                        <i class="bi bi-x fs-2 text-white" data-bs-dismiss="modal" aria-label="Close"></i>
+                        <!-- <i class="bi bi-x fs-2 text-white" data-bs-dismiss="modal" aria-label="Close"></i> -->
                     </div>
                     <div class="modal-body brand-bg">
                         <form @submit.prevent="submitQuery()" class="row g-3 needs-validation" novalidate>
@@ -53,7 +59,7 @@
                                     class="form-control flex-fill bg-transparent custom-placeholder"
                                     placeholder="Type your message..." required>
                                 </textarea>
-                            </div> 
+                            </div>
                             <div class="col-12">
                                 <button class="btn w-100" type="submit"
                                     style="background: var(--bg-glow);">Submit</button>
@@ -163,7 +169,8 @@ export default {
 }
 
 .custom-select {
-    background-color:transparent;    /* Example: Semi-transparent black */
+    background-color: transparent;
+    /* Example: Semi-transparent black */
     color: white;
     /* Text color */
     border: 1px solid white;

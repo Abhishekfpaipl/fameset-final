@@ -1,8 +1,8 @@
 <template>
-  <div class="container my-5"> 
+  <div class="container my-5">
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col" v-for="(reason, index) in reasons" :key="index">
-        <div class="card h-100 hover-scale bg-dark text-white" >
+        <div class="card h-100 hover-scale bg-dark text-white">
           <div class="card-body d-flex flex-column">
             <div class="icon-wrapper mb-3">
               <i :class="reason.icon"></i>
@@ -23,20 +23,21 @@ export default {
       reasons: [
         {
           "icon": "bi bi-currency-rupee text-warning",
-          "title": "Make money",
-          "description": "Thousands of sellers making substantial income by reaching a nationwide customer base through Covisor Biz."
+          "title": "Make Money",
+          "description": "Thousands of sellers are generating substantial income by reaching a nationwide customer base through Fameset."
         },
         {
           "icon": "bi bi-lightning-charge-fill text-warning",
-          "title": "Fast selling",
-          "description": "Accelerate your sales growth. Many sellers quickly become top earners; you can be the next success story."
+          "title": "Fast Selling",
+          "description": " Many sellers quickly become top earners, and you can be the next success story in the Fameset market."
         },
         {
           "icon": "bi bi-globe text-warning",
-          "title": "World's need",
-          "description": "Tap into the vast market where billions of customers are the target audience of Covisor Biz."
+          "title": "Global Demand",
+          "description": "Tap into a global market where billions of potential customers are actively seeking Fameset to streamline their networking and professional connections."
         }
       ]
+
 
 
     };

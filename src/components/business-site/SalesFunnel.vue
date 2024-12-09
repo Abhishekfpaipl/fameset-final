@@ -1,7 +1,7 @@
 <template>
     <div class="brandText">
         <div class="container">
-            <h1 class="text-center text-capitalize mb-4">How it works</h1>
+            <h1 class="text-center text-capitalize mb-4">Required Steps for Account Setup</h1>
             <div class="d-flex flex-column m-auto align-items-center" style="max-width: 500px;">
                 <div v-for="(lead, index) in values" :key="index" class="funnel-step"
                     :style="{ width: calculateWidth(index) }">
@@ -27,54 +27,55 @@ export default {
             values: [
                 {
                     id: 1,
-                    icon: 'bi-funnel fs-4',
-                    title: "Start With High-Quality Traffic from Everywhere",
+                    icon: 'bi-person-circle fs-4',
+                    title: "Profile Setting Up",
                     color: '#e76365',
-                    description: "Buy targeted advertising on Facebook and Instagram or Google and start driving high- quality traffic to your Saleswik landing pages.",
+                    description: "Create a compelling profile to showcase your skills and services. Customize it to match your branding and ensure a professional appearance.",
                 },
                 {
                     id: 2,
-                    icon: 'bi-diagram-3 fs-4',
-                    title: "Send the traffic to your Sales Funnel ",
+                    icon: 'bi-file-earmark-bar-graph fs-4',
+                    title: "Quick Information",
                     color: "#f5925e",
-                    description: "Select a high-converting Saleswik landing page which is more optimized for your business goals. ",
+                    description: "Provide essential information like your offerings, pricing, and contact details so your visitors can quickly understand what you offer.",
                 },
                 {
                     id: 3,
-                    icon: 'bi-hand-thumbs-up fs-4',
-                    title: "Conversion of the traffic into Leads",
+                    icon: 'bi-person-check fs-4',
+                    title: "Connecting Details",
                     color: "#f8a42a",
-                    description: "Get more conversions by capturing the contact details of the visitors, visiting your Saleswik landing page.",
+                    description: "Enhance your customer interactions by collecting key details like emails, phone numbers, and social media handles directly from your landing page.",
                 },
                 {
                     id: 4,
-                    icon: 'bi-megaphone fs-4',
-                    title: "Nurture leads with follow-ups",
+                    icon: 'bi-image fs-4',
+                    title: "Cover Banner Image",
                     color: "#f8d452",
-                    description: "Set up campaigns to nurture your leads and build relationships and turn your expertise into a commodity",
+                    description: "Design a visually engaging cover banner that represents your brand and attracts visitors to your page with the right imagery.",
                 },
                 {
                     id: 5,
-                    icon: 'bi-telephone fs-4',
-                    title: "Start selling your products",
+                    icon: 'bi-bar-chart-line fs-4',
+                    title: "Skill Bars & Fun Facts",
                     color: "#fbd453",
-                    description: "From your sales page and order form templates in seconds to sell your products and services online.",
+                    description: "Showcase your expertise through skill bars that highlight your abilities and share interesting facts that help engage your audience.",
                 },
                 {
                     id: 6,
-                    icon: 'bi-whatsapp fs-4',
-                    title: "Upsell with offers",
+                    icon: 'bi-trophy fs-4',
+                    title: "Awards & Achievements",
                     color: "#c9d825",
-                    description: "Increase your revenue and promote limited-time offers immediately after a customer's purchase.",
+                    description: "Display your achievements and accolades to build trust and credibility, establishing yourself as an authority in your field.",
                 },
                 {
                     id: 7,
-                    icon: 'bi-clipboard-data fs-4',
-                    title: "Get paid",
+                    icon: 'bi-qr-code fs-4',
+                    title: "QR Code & Link For Share",
                     color: "#5ccd5f",
-                    description: "Connect to Payment Gateway without leaving the app. Sell your products and services right on your Saleswik landing page.",
+                    description: "Easily share your profile or landing page via QR codes or direct links, enabling quick and seamless access for your audience.",
                 },
             ],
+
         }
     },
     methods: {

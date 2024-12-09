@@ -7,7 +7,7 @@
                     <div class="" v-for="(card, index) in cards" :key="index">
                         <div class="card border-0 h-100 shadow">
                             <div class="card-header d-flex justify-content-center algin-items-center">
-                                <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
+                                <div class="rounded-circle overflow-hidden  shadow p-1"
                                     style="width:60px; height:60px; margin-top:-40px;">
                                     <img :src="card.image" alt="Profile" class="rounded-circle"
                                         style="width: 100%; height: 100%;object-fit: cover;" />
@@ -27,7 +27,7 @@
                     <div class="" v-for="(card, index) in cards" :key="index">
                         <div class="card border-0 h-100 shadow">
                             <div class="card-header d-flex justify-content-center algin-items-center">
-                                <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
+                                <div class="rounded-circle overflow-hidden  shadow p-1"
                                     style="width:60px; height:60px; margin-top:-40px;">
                                     <img :src="card.image" alt="Profile" class="rounded-circle"
                                         style="width: 100%; height: 100%;object-fit: cover;" />
@@ -48,7 +48,7 @@
                     <div class="" v-for="(card, index) in cards2" :key="index">
                         <div class="card border-0 h-100 shadow">
                             <div class="card-header d-flex justify-content-center algin-items-center">
-                                <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
+                                <div class="rounded-circle overflow-hidden  shadow p-1"
                                     style="width:60px; height:60px; margin-top:-40px;">
                                     <img :src="card.image" alt="Profile" class="rounded-circle"
                                         style="width: 100%; height: 100%;object-fit: cover;" />
@@ -68,7 +68,7 @@
                     <div class="" v-for="(card, index) in cards2" :key="index">
                         <div class="card border-0 h-100  shadow">
                             <div class="card-header d-flex justify-content-center algin-items-center">
-                                <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
+                                <div class="rounded-circle overflow-hidden  shadow p-1"
                                     style="width:60px; height:60px; margin-top:-40px;">
                                     <img :src="card.image" alt="Profile" class="rounded-circle"
                                         style="width: 100%; height: 100%;object-fit: cover;" />
@@ -89,7 +89,7 @@
                     <div class="" v-for="(card, index) in cards3" :key="index">
                         <div class="card border-0 h-100 shadow">
                             <div class="card-header d-flex justify-content-center algin-items-center">
-                                <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
+                                <div class="rounded-circle overflow-hidden  shadow p-1"
                                     style="width:60px; height:60px; margin-top:-40px;">
                                     <img v-if="card.image" :src="card.image" alt="Profile" class="rounded-circle"
                                         style="width: 100%; height: 100%;object-fit: cover;" />
@@ -110,7 +110,7 @@
                     <div class="" v-for="(card, index) in cards3" :key="index">
                         <div class="card border-0 h-100 shadow">
                             <div class="card-header d-flex justify-content-center algin-items-center">
-                                <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
+                                <div class="rounded-circle overflow-hidden  shadow p-1"
                                     style="width:60px; height:60px; margin-top:-40px;">
                                     <img :src="card.image" alt="Profile" class="rounded-circle"
                                         style="width: 100%; height: 100%;object-fit: cover;" />
@@ -146,7 +146,7 @@ export default {
             isReverse: false,
             cards: [
                 {
-                    image: 'img/members/13.jpg',
+                    image: 'img/customers/4.jpeg',
                     title: 'Perfect for Networking',
                     tax: 'Streamlined my contact sharing',
                     time: 'Used for 2 months',
@@ -155,7 +155,7 @@ export default {
                     review: 'The QR Code feature is a game-changer! Sharing my contact details has never been so effortless. My clients love how professional it looks.'
                 },
                 {
-                    image: 'img/members/14.jpg',
+                    image: 'img/customers/2.jpeg',
                     title: 'Boosts Engagement',
                     tax: 'Availed maximum reactions',
                     time: 'Used for 3 months',
@@ -164,7 +164,7 @@ export default {
                     review: 'I’ve seen a significant increase in client engagement thanks to the views and reactions tracking feature. The payment integration is an added bonus!'
                 },
                 {
-                    image: 'img/members/15.jpg',
+                    image: 'img/customers/3.jpeg',
                     title: 'Great for Freelancers',
                     tax: 'Enhanced my portfolio',
                     time: 'Used for 6 weeks',
@@ -173,7 +173,7 @@ export default {
                     review: 'The timeline and skillset features let me showcase my expertise effectively. My clients have complimented my card multiple times!'
                 },
                 {
-                    image: 'img/members/16.jpg',
+                    image: 'img/customers/1.jpeg',
                     title: 'Simplifies Connections',
                     tax: 'Increased network by 30%',
                     time: 'Used for 1 month',
@@ -182,7 +182,7 @@ export default {
                     review: 'Sharing my digital card via social profiles is super quick. The fun facts section adds a personal touch, making it more relatable.'
                 },
                 {
-                    image: 'img/members/17.jpg',
+                    image: 'img/customers/5.jpeg',
                     title: 'Builds Trust Instantly',
                     tax: 'Highlighted my achievements',
                     time: 'Used for 3 months',
@@ -191,7 +191,7 @@ export default {
                     review: 'The achievements and testimonial sections help build instant trust with new clients. I also love the website widget—it’s seamless!'
                 },
                 {
-                    image: 'img/members/18.jpg',
+                    image: 'img/customers/6.jpeg',
                     title: 'Outstanding Features',
                     tax: 'Effortless Sharing',
                     time: 'within 2 weeks',
@@ -202,7 +202,7 @@ export default {
             ],
             cards2: [
                 {
-                    image: 'img/members/19.jpg',
+                    image: 'img/customers/7.jpeg',
                     title: 'User-Friendly Design',
                     tax: 'Enhanced online presence',
                     time: 'within 1 month',
@@ -211,16 +211,16 @@ export default {
                     review: 'The contact details and payment integration have made my interactions smoother. Reactions and reviews help me improve my client relationships.'
                 },
                 {
-                    image: 'img/members/20.jpg',
+                    image: 'img/customers/8.jpeg',
                     title: 'Highly Customizable',
                     tax: 'Added personal branding',
                     time: 'Used for 4 months',
-                    name: 'Meera Joshi',
+                    name: 'Rahul Joshi',
                     subtitle: 'Life Coach and Mentor',
                     review: 'The customization options allowed me to reflect my personality in the card. The testimonial section is a great trust-building tool.'
                 },
                 {
-                    image: 'img/members/21.jpg',
+                    image: 'img/customers/9.jpeg',
                     title: 'Perfect for Startups',
                     tax: 'Gained new clients',
                     time: 'within 30 days',
@@ -229,7 +229,7 @@ export default {
                     review: 'The promotes and reactions tracking features have helped me measure how well my networking efforts are performing.'
                 },
                 {
-                    image: 'img/members/22.jpg',
+                    image: 'img/customers/10.jpeg',
                     title: 'Saves Time',
                     tax: 'Simplified client onboarding',
                     time: 'Used for 1 month',
@@ -238,7 +238,7 @@ export default {
                     review: 'With the QR Code and payment integration, I’ve been able to onboard clients more efficiently. It’s a great investment!'
                 },
                 {
-                    image: 'img/members/23.jpg',
+                    image: 'img/customers/11.jpeg',
                     title: 'Impressive Layout',
                     tax: 'Boosted my credibility',
                     time: 'Used for 2 months',
@@ -247,16 +247,16 @@ export default {
                     review: 'The attributes and achievements sections allowed me to highlight my skills effectively. My clients feel more confident in my services.'
                 },
                 {
-                    image: 'img/members/24.jpg',
+                    image: 'img/customers/12.jpeg',
                     title: 'Great for Promotions',
                     tax: 'Enhanced visibility',
                     time: 'within 15 days',
-                    name: 'Ritika Roy',
+                    name: 'Ritik Roy',
                     subtitle: 'Event Planner',
                     review: 'The reactions and hearts features provide instant feedback on my promotions. The digital business card is sleek and modern.'
                 },
                 {
-                    image: 'img/members/25.jpg',
+                    image: 'img/customers/14.jpeg',
                     title: 'A Complete Solution',
                     tax: 'Effortlessly integrated',
                     time: 'Used for 1 month',
@@ -265,7 +265,7 @@ export default {
                     review: 'The website widget integration is seamless. I love how my portfolio, payment options, and testimonials are all in one place.'
                 },
                 {
-                    image: 'img/members/26.jpg',
+                    image: 'img/customers/13.jpeg',
                     title: 'Perfect for Showcasing',
                     tax: 'Boosted my portfolio views',
                     time: 'within 3 weeks',
@@ -277,7 +277,7 @@ export default {
             ],
             cards3: [
                 {
-                    image: 'img/members/27.jpg',
+                    image: 'img/customers/15.jpeg',
                     title: 'Engages Audience',
                     tax: 'Increased client interactions',
                     time: 'Used for 2 months',
@@ -286,16 +286,16 @@ export default {
                     review: 'The reactions and reviews features have helped me improve my services. My clients enjoy the easy sharing options too!'
                 },
                 {
-                    image: 'img/members/28.jpg',
+                    image: 'img/customers/16.jpg',
                     title: 'Modern and Elegant',
                     tax: 'Enhanced client trust',
                     time: 'Used for 45 days',
-                    name: 'Isha Sharma',
+                    name: 'Shivam Sharma',
                     subtitle: 'Interior Designer',
                     review: 'The card layout is so modern and elegant! The attributes and skills sections make my services stand out.'
                 },
                 {
-                    image: 'img/members/29.jpg',
+                    image: 'img/customers/17.jpg',
                     title: 'Makes Networking Easy',
                     tax: 'Built strong connections',
                     time: 'within 3 weeks',
@@ -304,7 +304,7 @@ export default {
                     review: 'Sharing via social profiles and QR Code has been a breeze. The achievements section helped me land new projects.'
                 },
                 {
-                    image: 'img/members/30.jpg',
+                    image: 'img/customers/18.jpg',
                     title: 'Highly Functional',
                     tax: 'Exceeded expectations',
                     time: 'Used for 3 months',
@@ -313,16 +313,16 @@ export default {
                     review: 'The reactions and reviews features give me real-time feedback. The timeline helps showcase my career growth.'
                 },
                 {
-                    image: 'img/members/31.jpg',
+                    image: 'img/customers/19.jpg',
                     title: 'Cost-Effective Solution',
                     tax: 'Saved on printing costs',
                     time: 'Used for 2 months',
-                    name: 'Nisha Kapoor',
+                    name: 'Lokesh Verma',
                     subtitle: 'Freelance Content Strategist',
                     review: 'I’ve replaced physical business cards with this digital one. It’s eco-friendly, cost-effective, and packed with features!'
                 },
                 {
-                    image: 'img/members/32.jpg',
+                    image: 'img/customers/20.jpg',
                     title: 'Great Design',
                     tax: 'Attracted new opportunities',
                     time: 'Used for 1 month',
@@ -331,11 +331,11 @@ export default {
                     review: 'The digital card is aesthetically designed. My clients appreciate the attributes and skills sections—it’s professional and impressive.'
                 },
                 {
-                    image: 'img/members/33.jpg',
+                    image: 'img/customers/21.jpg',
                     title: 'Simplifies Sharing',
                     tax: 'Built a wider network',
                     time: 'within 20 days',
-                    name: 'Shweta Bansal',
+                    name: 'Vivek Kumar',
                     subtitle: 'Entrepreneur',
                     review: 'The easy sharing options and interactive features have helped me expand my network. The digital business card is a must-have!'
                 }

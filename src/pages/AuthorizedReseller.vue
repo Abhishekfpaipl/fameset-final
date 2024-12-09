@@ -1,5 +1,5 @@
 <template>
-    <div class="text-bg-dark top-padding">
+    <div class="text-white top-padding" style="background-color: black;">
         <CarouselBanner />
         <ResllerImage />
         <div class="text-center  py-5 text-bg-light">

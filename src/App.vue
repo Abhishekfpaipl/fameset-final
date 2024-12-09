@@ -50,7 +50,9 @@ export default {
 .form-control {
   box-shadow: none !important;
 }
-
+.form-control:focus {
+  border-color:white !important;
+}
 .method1 {
   background: linear-gradient(90deg, rgba(254, 242, 159, 1) 0%, rgba(210, 163, 73, 1) 50%, rgba(254, 242, 159, 1) 100%);
   -webkit-background-clip: text;

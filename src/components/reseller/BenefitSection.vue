@@ -1,4 +1,4 @@
-<template> 
+<template>
     <div class="container px-3 px-md-0">
         <div class="row d-flex justify-content-center pb-5 pt-2">
             <div class="col-lg-4 row row-cols-1 g-3 mt-0">
@@ -46,41 +46,42 @@ export default {
                 {
                     icon: 'bi bi-shop fs-3',
                     heading: 'Low Startup Cost',
-                    description: "Reselling digital business cards involves minimal upfront investment. Since you don't have to worry about physical products or shipping logistics, your primary expenses will be in marketing and customer acquisition."
+                    description: "Starting a Fameset service requires minimal upfront investment. Without the need for physical products or shipping logistics, your main expenses are focused on marketing and customer acquisition."
                 },
                 {
                     icon: 'bi bi-currency-rupee fs-3',
                     heading: "Eco-Friendly",
-                    description: "As the world moves toward sustainability, digital business cards provide an eco-friendly alternative to traditional paper cards. By promoting digital cards, you’re contributing to reducing paper waste."
+                    description: "Famesets are an eco-friendly solution, reducing the need for paper and printing. By offering digital cards, you help minimize waste and support sustainable business practices."
                 },
                 {
                     icon: 'bi bi-headset fs-3',
                     heading: "High Demand",
-                    description: "Digital business cards are in demand as more people move towards digital solutions for their personal and business networking. Offering these cards positions you at the forefront of a growing market."
+                    description: "As the world shifts toward digital networking, the demand for Famesets is growing. Offering these cards positions your business to serve a rapidly expanding market."
                 },
                 {
                     icon: 'bi bi-diagram-2 fs-3',
                     heading: "Recurring Revenue Model",
-                    description:"Many digital business card programs offer subscription-based services, meaning you can earn recurring income from clients who renew their digital cards annually or monthly."
-                },
+                    description: "Many Fameset services offer subscription-based pricing, allowing you to earn recurring revenue from clients who renew their cards on an annual or monthly basis."
+                }
             ],
-            servicesRight: [ 
+            servicesRight: [
                 {
                     icon: 'bi bi-bar-chart-line fs-3',
                     heading: "Customizable Solutions",
-                    description: "You can offer clients a range of customization options such as logos, color schemes, and interactive features like QR codes, social media links, and personalized contact details."
+                    description: "Famesets offer extensive customization options, including logos, color schemes, QR codes, social media links, and personalized contact information, ensuring a unique card for every client."
                 },
                 {
                     icon: 'bi bi-lock fs-3',
                     heading: "Scalable Business",
-                    description: "Reselling digital cards allows you to scale easily without worrying about inventory management or supply chain issues. Your only focus will be growing your client base and expanding your service offerings."
+                    description: "Reselling Famesets allows for easy scalability. With no need for inventory management, your focus is on expanding your customer base and increasing your service offerings."
                 },
                 {
                     icon: 'bi bi-phone fs-3',
                     heading: "Remote Business",
-                    description: "Reselling digital cards can be run from anywhere, making it a perfect opportunity for home-based or remote businesses. All you need is a computer and an internet connection to get started."
-                }, 
+                    description: "Fameset reselling business can be managed remotely. Whether from home or on the go, all you need is a computer and an internet connection to manage your business."
+                }
             ]
+
         }
     },
 }

@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-6">
                 <div class="position-relative">
-                    <div class="card border-0 shadow bg-dark text-white" >
+                    <div class="card border-0 shadow bg-dark text-white">
                         <div class="card-body">
                             <div class="d-flex flex-column justify-content-center align-items-center mb-3">
                                 <img :src="currentStory.image" alt="Seller" class="rounded-circle me-3" width="60"
@@ -26,11 +26,13 @@
                         </div>
                     </div>
                     <div class="position-absolute top-50 translate-middle" style="left: 0%;">
-                        <button class="btn rounded-circle shadow py-2" style="background-color: var(--brand-color) !important;" @click="prevStory"><i
+                        <button class="btn rounded-circle shadow py-2"
+                            style="background-color: var(--brand-color) !important;" @click="prevStory"><i
                                 class="bi bi-chevron-left"></i></button>
                     </div>
                     <div class="position-absolute top-50 translate-middle" style="right: -7%;">
-                        <button class="btn rounded-circle shadow py-2" style="background-color: var(--brand-color) !important;" @click="nextStory"><i
+                        <button class="btn rounded-circle shadow py-2"
+                            style="background-color: var(--brand-color) !important;" @click="nextStory"><i
                                 class="bi bi-chevron-right"></i></button>
                     </div>
                 </div>
@@ -50,34 +52,22 @@ export default {
             currentIndex: 0,
             stories: [
                 {
-                    name: "Samantha",
-                    company: "Amazestore",
-                    image: "img/users/1.png",
-                    quote: "Samantha’s Digital Transformation Agency Samantha, an entrepreneur with a background in graphic design, started reselling digital business cards as part of her digital transformation services. She targeted small businesses and startups that wanted to create professional branding without investing in expensive printing. By offering digital cards with unique, branded designs and tracking features, Samantha saw her client base grow quickly. She was able to generate a steady income through subscriptions and referrals, all while promoting the environmental benefits of digital cards."
+                    "name": "Emily",
+                    "company": "BrandElevate Co.",
+                    "image": "img/users/5.png",
+                    "quote": "Emily’s Creative Agency Emily, a branding expert, saw Fameset as the perfect addition to her portfolio of services. She offered clients personalized Famesets integrated with brand colors, logos, and social media links. Her unique selling point was the ability to tie the Fameset design to the client’s marketing campaigns, creating a cohesive brand identity. By delivering tailored solutions and maintaining strong client relationships, Emily boosted her agency’s revenue while helping businesses enhance their digital presence."
                 },
                 {
-                    name: "David",
-                    company: "Sirona Hygiene",
-                    image: "img/users/2.png",
-                    quote: "David’s Networking Solutions David, a seasoned networker and entrepreneur, recognized the potential of digital business cards and launched a reselling business targeted at professionals and corporate clients. He helped executives replace paper business cards with customized digital versions that could be easily shared through QR codes and links. His personalized service and focus on streamlining the professional networking process helped him build a strong client base, earning him long-term recurring revenue."
+                    "name": "Aiden",
+                    "company": "ProNet Solutions",
+                    "image": "img/users/6.png",
+                    "quote": "Aiden’s Corporate Outreach Aiden, a business consultant, incorporated Fameset into his corporate training programs. He provided executives and teams with custom Famesets to streamline networking during conferences and business meetings. His strategy of bundling Famesets with other consultancy services created additional value for clients. Over time, Aiden expanded his reselling operations and secured contracts with multiple corporations, transforming Fameset into a core part of his business model."
                 },
                 {
-                    name: "Lara",
-                    company: "Glide Route Ventures",
-                    image: "img/users/3.png",
-                    quote: "Lara’s Event Marketing Business Lara, who specialized in organizing conferences and events, began offering digital business cards to exhibitors and attendees as a part of her event packages. The ability to instantly share contact information and promote services through QR codes made the digital cards a hit at trade shows and networking events. As her event marketing business grew, she expanded her offering to include a digital business card reseller program, adding a new revenue stream and offering clients a modern way to connect."
-                },
-                {
-                    name: "Daniel",
-                    company: "Glide Route Ventures",
-                    image: "img/users/3.png",
-                    quote: "Daniel’s E-Commerce Reseller Daniel launched an online e-commerce store selling digital business card subscriptions. By targeting startups, influencers, and freelancers, he offered customizable templates, analytics, and integration with social media. His ability to provide flexible plans and offer free trials helped him grow a loyal customer base. Daniel capitalized on the growing trend of digital transformation and earned passive income by promoting digital business cards online."
-                },
-                {
-                    name: "Sophia",
-                    company: "Glide Route Ventures",
-                    image: "img/users/3.png",
-                    quote: "Sophia’s Sustainable Branding Reseller Sophia, a sustainability advocate, created a niche digital business card reseller business that targeted eco-conscious professionals and businesses. By promoting the environmental benefits of going paperless and offering custom-branded digital cards, Sophia built a loyal customer base. Through social media marketing, content creation, and strategic partnerships with eco-friendly organizations, she was able to scale her reselling business and establish herself as an authority in the sustainability and digital branding space."
+                    "name": "Olivia",
+                    "company": "Green Network Hub",
+                    "image": "img/users/7.png",
+                    "quote": "Olivia’s Eco-Friendly Network Olivia, an environmentalist and entrepreneur, launched a Fameset reseller business aimed at NGOs and sustainability-focused businesses. She emphasized the paperless aspect of Fameset, which aligned perfectly with her clients’ eco-friendly values. Olivia also partnered with environmental organizations to promote the adoption of digital networking tools. Her commitment to sustainability and effective partnerships helped her create a thriving reseller business with a loyal, niche client base."
                 },
             ]
         }
