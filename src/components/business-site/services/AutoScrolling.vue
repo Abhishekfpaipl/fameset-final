@@ -1,7 +1,7 @@
 <template>
     <div class="py-5 text-white" style="background-color: #000">
-        <h3 class="text-center mb-5 text-capitalize ">we rely on the best to provide the finest service and experience
-        </h3>
+        <h1 class="text-center mb-5 text-capitalize ">top industries we serve
+        </h1>
         <article :class="['wrapper', { 'wrapper--vertical': isVertical }]">
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
@@ -173,7 +173,7 @@ export default {
     --color-bg-accent: #ecdcc0;
     --size: clamp(10rem, 1rem + 40vmin, 30rem);
     --gap: calc(var(--size) / 14);
-    --duration: 10s;
+    --duration: 25s;
     --scroll-start: 0;
     --scroll-end: calc(-100% - var(--gap));
 }

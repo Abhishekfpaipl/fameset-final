@@ -30,6 +30,10 @@ export default {
   color: #2c3e50;
 }
 
+.brand-bg {
+  background: linear-gradient(90deg, rgba(24, 13, 0, 1) 0%, rgba(47, 28, 8, 1) 50%, rgba(24, 13, 0, 1) 100%);
+}
+
 .top-padding {
   padding-top: 70px;
 }
@@ -39,8 +43,8 @@ export default {
   color: black !important;
 }
 
-.brand-btn  {
-  border: 1px solid gold !important;  
+.brand-btn {
+  border: 1px solid gold !important;
 }
 
 .form-control {
@@ -152,5 +156,22 @@ export default {
   border-bottom: 2px solid;
   border-image: linear-gradient(to right, black 0, transparent 10%);
   border-image-slice: 1;
+}
+
+@keyframes slideTop {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+.slide {
+  display: inline-block;
+  animation: slideTop 1.5s ease-in-out infinite;
 }
 </style>

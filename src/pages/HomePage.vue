@@ -1,14 +1,17 @@
 <template>
-    <div class="text-white bg-dark top-padding">
+    <div class="text-white brand-bg top-padding">
         <TopBanner />
-        <Banner brandColorOne="#125252" v-observe /> 
+        <Banner brandColorOne="#125252" v-observe />
         <div class="my-5">
-            <ServicesLeadManagement :values="leads" title="Incredible Features," subtitle=" that boost your fame!" v-observe />
+            <LeadManagement :values="leads" title="Incredible Features," subtitle=" that boost your fame!" v-observe />
         </div>
         <div class="my-5">
             <WhyChooseUs :description="whychooseUs" title="why choose us" v-observe />
         </div>
-      
+
+        <div class="my-5">
+            <LeadManagement :values="featureSoon" title="Features Coming Soon" subtitle=" that boost your fame!" v-observe />
+        </div>
         <div class="my-5" id="second">
             <PriceSection v-observe />
         </div>
@@ -16,10 +19,10 @@
             <StepsForRegistration v-observe />
         </div>
         <div class="my-5">
-            <AutoScrolling v-observe />
+            <SalesFunnel v-observe />
         </div>
         <div class="my-5">
-            <SalesFunnel v-observe />
+            <AutoScrolling v-observe />
         </div>
         <!-- <div class="">
             <BookDemo :faqs="faqs" image-src="/img/demo.svg" title="Schedule a free demo" v-observe />
@@ -33,7 +36,7 @@
             <TempFaqs :faqs="faqs" image-src="/img/faq.svg" title="Frequently asked questions" image-position="left"
                 v-observe />
         </div> -->
-      
+
         <div class="py-5">
             <HomeTestimonialSection />
         </div>
@@ -44,7 +47,7 @@
 <script>
 import TopBanner from "@/components/business-site/TopBanner.vue";
 import Banner from "@/components/business-site/BannerSection.vue";
-import ServicesLeadManagement from "@/components/business-site/services/LeadManagement.vue"; 
+import LeadManagement from "@/components/LeadManagement.vue";
 import AutoScrolling from "@/components/business-site/services/AutoScrolling.vue";
 // import BookDemo from "@/components/business-site/BookDemo.vue";
 import PriceSection from "@/components/business-site/PriceSection.vue";
@@ -54,13 +57,13 @@ import SalesFunnel from "@/components/business-site/SalesFunnel.vue";
 import WhyChooseUs from "@/components/business-site/WhyChooseUs.vue";
 // import TempFaqs from "@/components/business-site/TempFaqs.vue";
 import BottomShareIcons from "@/components/business-site/BottomShareIcons.vue";
-// import HomeTestimonialSection from "@/components/HomeTestimonialSection.vue";
+import HomeTestimonialSection from "@/components/HomeTestimonialSection.vue";
 export default {
     name: "ListYourBusiness",
     components: {
         TopBanner,
         Banner,
-        ServicesLeadManagement, 
+        LeadManagement,
         AutoScrolling,
         // BookDemo,
         PriceSection,
@@ -70,7 +73,7 @@ export default {
         WhyChooseUs,
         // TempFaqs,
         BottomShareIcons,
-        // HomeTestimonialSection,
+        HomeTestimonialSection,
     },
     data() {
         return {
@@ -173,6 +176,16 @@ export default {
                     description: "Capture leads from all sources- website, facbook, google, lead providers, referrals - onto one platform with zero leakage.",
                 },
                 {
+                    id: 65,
+                    icon: 'bi-whatsapp fs-4',
+                    image: "/img/features/Reviews.png",
+                    title: "Reviews",
+                    description: "Call prospects in just one click . Track and record conversations to ensure high compliance and productivity.",
+                },
+
+            ],
+            featureSoon: [
+                {
                     id: 2,
                     icon: 'bi-diagram-3 fs-4',
                     image: "/img/features/Hearts.png",
@@ -193,13 +206,7 @@ export default {
                     title: "Reactions",
                     description: "Call prospects in just one click . Track and record conversations to ensure high compliance and productivity.",
                 },
-                {
-                    id: 65,
-                    icon: 'bi-whatsapp fs-4',
-                    image: "/img/features/Reviews.png",
-                    title: "Reviews",
-                    description: "Call prospects in just one click . Track and record conversations to ensure high compliance and productivity.",
-                },
+
                 {
                     id: 65,
                     icon: 'bi-whatsapp fs-4',

@@ -1,7 +1,7 @@
 <template>
-    <div class="text-bg-dark  top-padding">
+    <div class="text-white top-padding" style="background-color: black !important">
         <TopSectionBanner /> 
-        <div class="container rounded-top-5 bg-dark" v-observe>
+        <div class="container" v-observe>
             <SuccessStory :tests="tests" v-observe />
             <div class="my-5">
                 <InfoSection :techTeam="techTeam" :marketingTeam="marketingTeam" :managementTeam="managementTeam"

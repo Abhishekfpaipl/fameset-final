@@ -1,8 +1,10 @@
 <template lang="">
     <div>
-        <div class="position-relative" style="width:100%; height:auto;">
-            <img src="/img/bannerDesktop.jpg" alt="" class=""
-                style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="position-relative" style="width:100%; height:100%;">
+            <img src="/img/bannerDesktop.jpg" alt="" class="d-none d-md-block"
+                style="width: 100%; height: 400px; object-fit: cover;">
+            <img src="/img/bannerDesktop.jpg" alt="" class="d-md-none"
+                style="width: 100%; object-fit: cover;">
             <!-- <img src="/img/bannerMobile.jpg" alt="" class="d-md-none"
                 style="width: 100%; height: 100%; object-fit: cover;"> -->
                

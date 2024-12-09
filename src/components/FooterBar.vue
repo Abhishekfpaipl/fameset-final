@@ -1,25 +1,23 @@
 <template>
-    <div class="container-fluid text-white pt-3" style="background-color: black !important;">
-        <div class="row">
+    <div class="container-fluid text-white pt-3 footer-container" style="background-color: black !important;">
+        <div class="row pt-3">
             <div class="col-12 col-md-4 mb-3 d-flex flex-column align-items-center justify-content-start">
                 <router-link to="/"
                     class="d-flex gap-2 align-items-center justify-content-center text-decoration-none text-white">
-                    <img :src="img" style="width: 70px;object-fit: contain;">
-                    <div class="d-flex flex-column align-items-start">
-                        <span class="text-uppercase text-white fs-1 lh-1">Fameset</span>
-                        <!-- <span class="text-capitalize text-white">business networking card</span> -->
-                    </div>
+                    <img :src="img" style="width: 70px; object-fit: contain;">
                 </router-link>
-                <p class="mt-4 px-2">Let's Charm
-                    Your Fame with
-                    Fameset</p>
+                <p class="mt-2 px-2">
+                    <span class="fs-2 fw-bold method1">FAMESET <br></span>
+                    <span class="fs-5 fw-bold method1">Let's Charm <br></span>
+                    <span class="fs-5 fw-bold method1">Your Fame</span>
+                </p>
             </div>
 
-            <div class=" col-12 col-md-4 mb-3 text-center">
+            <div class="col-12 col-md-4 mb-3 text-center">
                 <p class="mb-2 fw-bold">Contact Us</p>
-                <p class="mb-2">Email : support@fameset.com</p>
-                <p class="mb-2">Mob no. : 91 8860012001</p>
-                <p class="mb-2">Address : 2nd Floor, Block B1/632, <br> Janakpuri, 110058, Delhi, India</p>
+                <p class="mb-2">Email: support@fameset.com</p>
+                <p class="mb-2">Mob no.: 91 8802172121</p>
+                <p class="mb-2">Address: 2nd Floor, Block B1/632, <br> Janakpuri, 110058, Delhi, India</p>
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-around">
                 <div class="mb-3 text-start">
@@ -40,6 +38,7 @@
         </div>
     </div>
 </template>
+
 
 <script>
 export default {
@@ -95,3 +94,24 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+.footer-container {
+    position: relative;
+}
+
+.footer-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Adjust thickness of the border */
+    background: linear-gradient(90deg,
+            rgba(254, 242, 159, 1) 0%,
+            rgba(210, 163, 73, 1) 50%,
+            rgba(254, 242, 159, 1) 100%);
+    z-index: 1;
+}
+</style>

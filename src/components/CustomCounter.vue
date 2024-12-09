@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid" style="background-color: #FFF5DD;">
+    <div class="container-fluid method1" style="background-color: black;">
         <div class="row py-4 text-dark">
             <h1 class=" text-center text-capitalize my-5">{{ title }}</h1>
             <div class="col">

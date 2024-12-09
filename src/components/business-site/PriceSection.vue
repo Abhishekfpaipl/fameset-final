@@ -10,13 +10,13 @@
                     <div class="tab-pane fade" :class="{ 'show active': index === 0 }" v-for="(price, index) in pricing"
                         :key="index" :id="'content-' + index" role="tabpanel" :aria-labelledby="'tab-' + index"
                         tabindex="0">
-                        <div class="d-md-flex justify-content-center gap-3">
+                        <div class="d-md-flex justify-content-center gap-5">
                             <div v-for="(plan, index) in price.plans" :key="index"
-                                class="card mb-3 p-3 py-4 bg-dark text-white rounded border border-2 test-border"
+                                class="card mb-3 p-3 py-4 text-white rounded border border-2 test-border"
                                 :class="{ 'recommended': index === 1 }" :style="[
                                     { backgroundColor: index === 1 ? 'black !important' : '' },
-                                    { border: index === 1 ? '2px solid gold !important' : '' }
-                                ]">
+                                    { border: index === 1 ? '3px solid gold !important' : '' }
+                                ]" style="background-color:black !important ;">
 
                                 <div v-if="index === 1" class="position-absolute start-0 m-2 ms-0"
                                     style="font-size: 12px; top: 1.5%;">
@@ -31,36 +31,60 @@
                                     <p class="mb-0 "> <span class="smaller">Plus 18% gst</span></p>
                                     <p><small class="text-capitalize">{{ plan.tag
                                             }}</small></p>
-                                    <div class="d-flex justify-content-center align-items-center">
+                                    <!-- <div class="d-flex justify-content-center align-items-center">
                                         <p class="fw-light bg-dark d-inline-block px-4 rounded-3">
                                             <span class="text-decoration-line-through text-white">{{ plan.mrp }}</span>
                                             <span class="text-white"> ({{ getDiscount(plan) }}% discount)</span>
                                         </p>
-                                    </div>
+                                    </div> -->
 
-                                    <ul v-if="plan.features" class="list-group">
-                                        <small class="text-start text-uppercase fw-bold my-2 text-primary">{{ plan.key
+                                    <ul class="list-group">
+                                        <!-- Regular Features -->
+                                        <small class="text-start text-uppercase fw-bold my-2 text-white">{{ plan.key
                                             }}</small>
                                         <li v-for="(feature, featureIndex) in plan.features" :key="featureIndex"
-                                            class="bg-dark text-white px-0 d-flex justify-content-between list-group-item text-start text-capitalize border-0"
-                                            :style="{ backgroundColor: index === 1 ? 'black !important' : '' }">
-                                            <div class="">
-                                                <i class="bi bi-check-circle text-success"></i>
-                                                <span class="px-2">
-                                                    {{ feature.text }}
-                                                </span>
+                                            class="text-white px-0 list-group-item text-start text-capitalize border-0"
+                                            style="background-color:black !important ;">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <i class="bi bi-check-circle text-success method1"></i>
+                                                    <span class="px-2">
+                                                        {{ feature.text }}
+                                                    </span>
+                                                </div>
+                                                <i class="bi bi-info-circle method1" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" :data-bs-title="feature.tooltip"></i>
                                             </div>
-                                            <i class="bi bi-info-circle" data-bs-toggle="tooltip"
-                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
-                                                :data-bs-title="feature.tooltip"></i>
+                                        </li>
+
+                                        <!-- Coming Soon Heading -->
+                                        <h6 v-if="plan.comingSoonFeatures" class="text-start text-uppercase mt-4 fw-bold text-warning">Coming Soon</h6>
+                                        <!-- Coming Soon Features -->
+                                        <li v-for="(feature, featureIndex) in plan.comingSoonFeatures"
+                                            :key="featureIndex"
+                                            class="text-white px-0 list-group-item text-start text-capitalize border-0"
+                                            style="background-color:black !important ;">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <i class="bi bi-clock text-warning method1"></i>
+                                                    <span class="px-2">
+                                                        {{ feature.text }}
+                                                    </span>
+                                                </div>
+                                                <i class="bi bi-info-circle method1" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" :data-bs-title="feature.tooltip"></i>
+                                            </div>
                                         </li>
                                     </ul>
+
                                 </div>
                                 <div class="card-footer bg-dark text-white p-0 border-top pt-2"
-                                    :style="{ backgroundColor: index === 1 ? 'black !important' : '' }">
+                                    :style="{ backgroundColor: index === 1 ? 'black !important' : '' }"
+                                    style="background-color:black !important ;">
                                     <p class="card-text text-capitalize smaller">{{ plan.description }}</p>
                                     <div class="d-flex justify-content-center gap-2 my-3">
-                                        <button class="btn fw-bold text-white w-100 brand-btn" >{{ plan.button }}</button>
+                                        <button class="btn fw-bold text-white w-100 brand-btn">{{ plan.button
+                                            }}</button>
                                     </div>
                                 </div>
                             </div>
@@ -156,47 +180,50 @@ export default {
                         {
                             id: 3,
                             name: "Elite",
-                            price: "10,000",
+                            price: "5,000",
                             mrp: "25,000",
                             tag: "/account/year",
                             description: "Enjoy our advanced offering for fast-growing businesses and Networking.",
                             button: "Get Started",
                             button2: "Buy now",
-                            key: "key features",
+                            key: "key features", 
                             features: [
                                 {
                                     text: "All features of pro plan",
-                                    tooltip: "Enjoy advanced features and premium benefits available in the Pro plan."
+                                    tooltip: "Enjoy advanced features and premium benefits available in the Pro plan.",
                                 },
                                 {
                                     text: "Views",
-                                    tooltip: "Track the number of times your digital card has been viewed by others."
+                                    tooltip: "Track the number of times your digital card has been viewed by others.",
                                 },
                                 {
                                     text: "Achievements",
-                                    tooltip: "Highlight your significant accomplishments to impress your audience."
-                                },
+                                    tooltip: "Highlight your significant accomplishments to impress your audience.",
+                                }, 
+                            ],
+                            comingSoonFeatures: [
                                 {
                                     text: "Hearts",
-                                    tooltip: "Receive love and appreciation from your audience as they interact with your card."
+                                    tooltip: "Receive love and appreciation from your audience as they interact with your card.",
                                 },
                                 {
                                     text: "Promotes",
-                                    tooltip: "Boost your visibility by promoting your card across multiple platforms."
+                                    tooltip: "Boost your visibility by promoting your card across multiple platforms.",
                                 },
                                 {
                                     text: "Reactions",
-                                    tooltip: "Collect feedback and engagement through reactions to your card content."
+                                    tooltip: "Collect feedback and engagement through reactions to your card content.",
                                 },
                                 {
                                     text: "Reviews",
-                                    tooltip: "Showcase customer feedback and reviews to build trust and credibility."
+                                    tooltip: "Showcase customer feedback and reviews to build trust and credibility.",
                                 },
                                 {
                                     text: "Testimonial",
-                                    tooltip: "Display heartfelt testimonials from clients or customers to strengthen your reputation."
-                                }
-                            ]
+                                    tooltip: "Display heartfelt testimonials from clients or customers to strengthen your reputation.",
+                                },
+                            ],
+
                         }
                     ]
                 },
@@ -253,7 +280,8 @@ export default {
     top: 70px;
     z-index: 10;
     background-color: white;
-} 
+}
+
 .test-border {
     border-color: black !important;
 }

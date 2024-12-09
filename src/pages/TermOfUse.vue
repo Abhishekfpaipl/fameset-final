@@ -1,16 +1,17 @@
 <template>
-    <div class="bg-dark top-padding"> 
-        <TopSectionBanner/>
-        <div class="container py-5 rounded-top-5 bg-dark" >
-
-            <div class="card border-0 bg-dark text-white">
-                <div class="card-body text-start">
+    <div class="top-padding" style="background-color: black;">
+        <TopSectionBanner />
+        <div class="container py-5 "> 
+            <div class="card border-0 text-white">
+                <div class="card-body text-start" style="background-color: black;">
                     <div id="termsAccordion">
                         <!-- Introduction -->
                         <div class="mb-3">
-                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                            <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro">
                                 <strong>1. Introduction</strong>
+                                <i class="bi bi-chevron-down"></i>
                             </button>
                             <div id="collapseIntro" class="collapse show">
                                 <p>
@@ -25,9 +26,11 @@
 
                         <!-- License to Use -->
                         <div class="mb-3">
-                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                            <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseLicense" aria-expanded="true" aria-controls="collapseLicense">
                                 <strong>2. License to Use</strong>
+                                <i class="bi bi-chevron-down"></i>
                             </button>
                             <div id="collapseLicense" class="collapse show">
                                 <p>
@@ -41,10 +44,12 @@
 
                         <!-- User Responsibilities -->
                         <div class="mb-3">
-                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                            <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseResponsibilities" aria-expanded="true"
                                 aria-controls="collapseResponsibilities">
                                 <strong>3. User Responsibilities</strong>
+                                <i class="bi bi-chevron-down"></i>
                             </button>
                             <div id="collapseResponsibilities" class="collapse show">
                                 <p>As a user of Fameset, you agree to adhere to the following responsibilities:</p>
@@ -61,10 +66,12 @@
 
                         <!-- Prohibited Activities -->
                         <div class="mb-3">
-                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                            <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseProhibited" aria-expanded="true"
                                 aria-controls="collapseProhibited">
                                 <strong>4. Prohibited Activities</strong>
+                                <i class="bi bi-chevron-down"></i>
                             </button>
                             <div id="collapseProhibited" class="collapse show">
                                 <p>To maintain the integrity of our platform, you must not engage in the following
@@ -83,9 +90,11 @@
 
                         <!-- Intellectual Property -->
                         <div class="mb-3">
-                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                            <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseIP" aria-expanded="true" aria-controls="collapseIP">
                                 <strong>5. Intellectual Property</strong>
+                                <i class="bi bi-chevron-down"></i>
                             </button>
                             <div id="collapseIP" class="collapse show">
                                 <p>
@@ -99,10 +108,12 @@
 
                         <!-- Termination -->
                         <div class="mb-3">
-                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                            <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTermination" aria-expanded="true"
                                 aria-controls="collapseTermination">
                                 <strong>6. Termination</strong>
+                                <i class="bi bi-chevron-down"></i>
                             </button>
                             <div id="collapseTermination" class="collapse show">
                                 <p>
@@ -116,10 +127,12 @@
 
                         <!-- Limitation of Liability -->
                         <div class="mb-3">
-                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                            <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseLiability" aria-expanded="true"
                                 aria-controls="collapseLiability">
                                 <strong>7. Limitation of Liability</strong>
+                                <i class="bi bi-chevron-down"></i>
                             </button>
                             <div id="collapseLiability" class="collapse show">
                                 <p>
@@ -133,9 +146,11 @@
 
                         <!-- Changes to Terms -->
                         <div class="mb-3">
-                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                            <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseChanges" aria-expanded="true" aria-controls="collapseChanges">
                                 <strong>8. Changes to Terms</strong>
+                                <i class="bi bi-chevron-down"></i>
                             </button>
                             <div id="collapseChanges" class="collapse show">
                                 <p>
@@ -149,9 +164,11 @@
 
                         <!-- Governing Law -->
                         <div class="mb-3">
-                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                            <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseLaw" aria-expanded="true" aria-controls="collapseLaw">
                                 <strong>9. Governing Law</strong>
+                                <i class="bi bi-chevron-down"></i>
                             </button>
                             <div id="collapseLaw" class="collapse show">
                                 <p>
@@ -164,9 +181,11 @@
 
                         <!-- Contact Us -->
                         <div class="mb-3">
-                            <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                            <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseContact" aria-expanded="true" aria-controls="collapseContact">
                                 <strong>10. Contact Us</strong>
+                                <i class="bi bi-chevron-down"></i>
                             </button>
                             <div id="collapseContact" class="collapse show">
                                 <p>
@@ -174,7 +193,7 @@
                                     contact us:<br>
                                     <strong>Fameset</strong><br>
                                     Email: <a href="mailto:support@fameset.com">support@fameset.com</a><br>
-                                    Phone: +91-8860012001<br>
+                                    Phone: +91-8802172121<br>
                                     Address: 2nd Floor, Block B1/632, Janakpuri, 110058, Delhi, India
                                 </p>
                             </div>

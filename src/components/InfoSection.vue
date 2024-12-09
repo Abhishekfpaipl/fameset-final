@@ -5,7 +5,7 @@
       <div class="position-relative">
         <div class="d-flex gap-3 overflow-x-scroll" ref="techScrollContainer" id="scroll">
           <div class="" v-for="(team, index) in techTeam" :key="index">
-            <div class="card text-white" style="min-width: 18rem; background-color: black;">
+            <div class="card text-white brand-bg" style="min-width: 18rem; ">
               <div class="card-body p-0">
                 <div class="text-center card-title border-bottom py-2">
                   <h5 class="lh-1 mb-0">{{ team.name }}</h5>
@@ -32,7 +32,7 @@
       <div class="position-relative">
         <div class="d-flex gap-3 overflow-x-scroll" ref="marketingScrollContainer" id="scroll">
           <div class="" v-for="(team, index) in marketingTeam" :key="index">
-            <div class="card text-white" style="min-width: 18rem; background-color: black;">
+            <div class="card text-white brand-bg" style="min-width: 18rem; ">
               <div class="card-body p-0">
                 <div class="text-center card-title border-bottom py-2">
                   <h5 class="lh-1 mb-0">{{ team.name }}</h5>
@@ -59,7 +59,7 @@
       <div class="position-relative">
         <div class="d-flex gap-3 overflow-x-scroll" ref="managementScrollContainer" id="scroll">
           <div class="" v-for="(team, index) in managementTeam" :key="index">
-            <div class="card text-white" style="min-width: 18rem; background-color: black;">
+            <div class="card text-white brand-bg" style="min-width: 18rem; ">
               <div class="card-body p-0">
                 <div class="text-center card-title border-bottom py-2">
                   <h5 class="lh-1 mb-0">{{ team.name }}</h5>

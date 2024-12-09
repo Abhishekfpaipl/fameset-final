@@ -1,6 +1,6 @@
 <template lang="">
     <div>
-        <div class="container-fluid bg-dark text-white">
+        <div class="container-fluid  text-white" style="background-color:black !important ;">
             <div class="row py-5">
                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
                     <div class="" style="width:1000px; max-width:70%">
@@ -9,9 +9,9 @@
                 </div>
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-md-start align-items-center"> 
                         <div class="text-start mt-5 mt-md-0"> 
-                            <p class="fs-1 fw-bold m-0 text-uppercase">famefoot</p>
+                            <p class="fs-1 fw-bold m-0 text-uppercase">fameset</p>
                         </div>
-                        <h3 class="mt-3 text-start text-capitalize">Attract and retain customers effortlessly with FAMEFOOT</h3>
+                        <h3 class="mt-3 text-start text-capitalize">Attract and retain customers effortlessly with fameset</h3>
                         <small class="text-start">Unlock the power of real, trusted reviews proven to drive significant revenue growth for your business.</small>
                         <div class="mt-3 text-center text-md-start">
                             <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Stay ahead in your market.</p>
@@ -19,8 +19,9 @@
                             <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Boost Your Network & Public Image.</p>
                             <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Maximize your Business.</p>
                         </div> 
-                        <RouterLink to="/free-trial">
-                            <div class="btn my-4 fs-5 fw-bold text-white brand-btn text-capitalize">
+                        <RouterLink to=" ">
+                            <div class="btn my-4 fs-5 fw-bold text-white brand-btn text-capitalize" data-bs-toggle="modal"
+                            data-bs-target="#queryModal">
                                 Get started
                             </div>
                         </RouterLink>

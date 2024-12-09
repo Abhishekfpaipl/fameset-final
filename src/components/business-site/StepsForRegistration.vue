@@ -1,10 +1,10 @@
 <template>
-    <div class="bg-dark" >
+    <div class=" " style="background-color:black !important ;" >
         <div class="container py-5 text-white">
             <h1 class="text-center mb-4 text-capitalize">Get started in 3 simple steps</h1>
             <div class="d-flex flex-nowrap overflow-x-scroll" id="scroll">
                 <div v-for="(link, index) in links" :key="index" class="col">
-                    <div class="card bg-dark border-0 p-3 ">
+                    <div class="card bg-transparent border-0 p-3 ">
                         <div style="color: var(--bg-primary);">
                             <div class="d-flex justify-content-center align-items-center">
                                 <img :src="link.img" width="300" alt=""/>

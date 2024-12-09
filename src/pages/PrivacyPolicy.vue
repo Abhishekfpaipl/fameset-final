@@ -1,16 +1,19 @@
 <template>
-    <div class="bg-dark top-padding">
-       <TopSectionBanner/>
-        <div class="container py-5 rounded-top-5 bg-dark" >
+    <div class=" top-padding" style="background-color: black;">
+        <TopSectionBanner />
+        <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-12">
-                    <div class="card border-0 bg-dark text-white text-start">
+                    <div class="card border-0 text-white text-start" style="background-color: black;">
                         <div id="privacyAccordion">
                             <!-- Introduction -->
                             <div class="mb-3">
-                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseIntro" aria-expanded="true" aria-controls="collapseIntro">
+                                <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseIntro"
+                                    aria-expanded="true" aria-controls="collapseIntro"
+                                    style="background: var(--bg-glow);">
                                     <strong>Introduction</strong>
+                                    <i class="bi bi-chevron-down"></i>
                                 </button>
                                 <div id="collapseIntro" class="collapse show">
                                     <p>
@@ -28,10 +31,12 @@
 
                             <!-- Information We Collect -->
                             <div class="mb-3">
-                                <button class="btn text-white  border mb-2" type="button" data-bs-toggle="collapse"
+                                <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                    style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseCollect" aria-expanded="true"
                                     aria-controls="collapseCollect">
                                     <strong>1. Information We Collect</strong>
+                                    <i class="bi bi-chevron-down"></i>
                                 </button>
                                 <div id="collapseCollect" class="collapse show">
                                     <p>We collect information to provide and improve our services effectively.
@@ -55,9 +60,11 @@
 
                             <!-- How We Use Your Information -->
                             <div class="mb-3">
-                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                    style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseUse" aria-expanded="true" aria-controls="collapseUse">
                                     <strong>2. How We Use Your Information</strong>
+                                    <i class="bi bi-chevron-down"></i>
                                 </button>
                                 <div id="collapseUse" class="collapse show">
                                     <p>We use the information collected for purposes such as:</p>
@@ -78,9 +85,11 @@
 
                             <!-- Sharing Your Information -->
                             <div class="mb-3">
-                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                    style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseShare" aria-expanded="true" aria-controls="collapseShare">
                                     <strong>3. Sharing Your Information</strong>
+                                    <i class="bi bi-chevron-down"></i>
                                 </button>
                                 <div id="collapseShare" class="collapse show">
                                     <p>Your information is not sold or traded. We may share it under the
@@ -102,10 +111,12 @@
 
                             <!-- Data Security -->
                             <div class="mb-3">
-                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                    style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseSecurity" aria-expanded="true"
                                     aria-controls="collapseSecurity">
                                     <strong>4. Data Security</strong>
+                                    <i class="bi bi-chevron-down"></i>
                                 </button>
                                 <div id="collapseSecurity" class="collapse show">
                                     <p>
@@ -119,10 +130,12 @@
 
                             <!-- Your Rights -->
                             <div class="mb-3">
-                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                    style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseRights" aria-expanded="true"
                                     aria-controls="collapseRights">
                                     <strong>5. Your Rights</strong>
+                                    <i class="bi bi-chevron-down"></i>
                                 </button>
                                 <div id="collapseRights" class="collapse show">
                                     <p>You have the right to manage your personal information and interactions
@@ -140,10 +153,12 @@
 
                             <!-- Cookies -->
                             <div class="mb-3">
-                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                <button class="btn mb-2 w-100 d-flex justify-content-between align-items-center"
+                                    style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseCookies" aria-expanded="true"
                                     aria-controls="collapseCookies">
                                     <strong>6. Cookies</strong>
+                                    <i class="bi bi-chevron-down"></i>
                                 </button>
                                 <div id="collapseCookies" class="collapse show">
                                     <p>
@@ -157,10 +172,12 @@
 
                             <!-- Changes to This Privacy Policy -->
                             <div class="mb-3">
-                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                <button class="btn w-100 mb-2 d-flex justify-content-between align-items-center"
+                                    style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseChanges" aria-expanded="true"
                                     aria-controls="collapseChanges">
                                     <strong>7. Changes to This Privacy Policy</strong>
+                                    <i class="bi bi-chevron-down"></i>
                                 </button>
                                 <div id="collapseChanges" class="collapse show">
                                     <p>
@@ -174,10 +191,12 @@
 
                             <!-- Contact Us -->
                             <div class="mb-3">
-                                <button class="btn text-white border mb-2" type="button" data-bs-toggle="collapse"
+                                <button class="btn w-100 mb-2 d-flex justify-content-between align-items-center"
+                                    style="background: var(--bg-glow);" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseContact" aria-expanded="true"
                                     aria-controls="collapseContact">
                                     <strong>8. Contact Us</strong>
+                                    <i class="bi bi-chevron-down"></i>
                                 </button>
                                 <div id="collapseContact" class="collapse show">
                                     <p>
@@ -185,7 +204,7 @@
                                         reach out to us:<br>
                                         <strong>Fameset</strong><br>
                                         Email: <a href="mailto:support@fameset.com">support@fameset.in</a><br>
-                                        Phone: +91-8860012001<br>
+                                        Phone: +91-8802172121<br>
                                         Address: 2nd Floor, Block B1/632, Janakpuri, 110058, Delhi, India
                                     </p>
                                 </div>

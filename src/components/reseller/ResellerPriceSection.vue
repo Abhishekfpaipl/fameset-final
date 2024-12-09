@@ -42,7 +42,7 @@
                         </div>
                         <div class="card-footer  p-0 border-top pt-2" >
                             <div class="btn-group w-100 my-2">
-                                <a :href="'https://wa.me/8860012001?text=' + encodeURIComponent('Hello, I want to get your ' + plan.name + ' service')"
+                                <a :href="'https://wa.me/8802172121?text=' + encodeURIComponent('Hello, I want to get your ' + plan.name + ' service')"
                                     class="btn text-capitalize px-4 text-dark btn-warning">
                                     <i class="bi bi-whatsapp"></i>
                                     <span class="ms-2">Enquiry</span>

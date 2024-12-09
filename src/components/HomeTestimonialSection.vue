@@ -1,26 +1,23 @@
 <template>
-    <div class="bg-dark text-white">
+    <div class="brand-bg">
+        <h1 class="text-center text-capitalize mb-4">our customer's reviews</h1>
         <article :class="['wrapper', { 'wrapper--vertical': isVertical }]" class="pb-5">
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group mt-5" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container position-relative rounded p-0 bg-light border">
-                            <div class="card border-0">
-                                <div class="card-header d-flex justify-content-center algin-items-center">
-                                    <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
-                                        style="width:60px; height:60px; margin-top:-40px;">
-                                        <img :src="card.image" alt="Profile" class="rounded-circle"
-                                            style="width: 100%; height: 100%;object-fit: cover;" />
-                                    </div>
+                        <div class="card border-0 h-100 shadow">
+                            <div class="card-header d-flex justify-content-center algin-items-center">
+                                <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
+                                    style="width:60px; height:60px; margin-top:-40px;">
+                                    <img :src="card.image" alt="Profile" class="rounded-circle"
+                                        style="width: 100%; height: 100%;object-fit: cover;" />
                                 </div>
-                                <div class="card-body text-bg-light py-2 px-1" style="max-width: 250px;">
-                                    <p class="name smaller mb-0 mt-0 pb-2 text-ellipsis1 border-bottom border-2">{{
-                                        card.name
-                                    }}</p> 
-                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
-                                        ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto iste
-                                        voluptatibus error tempore qui dolores possimus, nam fugit repudiandae?</p>
-                                </div>
+                            </div>
+                            <div class="card-body py-2 px-1" style="max-width: 250px;">
+                                <p class="name smaller mb-0 mt-0 pb-2 text-ellipsis1 border-bottom border-2">{{
+                                    card.name
+                                }}</p>
+                                <p class="  smaller mb-0  text-ellipsis3 pt-2 ">{{ card.review }} </p>
                             </div>
                         </div>
                     </div>
@@ -28,23 +25,19 @@
                 <div aria-hidden="true" class="marquee__group mt-5"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container position-relative rounded p-0 bg-light border">
-                            <div class="card border-0">
-                                <div class="card-header d-flex justify-content-center algin-items-center">
-                                    <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
-                                        style="width:60px; height:60px; margin-top:-40px;">
-                                        <img :src="card.image" alt="Profile" class="rounded-circle"
-                                            style="width: 100%; height: 100%;object-fit: cover;" />
-                                    </div>
+                        <div class="card border-0 h-100 shadow">
+                            <div class="card-header d-flex justify-content-center algin-items-center">
+                                <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
+                                    style="width:60px; height:60px; margin-top:-40px;">
+                                    <img :src="card.image" alt="Profile" class="rounded-circle"
+                                        style="width: 100%; height: 100%;object-fit: cover;" />
                                 </div>
-                                <div class="card-body text-bg-light py-2 px-1" style="max-width: 250px;">
-                                    <p class="name smaller mb-0 mt-0 pb-2 text-ellipsis1 border-bottom border-2">{{
-                                        card.name
-                                    }}</p> 
-                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
-                                        ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto iste
-                                        voluptatibus error tempore qui dolores possimus, nam fugit repudiandae?</p>
-                                </div>
+                            </div>
+                            <div class="card-body py-2 px-1" style="max-width: 250px;">
+                                <p class="name smaller mb-0 mt-0 pb-2 text-ellipsis1 border-bottom border-2">{{
+                                    card.name
+                                }}</p>
+                                <p class="  smaller mb-0  text-ellipsis3  pt-2">{{ card.review }} </p>
                             </div>
                         </div>
                     </div>
@@ -52,48 +45,40 @@
             </div>
             <div class="marquee marquee--reverse" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group mt-5" :style="{ 'animation-direction': isReverse ? 'normal' : 'reverse' }">
-                    <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container position-relative rounded p-0 bg-light border">
-                            <div class="card border-0">
-                                <div class="card-header d-flex justify-content-center algin-items-center">
-                                    <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
-                                        style="width:60px; height:60px; margin-top:-40px;">
-                                        <img :src="card.image" alt="Profile" class="rounded-circle"
-                                            style="width: 100%; height: 100%;object-fit: cover;" />
-                                    </div>
+                    <div class="" v-for="(card, index) in cards2" :key="index">
+                        <div class="card border-0 h-100 shadow">
+                            <div class="card-header d-flex justify-content-center algin-items-center">
+                                <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
+                                    style="width:60px; height:60px; margin-top:-40px;">
+                                    <img :src="card.image" alt="Profile" class="rounded-circle"
+                                        style="width: 100%; height: 100%;object-fit: cover;" />
                                 </div>
-                                <div class="card-body text-bg-light py-2 px-1" style="max-width: 250px;">
-                                    <p class="name smaller mb-0 mt-0 pb-2 text-ellipsis1 border-bottom border-2">{{
-                                        card.name
-                                    }}</p> 
-                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
-                                        ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto iste
-                                        voluptatibus error tempore qui dolores possimus, nam fugit repudiandae?</p>
-                                </div>
+                            </div>
+                            <div class="card-body  py-2 px-1" style="max-width: 250px;">
+                                <p class="name smaller mb-0 mt-0 pb-2 text-ellipsis1 border-bottom border-2">{{
+                                    card.name
+                                }}</p>
+                                <p class="  smaller mb-0  text-ellipsis3  pt-2">{{ card.review }} </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div aria-hidden="true" class="marquee__group mt-5"
                     :style="{ 'animation-direction': isReverse ? 'normal' : 'reverse' }">
-                    <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container position-relative rounded p-0 bg-light border">
-                            <div class="card border-0">
-                                <div class="card-header d-flex justify-content-center algin-items-center">
-                                    <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
-                                        style="width:60px; height:60px; margin-top:-40px;">
-                                        <img :src="card.image" alt="Profile" class="rounded-circle"
-                                            style="width: 100%; height: 100%;object-fit: cover;" />
-                                    </div>
+                    <div class="" v-for="(card, index) in cards2" :key="index">
+                        <div class="card border-0 h-100  shadow">
+                            <div class="card-header d-flex justify-content-center algin-items-center">
+                                <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
+                                    style="width:60px; height:60px; margin-top:-40px;">
+                                    <img :src="card.image" alt="Profile" class="rounded-circle"
+                                        style="width: 100%; height: 100%;object-fit: cover;" />
                                 </div>
-                                <div class="card-body text-bg-light py-2 px-1" style="max-width: 250px;">
-                                    <p class="name smaller mb-0 mt-0 pb-2 text-ellipsis1 border-bottom border-2">{{
-                                        card.name
-                                    }}</p> 
-                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
-                                        ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto iste
-                                        voluptatibus error tempore qui dolores possimus, nam fugit repudiandae?</p>
-                                </div>
+                            </div>
+                            <div class="card-body py-2 px-1" style="max-width: 250px;">
+                                <p class="name smaller mb-0 mt-0 pb-2 text-ellipsis1 border-bottom border-2">{{
+                                    card.name
+                                }}</p>
+                                <p class="  smaller mb-0  text-ellipsis3 pt-2 ">{{ card.review }} </p>
                             </div>
                         </div>
                     </div>
@@ -101,48 +86,41 @@
             </div>
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group mt-5" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
-                    <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container position-relative rounded p-0 bg-light border">
-                            <div class="card border-0">
-                                <div class="card-header d-flex justify-content-center algin-items-center">
-                                    <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
-                                        style="width:60px; height:60px; margin-top:-40px;">
-                                        <img :src="card.image" alt="Profile" class="rounded-circle"
-                                            style="width: 100%; height: 100%;object-fit: cover;" />
-                                    </div>
+                    <div class="" v-for="(card, index) in cards3" :key="index">
+                        <div class="card border-0 h-100 shadow">
+                            <div class="card-header d-flex justify-content-center algin-items-center">
+                                <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
+                                    style="width:60px; height:60px; margin-top:-40px;">
+                                    <img v-if="card.image" :src="card.image" alt="Profile" class="rounded-circle"
+                                        style="width: 100%; height: 100%;object-fit: cover;" />
+                                    <i v-else class="bi bi-person-circle"></i>
                                 </div>
-                                <div class="card-body text-bg-light py-2 px-1" style="max-width: 250px;">
-                                    <p class="name smaller mb-0 mt-0 pb-2 text-ellipsis1 border-bottom border-2">{{
-                                        card.name
-                                    }}</p> 
-                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
-                                        ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto iste
-                                        voluptatibus error tempore qui dolores possimus, nam fugit repudiandae?</p>
-                                </div>
+                            </div>
+                            <div class="card-body py-2 px-1" style="max-width: 250px;">
+                                <p class="name smaller mb-0 mt-0 pb-2 text-ellipsis1 border-bottom border-2">{{
+                                    card.name
+                                }}</p>
+                                <p class="  smaller mb-0  text-ellipsis3 pt-2 ">{{ card.review }} </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div aria-hidden="true" class="marquee__group mt-5"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
-                    <div class="" v-for="(card, index) in cards" :key="index">
-                        <div class="card-container position-relative rounded p-0 bg-light border">
-                            <div class="card border-0">
-                                <div class="card-header d-flex justify-content-center algin-items-center">
-                                    <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
-                                        style="width:60px; height:60px; margin-top:-40px;">
-                                        <img :src="card.image" alt="Profile" class="rounded-circle"
-                                            style="width: 100%; height: 100%;object-fit: cover;" />
-                                    </div>
+                    <div class="" v-for="(card, index) in cards3" :key="index">
+                        <div class="card border-0 h-100 shadow">
+                            <div class="card-header d-flex justify-content-center algin-items-center">
+                                <div class="rounded-circle overflow-hidden border border-dark border-2 p-1"
+                                    style="width:60px; height:60px; margin-top:-40px;">
+                                    <img :src="card.image" alt="Profile" class="rounded-circle"
+                                        style="width: 100%; height: 100%;object-fit: cover;" />
                                 </div>
-                                <div class="card-body text-bg-light py-2 px-1" style="max-width: 250px;">
-                                    <p class="name smaller mb-0 mt-0 pb-2 text-ellipsis1 border-bottom border-2">{{
-                                        card.name
-                                    }}</p> 
-                                    <p class="text-dark smaller mb-0 text-ellipsis5 py-2">{{ card.review }} Lorem
-                                        ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto iste
-                                        voluptatibus error tempore qui dolores possimus, nam fugit repudiandae?</p>
-                                </div>
+                            </div>
+                            <div class="card-body py-2 px-1" style="max-width: 250px;">
+                                <p class="name smaller mb-0 mt-0 pb-2 text-ellipsis1 border-bottom border-2">{{
+                                    card.name
+                                }}</p>
+                                <p class="smaller mb-0  text-ellipsis3 pt-2">{{ card.review }} </p>
                             </div>
                         </div>
                     </div>
@@ -165,7 +143,7 @@ export default {
     data() {
         return {
             isVertical: false,
-            isReverse: false, 
+            isReverse: false,
             cards: [
                 {
                     image: 'img/members/13.jpg',
@@ -221,6 +199,8 @@ export default {
                     subtitle: 'Sales Executive at NexGen Realty',
                     review: 'This digital business card made me stand out at networking events. The ability to track hearts and promotes is so motivating.'
                 },
+            ],
+            cards2: [
                 {
                     image: 'img/members/19.jpg',
                     title: 'User-Friendly Design',
@@ -293,6 +273,9 @@ export default {
                     subtitle: 'Content Writer',
                     review: 'The timeline and fun facts sections make my portfolio engaging and interesting. I’ve received more views than ever before!'
                 },
+
+            ],
+            cards3: [
                 {
                     image: 'img/members/27.jpg',
                     title: 'Engages Audience',
@@ -356,7 +339,7 @@ export default {
                     subtitle: 'Entrepreneur',
                     review: 'The easy sharing options and interactive features have helped me expand my network. The digital business card is a must-have!'
                 }
-            ] 
+            ]
         };
     },
     methods: {
@@ -368,10 +351,15 @@ export default {
 };
 </script>
 <style scoped>
-.card-header { 
-    background: linear-gradient(180deg, rgba(245, 197, 24, 1) 0%, rgba(255, 255, 255, 1) 95%);
+.card-header {
+    background: linear-gradient(180deg, rgba(245, 197, 24, 1) 0%, rgb(0, 0, 0) 95%);
     padding: 10px;
     text-align: center;
     border-bottom: 0px !important;
+}
+
+.card {
+    background-color: black !important;
+    color: white !important
 }
 </style>

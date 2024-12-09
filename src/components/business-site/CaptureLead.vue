@@ -3,7 +3,7 @@
         <div class="container px-3 px-md-0">
             <div class="text-center text-capitalize ">
                 <h1 class="py-3">Capture leads from all lead sources</h1>
-                <p class="">Boost your sales with seamless integration with bharatke, famefoot , google, facebook,
+                <p class="">Boost your sales with seamless integration with bharatke, fameset , google, facebook,
                     indiamart, justdial, instagram , linkedin, youtube, whatsapp and pinterest.</p>
             </div>
             <div class="row d-flex justify-content-center pb-5 pt-2">

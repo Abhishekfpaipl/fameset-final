@@ -1,14 +1,14 @@
 <template>
     <div class="container">
-        <h1 class="pt-3">Our Success Story</h1>
+        <h1 class="pt-5">Our Success Story</h1>
         <div class="row mt-5">
             <div class="col-12 col-md-4 position-relative  d-flex align-items-center justify-content-center pt-5">
-                <div class="card rounded-3">
-                    <div class="image rounded-3 d-flex justify-content-center align-items-center">
-                        <img href="#" :src="image" class="rounded-3" alt="Card image" style="width: 50%">
+                <div class="card rounded-3 border">
+                    <div class="image border rounded-3 d-flex justify-content-center align-items-center" style="background-color: black;">
+                        <img href="#" :src="image" class="rounded-3" alt="Card image" style="width: 75%">
                     </div>
                     <div class="content">
-                        <h3 class="mt-4 pt-2">{{ title }}</h3>
+                        <h1 class="mt-4 pt-2 method1 text-uppercase">{{ title }}</h1>
                         <p v-if="post" class="text-ellipsis2">{{ post }}</p>
                     </div>
                 </div>
@@ -50,14 +50,13 @@ export default {
     position: relative;
     max-width: 300px;
     height: 215px;
-    background-color: #fff;
+    background-color: black;  
     padding: 30px 15px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in-out;
-}
-
+} 
 .card:hover {
     height: 265px;
 }

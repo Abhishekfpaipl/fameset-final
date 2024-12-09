@@ -1,13 +1,13 @@
 <template>
-    <div class=" container">
+    <div class=" container brand-bg">
         <div class="py-2 mb-4">
             <h1 class="text-center text-capitalize">{{ title }}</h1> 
             <p class="text-center text-capitalize fs-4">{{ subtitle }}</p>
         </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-4 g-3">
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-4 g-3 justify-content-center">
             <div class="col" v-for="(lead, index) in values" :key="index">
                 <div class="position-relative w-100 d-flex justify-content-center align-items-center flex-fill">
-                    <div class="card position-relative w-100 p-2 d-flex flex-column bg-dark text-white">
+                    <div class="card position-relative w-100 p-2 d-flex flex-column text-white">
                         <div class="image text-center">
                             <img :src="lead.image"
                                   width="300" style="object-fit: cover;" class="w-100" alt=""> 
