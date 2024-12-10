@@ -1,19 +1,22 @@
-<template lang="">
+<template>
     <div>
         <div class="position-relative" style="width:100%; height:100%;">
-            <img src="/img/bannerDesktop.jpg" alt="" class="d-none d-md-block"
+            <!-- Images for desktop and mobile -->
+            <img src="/img/setionBanner.jpg" alt="" class="d-none d-md-block"
                 style="width: 100%; height: 400px; object-fit: cover;">
-            <img src="/img/bannerDesktop.jpg" alt="" class="d-md-none"
-                style="width: 100%; object-fit: cover;">
-            <!-- <img src="/img/bannerMobile.jpg" alt="" class="d-md-none"
-                style="width: 100%; height: 100%; object-fit: cover;"> -->
-               
-                <div class="center-content">
-                    <h1 class="text-capitalize method1">{{pageName}}</h1> 
-                </div>
-            </div> 
+            <img src="/img/setionBanner.jpg" alt="" class="d-md-none" style="width: 100%; object-fit: cover;">
+
+            <!-- Overlay -->
+            <div class="overlay"></div>
+
+            <!-- Centered Content -->
+            <div class="center-content">
+                <h1 class="text-capitalize method1">{{ pageName }}</h1>
+            </div>
+        </div>
     </div>
 </template>
+
 <script>
 export default {
     name: 'TopSectionBanner',
@@ -28,12 +31,20 @@ export default {
     },
 }
 </script>
-<style>
-.method1 {
-    background: linear-gradient(90deg, rgba(254, 242, 159, 1) 0%, rgba(210, 163, 73, 1) 50%, rgba(254, 242, 159, 1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+<style scoped>
+.position-relative {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 1; 
 }
 
 .center-content {
@@ -45,5 +56,8 @@ export default {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    z-index: 2;
+    /* Ensure text is above the overlay */
 }
+ 
 </style>

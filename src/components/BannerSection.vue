@@ -16,8 +16,9 @@
                         <div class="mt-3 text-center text-md-start">
                             <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Stay ahead in your market.</p>
                             <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Make a good impression.</p>
-                            <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Boost Your Network & Public Image.</p>
-                            <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Maximize your Business.</p>
+                            <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Boost your public image.</p>
+                            <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Enhance your network.</p>
+                            <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Maximize your business.</p>
                         </div> 
                         <RouterLink to=" ">
                             <div class="btn my-4 fs-5 fw-bold text-white brand-btn text-capitalize" data-bs-toggle="modal"

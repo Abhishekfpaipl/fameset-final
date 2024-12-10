@@ -10,7 +10,8 @@
         </div>
 
         <div class="my-5">
-            <LeadManagement :values="featureSoon" title="Features Coming Soon" subtitle=" that boost your fame!" v-observe />
+            <LeadManagement :values="featureSoon" title="Features Coming Soon" subtitle=" that boost your fame!"
+                v-observe />
         </div>
         <div class="my-5" id="second">
             <PriceSection v-observe />
@@ -45,18 +46,18 @@
 </template>
 
 <script>
-import TopBanner from "@/components/business-site/TopBanner.vue";
-import Banner from "@/components/business-site/BannerSection.vue";
+import TopBanner from "@/components/TopBanner.vue";
+import Banner from "@/components/BannerSection.vue";
 import LeadManagement from "@/components/LeadManagement.vue";
-import AutoScrolling from "@/components/business-site/services/AutoScrolling.vue";
+import AutoScrolling from "@/components/AutoScrolling.vue";
 // import BookDemo from "@/components/business-site/BookDemo.vue";
-import PriceSection from "@/components/business-site/PriceSection.vue";
-import StepsForRegistration from "@/components/business-site/StepsForRegistration.vue";
-import SalesFunnel from "@/components/business-site/SalesFunnel.vue";
+import PriceSection from "@/components/PriceSection.vue";
+import StepsForRegistration from "@/components/StepsForRegistration.vue";
+import SalesFunnel from "@/components/SalesFunnel.vue";
 // import BusinessCounter from "@/components/BusinessCounter.vue";
-import WhyChooseUs from "@/components/business-site/WhyChooseUs.vue";
+import WhyChooseUs from "@/components/WhyChooseUs.vue";
 // import TempFaqs from "@/components/business-site/TempFaqs.vue";
-import BottomShareIcons from "@/components/business-site/BottomShareIcons.vue";
+import BottomShareIcons from "@/components/BottomShareIcons.vue";
 import HomeTestimonialSection from "@/components/HomeTestimonialSection.vue";
 export default {
     name: "ListYourBusiness",
@@ -160,27 +161,62 @@ export default {
                     icon: 'bi-stars'
                 },
             ],
-            leads: [
+            leads: [ 
+                {
+                    id: 65,
+                    icon: 'bi-whatsapp fs-4',
+                    image: "/img/features/Reviews.png",
+                    title: "Users Reviews",
+                    description: "Call prospects in just one click . Track and record conversations to ensure high compliance and productivity.",
+                },
                 {
                     id: 432,
                     icon: 'bi-magnet fs-4',
                     image: "/img/features/Account Views.png",
-                    title: 'Views',
-                    description: 'Get in touch with customers by using our contact form and sync their data with a CRM of your favour.'
+                    title: 'Timeline Achievements',
+                    description: 'A detailed view of our project timelines and key milestones achieved.'
+                },
+                {
+                    id: 65,
+                    icon: 'bi-whatsapp fs-4',
+                    image: "/img/features/skillset.svg",
+                    title: "Skill Bars",
+                    description: "Highlighting our diverse and specialized skills to meet your business needs.",
                 },
                 {
                     id: 1,
                     icon: 'bi-funnel fs-4',
                     image: "/img/features/Achievements.png",
-                    title: "Achievements",
-                    description: "Capture leads from all sources- website, facbook, google, lead providers, referrals - onto one platform with zero leakage.",
+                    title: "Attributes",
+                    description: "Highlighting the unique features and qualities that set us apart.",
+                }, 
+                {
+                    id: 65,
+                    icon: 'bi-whatsapp fs-4',
+                    image: "/img/features/fun.png",
+                    title: "Fun Facts",
+                    description: "Interesting insights and trivia about our company and industry.",
                 },
                 {
                     id: 65,
                     icon: 'bi-whatsapp fs-4',
-                    image: "/img/features/Reviews.png",
-                    title: "Reviews",
-                    description: "Call prospects in just one click . Track and record conversations to ensure high compliance and productivity.",
+                    image: "/img/features/search.png",
+                    title: "Search Keywords",
+                    description: "Highlighting the unique features and qualities that set us apart.",
+                },
+                {
+                    id: 65,
+                    icon: 'bi-whatsapp fs-4',
+                    image: "/img/features/url.png",
+                    title: "Customise URL",
+                    description: "Highlighting the unique features and qualities that set us apart.",
+                },
+                {
+                    id: 65,
+                    icon: 'bi-whatsapp fs-4',
+                    image: "/img/features/contactcard.png",
+                    title: "Download Contact",
+                    description: "Highlighting the unique features and qualities that set us apart.",
                 },
 
             ],
@@ -212,6 +248,13 @@ export default {
                     icon: 'bi-whatsapp fs-4',
                     image: "/img/features/Testimonial.png",
                     title: "Testimonial",
+                    description: "Call prospects in just one click . Track and record conversations to ensure high compliance and productivity.",
+                },
+                {
+                    id: 65,
+                    icon: 'bi-whatsapp fs-4',
+                    image: "/img/features/Testimonial.png",
+                    title: "Views",
                     description: "Call prospects in just one click . Track and record conversations to ensure high compliance and productivity.",
                 },
             ],

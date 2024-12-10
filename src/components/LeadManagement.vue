@@ -4,18 +4,18 @@
             <h1 class="text-center text-capitalize">{{ title }}</h1> 
             <p class="text-center text-capitalize fs-4">{{ subtitle }}</p>
         </div>
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-4 g-3 justify-content-center">
+        <div class="row row-cols-2 row-cols-md-1 row-cols-lg-4 g-3 justify-content-center">
             <div class="col" v-for="(lead, index) in values" :key="index">
                 <div class="position-relative w-100 d-flex justify-content-center align-items-center flex-fill">
                     <div class="card position-relative w-100 p-2 d-flex flex-column text-white">
                         <div class="image text-center">
                             <img :src="lead.image"
                                   width="300" style="object-fit: cover;" class="w-100" alt=""> 
-                            <p class="text-capitalize text-ellipsis2 fs-1">{{ lead.title }}</p>
+                            <p class="text-capitalize text-ellipsis2 fs-4">{{ lead.title }}</p>
                         </div>
-                        <div class="content small text-ellipsis4">
-                            <h1 class="text-center">{{ lead.title }}</h1>
-                            <h5 class="text-center">{{ lead.description }}</h5>
+                        <div class="content  text-ellipsis4">
+                            <p class="text-center small mb-1 fw-bold">{{ lead.title }}</p>
+                            <p class="text-center small mb-1">{{ lead.description }}</p>
                         </div>
                     </div>
                 </div>
@@ -49,8 +49,8 @@ export default {
 
 .card {
     max-width: 500px;
-    min-height: 400px;
-    height: 400px;
+    min-height: 300px;
+    height: 300px;
     transition: 0.3s ease-in-out;
     border-radius: 15px;
     overflow: hidden;
@@ -91,8 +91,7 @@ export default {
 .container .card:hover .content {
     visibility: visible;
     opacity: 1;
-    max-height: 400px;
-    /* Adjust as needed */
+    max-height: 400px;/* Adjust as needed */
     transition-delay: 0.2s;
 }
 

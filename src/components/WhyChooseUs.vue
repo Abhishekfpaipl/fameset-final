@@ -46,65 +46,65 @@ export default {
             "servicesLeft": [
                 {
                     "id": 1,
-                    "title": "Contact Details",
-                    "icon": "bi-headset",
-                    "description": "Providing seamless communication channels to ensure you're always connected with us."
+                    "title": "Profile Picture",
+                    "icon": "bi-person-circle",
+                    "description": "Easily update and showcase your professional profile picture to represent yourself effectively."
                 },
                 {
                     "id": 2,
-                    "title": "Social Profiles",
-                    "icon": "bi-person-square",
-                    "description": "Showcasing our professional presence and updates across all major social platforms."
+                    "title": "Banner Image",
+                    "icon": "bi-image",
+                    "description": "Enhance your visual presence with custom banner images designed for impact."
                 },
                 {
                     "id": 3,
-                    "title": "Skillset",
-                    "icon": "bi-pie-chart",
-                    "description": "Highlighting our diverse and specialized skills to meet your business needs."
+                    "title": "Social Profiles",
+                    "icon": "bi-people",
+                    "description": "Connect all your social profiles in one place for seamless networking."
                 },
                 {
                     "id": 4,
-                    "title": "Timeline",
-                    "icon": "bi-clock-history",
-                    "description": "A detailed view of our project timelines and key milestones achieved."
+                    "title": "Bank Details",
+                    "icon": "bi-credit-card",
+                    "description": "Securely manage and share your bank details for effortless transactions."
                 },
                 {
                     "id": 5,
-                    "title": "Share",
-                    "icon": "bi-share",
-                    "description": "Easily share our content and updates with your network to spread the word."
+                    "title": "Contact Details",
+                    "icon": "bi-telephone",
+                    "description": "Ensure easy accessibility with your up-to-date contact details."
                 }
             ],
             "servicesRight": [
                 {
                     "id": 1,
-                    "title": "Qr Code",
-                    "icon": "bi-qr-code",
-                    "description": "Quick access to information through our QR codes for efficient engagement."
+                    "title": "Websites",
+                    "icon": "bi-globe",
+                    "description": "Showcase your online presence with fully customized and professional websites."
                 },
                 {
                     "id": 2,
-                    "title": "Website Widget",
-                    "icon": "bi-window-plus",
-                    "description": "Integrate our services seamlessly into your website for enhanced user experience."
+                    "title": "Multiple Files",
+                    "icon": "bi-file-earmark",
+                    "description": "Organize and manage multiple files efficiently in one secure location."
                 },
                 {
                     "id": 3,
-                    "title": "Fun Facts",
-                    "icon": "bi-123",
-                    "description": "Interesting insights and trivia about our company and industry."
+                    "title": "Share",
+                    "icon": "bi-share-fill",
+                    "description": "Share your content and updates effortlessly across platforms."
                 },
                 {
                     "id": 4,
-                    "title": "Attributes",
-                    "icon": "bi-stars",
-                    "description": "Highlighting the unique features and qualities that set us apart."
+                    "title": "QR Code",
+                    "icon": "bi-qr-code-scan",
+                    "description": "Generate and use QR codes for quick and convenient access to your information."
                 },
                 {
                     "id": 5,
-                    "title": "Payment",
-                    "icon": "bi-bank",
-                    "description": "Flexible payment options to suit your convenience and preferences."
+                    "title": "Account Match",
+                    "icon": "bi-check-circle",
+                    "description": "Find and link accounts seamlessly to optimize your online interactions."
                 }
             ]
 

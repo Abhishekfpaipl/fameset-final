@@ -45,28 +45,28 @@
 
 
 <script>
-import BenefitSection from "@/components/reseller/BenefitSection.vue"
-import PriceSection from "@/components/reseller/PriceSection.vue"
-import ProfitSection from "@/components/reseller/ResellerPriceSection.vue"
-import AccessSection from '@/components/business/AccessSection.vue';
-import FaqSection from "@/components/reseller/FaqSection.vue"
-import ResellerAbout from "@/components/reseller/ResellerAbout.vue"
-import SuccessStory from '@/components/business/SuccessStory.vue';
-import ResllerImage from '@/components/reseller/ResllerImage.vue';
-import BusinessCounter from '@/components/business/BusinessCounter.vue';
-import BusinessSell from '@/components/business/BusinessSell.vue';
-import HowItWorks from '@/components/business/HowItWorks.vue';
+import BenefitSection from "@/components/BenefitSection.vue"
+import PriceSection from "@/components/ResllerPriceSection.vue"
+import ResellerProfitSection from "@/components/ResellerProfitSection.vue"
+import AccessSection from '@/components/AccessSection.vue';
+import FaqSection from "@/components/FaqSection.vue"
+import ResellerAbout from "@/components/ResellerAbout.vue"
+import BusinessSuccessStory from '@/components/BusinessSuccessStory.vue';
+import ResllerImage from '@/components/ResllerImage.vue';
+import BusinessCounter from '@/components/BusinessCounter.vue';
+import BusinessSell from '@/components/BusinessSell.vue';
+import HowItWorks from '@/components/HowItWorks.vue';
 
 export default {
     name: 'CareerPage',
     components: {
         BenefitSection,
         PriceSection,
-        ProfitSection,
+        ResellerProfitSection,
         AccessSection,
         FaqSection,
         ResellerAbout,
-        SuccessStory,
+        BusinessSuccessStory,
         ResllerImage,
         BusinessCounter,
         BusinessSell,
@@ -76,13 +76,13 @@ export default {
         return {
             sections: [
                 { id: 'Price', name: 'Price', component: 'PriceSection' },
-                { id: 'Cost', name: 'Cost', component: 'ProfitSection' },
+                { id: 'Cost', name: 'Cost', component: 'ResellerProfitSection' },
                 { id: 'Software', name: 'Software', component: 'AccessSection' },
                 { id: 'Opportunity', name: 'Opportunity', component: 'BusinessCounter' },
                 { id: 'Benefits', name: 'Benefits', component: 'BenefitSection' },
                 { id: 'Why Choose', name: 'Why Choose', component: 'BusinessSell' },
                 { id: 'How It Works', name: 'How It Works', component: 'HowItWorks' },
-                { id: 'Success Story', name: 'Success Story', component: 'SuccessStory' },
+                { id: 'Success Story', name: 'Success Story', component: 'BusinessSuccessStory' },
                 { id: 'FAQ', name: 'FAQ', component: 'FaqSection' },
                 { id: 'About', name: 'About', component: 'ResellerAbout' },
             ],

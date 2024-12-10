@@ -16,11 +16,11 @@
         </div>
 
         <div class="modal fade" id="queryModal" tabindex="-1" aria-labelledby="queryModalLabel" aria-hidden="true">
-            <div class="modal-dialog ">
+            <div class="modal-dialog">
                 <div class="d-flex justify-content-center align-items-center">
                     <div class="rounded-circle wh-60 text-bg-dark d-flex justify-content-center align-items-center"
                         data-bs-dismiss="modal" style="padding: 0px 6px !important;">
-                        <i class="bi bi-x fs-3"></i>
+                        <i class="bi bi-x fs-3 method1"></i>
                     </div>
                 </div>
                 <div class="modal-content">
@@ -47,7 +47,7 @@
                                     placeholder="Email*" v-model="email" required>
                             </div>
                             <div class=" mb-3">
-                                <select class="form-select bg-transparent custom-select" v-model="selectedOption">
+                                <select class="p-2 w-100 rounded bg-transparent custom-select" v-model="selectedOption">
                                     <option value="" class="">I'm looking for</option>
                                     <option value="Lite (1000)">Lite (1000)</option>
                                     <option value="Pro (3000)">Pro (3000)</option>
