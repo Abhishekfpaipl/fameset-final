@@ -29,7 +29,7 @@
                             <p><small class="text-capitalize">{{ plan.tag
                                     }}</small></p>
                             <div v-if="plan.name === 'Elite'" class="d-flex justify-content-center align-items-center">
-                                <p class="fw-light d-inline-block px-4 rounded-3" style="background:var(--bg-glow) ;">
+                                <p class="fw-light d-inline-block px-4 rounded-3" style="background:gold;">
                                     <span class="text-decoration-line-through text-dark">{{ plan.mrp }}</span>
                                     <span class="text-dark"> ({{ getDiscount(plan) }}% discount)</span>
                                 </p>
@@ -78,7 +78,8 @@
                             style="background-color:black !important ;">
                             <p class="card-text text-capitalize smaller">{{ plan.description }}</p>
                             <div class="d-flex justify-content-center gap-2 my-3">
-                                <button class="btn fw-bold text-white w-100 brand-btn">{{ plan.button
+                                <button class="btn fw-bold text-white w-100 brand-btn" @click="enquiry(plan.name)">{{
+                                    plan.button
                                     }}</button>
                             </div>
                         </div>
@@ -122,10 +123,10 @@
                                     <p class="mb-0 card-title fs-3">₹ <span class="fw-bold">{{ plan.price }} </span></p>
                                     <p class="mb-0"><span class="smaller">Plus 18% GST</span></p>
                                     <p><small class="text-capitalize">{{ plan.tag }}</small></p>
+
                                     <div v-if="plan.name === 'Elite'"
                                         class="d-flex justify-content-center align-items-center">
-                                        <p class="fw-light d-inline-block px-4 rounded-3"
-                                            style="background:var(--bg-glow) ;">
+                                        <p class="fw-light d-inline-block px-4 rounded-3" style="background:gold;">
                                             <span class="text-decoration-line-through text-dark">{{ plan.mrp }}</span>
                                             <span class="text-dark"> ({{ getDiscount(plan) }}% discount)</span>
                                         </p>
@@ -170,7 +171,9 @@
                                     style="background-color:black !important ;">
                                     <p class="card-text text-capitalize smaller">{{ plan.description }}</p>
                                     <div class="d-flex justify-content-center gap-2 my-3">
-                                        <button class="btn fw-bold text-white w-100 brand-btn">{{ plan.button
+                                        <button class="btn fw-bold text-white w-100 brand-btn"
+                                            @click="enquiry(plan.name)">{{
+                                                plan.button
                                             }}</button>
                                     </div>
                                 </div>
@@ -198,7 +201,7 @@ export default {
                     description: "Start with our lite plan and upgrade only when you need additional features.",
                     button: "Get Started",
                     key: "key features",
-                    features: [ 
+                    features: [
                         {
                             text: "Profile Picture",
                             tooltip: "Easily update and showcase your professional profile picture to represent yourself effectively."
@@ -220,23 +223,23 @@ export default {
                             tooltip: "Ensure easy accessibility with your up-to-date contact details."
                         },
                         {
-                            text: "Websites",
+                            text: "Link Website",
                             tooltip: "Showcase your online presence with fully customized and professional websites."
                         },
-                        { 
-                            text: "Multiple Files", 
+                        {
+                            text: "Multiple Files",
                             tooltip: "Organize and manage multiple files efficiently in one secure location."
                         },
-                        { 
-                            text: "Share", 
+                        {
+                            text: "Share",
                             tooltip: "Share your content and updates effortlessly across platforms."
                         },
-                        { 
-                            text: "QR Code", 
+                        {
+                            text: "QR Code",
                             tooltip: "Generate and use QR codes for quick and convenient access to your information."
                         },
-                        { 
-                            text: "Account Match", 
+                        {
+                            text: "Account Match",
                             tooltip: "Find and link accounts seamlessly to optimize your online interactions."
                         }
 
@@ -287,7 +290,7 @@ export default {
                     id: 3,
                     name: "Elite",
                     price: "5,000",
-                    mrp: "25,000",
+                    mrp: "12,500",
                     tag: "/account/year",
                     description: "Enjoy our advanced offering for fast-growing businesses and Networking.",
                     button: "Get Started",
@@ -329,7 +332,6 @@ export default {
                             tooltip: "Display heartfelt testimonials from clients or customers to strengthen your reputation.",
                         },
                     ],
-
                 }
             ]
 
@@ -361,6 +363,11 @@ export default {
                 }
             }
             return 0;
+        },
+        enquiry(name) {
+            const phoneNumber = "8802172121"; 
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello, I would like to enquire about your services ${name}`;
+            window.open(whatsappUrl, "_blank");
         }
 
     }

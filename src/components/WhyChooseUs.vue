@@ -5,12 +5,15 @@
             <h4 class="text-center text-capitalize">to manage your fame</h4>
             <div class="row d-flex justify-content-center pb-5 pt-2">
                 <div class="col-lg-4 row row-cols-1 g-3 mt-0">
-                    <div v-for="(service, index) in servicesLeft" :key="index" class="col">
-                        <div class="d-flex align-items-start">
-                            <i class="bi fs-4 pe-4" :class="service.icon"></i>
-                            <div class="d-flex flex-column text-start flex-fill">
-                                <p class="fs-5 fw-b title mb-0">{{ service.title }}</p>
-                                <small class="smaller fw-light mb-0">{{ service.description }}</small>
+                    <div v-for="(service, index) in servicesLeft" :key="index" class="col" v-observe>
+                        <div class="d-flex justify-content-start align-items-center text-white p-2">
+                            <div class="text-md-end text-start order-2 order-md-1 card-body me-md-3 ms-3 p-0">
+                                <p class="fw-bold small mb-0 text-ellipsis1">{{ service.title }}</p>
+                                <p class="smaller mb-0 text-ellipsis3">{{ service.description }} </p>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center rounded-circle overflow-hidden order-md-2 p-1 rotate bg-dark"
+                                style="min-width:70px; height:70px; ">
+                                <i class="bi fs-2 text-dark method1" :class="service.icon"></i>
                             </div>
                         </div>
                     </div>
@@ -18,18 +21,23 @@
 
 
                 <div class="col-lg-4 overflow-hidden p-5 mt-0">
-                    <img src="/img/whychoose.svg" class="h-100 w-100 of-cover">
+                    <!-- <img src="/img/whychoose.svg" class="h-100 w-100 of-cover"> -->
+                    <i class="bi bi-box2-heart-fill font-img method1"></i>
                 </div>
 
 
                 <div class="col-lg-4 row row-cols-1 g-3 mt-0">
-                    <div v-for="(service, index) in servicesRight" :key="index" class="col">
-                        <div class="d-flex align-items-start">
-                            <i class="bi fs-5 pe-4" :class="service.icon"></i>
-                            <div class="d-flex flex-column text-start flex-fill">
-                                <p class="fs-5 fw-b title mb-0">{{ service.title }}</p>
-                                <small class="smaller fw-light mb-0">{{ service.description }}</small>
+                    <div v-for="(service, index) in servicesRight" :key="index" class="col" v-observe>
+                        <div class="d-flex justify-content-start align-items-center text-white p-2">
+                            <div class="d-flex justify-content-center align-items-center rounded-circle overflow-hidden p-1 rotate bg-dark"
+                                style="min-width:70px; height:70px; ">
+                                <i class="bi fs-2 text-dark method1" :class="service.icon"></i>
                             </div>
+                            <div class="text-start card-body ms-3 p-0">
+                                <p class="fw-bold small mb-0 text-ellipsis1">{{ service.title }}</p>
+                                <p class="smaller mb-0 text-ellipsis3">{{ service.description }} </p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -112,6 +120,29 @@ export default {
     }
 }
 </script>
-<style lang="">
+<style scoped>
+.font-img{
+    font-size:240px !important;
+}
+@media (max-width:768px) {
+    .font-img{
+        font-size:140px !important;
+    }
+}
+@keyframes rotate {
 
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+.rotate {
+    display: inline-block;
+    animation: rotate 1.5s ease-in-out infinite;
+}
 </style>

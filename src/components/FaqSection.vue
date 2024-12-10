@@ -1,5 +1,5 @@
 <template>
-    <div class="container rounded-top-5 bg-dark">
+    <div class="container rounded-top-5" style="background-color: black !important">
         <ul class="nav nav-pills justify-content-start align-items-center" id="pills-tab" role="tablist">
             <div class="d-flex overflow-x-scroll gap-3 my-3 p-2 px-3 rounded" id="scroll">
                 <li class="nav-item border border-secondary rounded" role="presentation" v-for="(price, index) in faqs"
@@ -33,7 +33,7 @@
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             <div class="accordion-item my-2 border-0">
                                 <h2 class="accordion-header border border-secondary">
-                                    <button class="accordion-button collapsed bg-dark text-white border-start border-4 "
+                                    <button class="accordion-button collapsed brand-bg text-white border-start border-4 "
                                         type="button" data-bs-toggle="collapse"
                                         :data-bs-target="'#flush-collapseOne' + index" aria-expanded="false"
                                         :aria-controls="'flush-collapseOne' + index"
@@ -42,8 +42,8 @@
                                     </button>
                                 </h2>
                                 <div :id="'flush-collapseOne' + index"
-                                    class="accordion-collapse collapse border-0 bg-dark text-white"
-                                    data-bs-parent="#accordionFlushExample">
+                                    class="accordion-collapse collapse border-0  text-dark"
+                                    data-bs-parent="#accordionFlushExample" style="background-color: gold !important">
                                     <div class="accordion-body text-start">{{ faq.answer }}</div>
                                 </div>
                             </div>
@@ -199,8 +199,8 @@ export default {
 }
 
 .accordion-button:not(.collapsed) {
-    color: black !important;
-    background-color: var(--brand-color) !important;
+    color: white !important;
+    background-color: gold !important;
     box-shadow: none !important;
 }
 
@@ -208,5 +208,8 @@ export default {
     z-index: 3;
     outline: 0;
     box-shadow: none !important;
+}
+.accordion-button::after{
+    filter:invert(1) !important
 }
 </style>

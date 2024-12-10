@@ -10,10 +10,9 @@
             <i class="bi bi-telephone fs-5"></i>
         </div> -->
 
-        <div class="query m-2 slide" data-bs-toggle="modal" data-bs-target="#queryModal">
-            <img src="/img/logo.png" style="width: 50px; height: 50px;" alt="">
-            <!-- <i class="bi bi-person-circle method1 fs-1"></i> -->
-        </div>
+        <!-- <div class="query m-2 slide" data-bs-toggle="modal" data-bs-target="#queryModal">
+            <img src="/img/logo.png" style="width: 50px; height: 50px;" alt=""> 
+        </div> -->
 
         <div class="modal fade" id="queryModal" tabindex="-1" aria-labelledby="queryModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -68,35 +67,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="bottomQuery" aria-labelledby="bottomQueryLabel">
-            <div class="offcanvas-header border-bottom">
-                <h5 class="offcanvas-title" id="bottomQueryLabel">Query</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <form @submit.prevent="submitQuery()" class="row g-3 needs-validation" novalidate>
-                    <div class="w-100 p-2 form-floating">
-                        <input type="text" class="form-control" placeholder="Mobile" v-model="name" required>
-                        <label for="floatingInput" class="text-muted">First name</label>
-                    </div>
-                    <div class="w-100 p-2 form-floating">
-                        <input type="text" class="form-control" placeholder="Mobile" v-model="email" required>
-                        <label class="text-muted">Email Or Mobile No.</label>
-                    </div>
-                    <div class="form-floating">
-                        <textarea v-model="query" rows="2" class="form-control flex-fill"
-                            placeholder="Type your message..." required>
-                        </textarea>
-                        <label class="text-muted">Enter Your Query</label>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Submit Query</button>
-                    </div>
-                </form>
-            </div>
-        </div> -->
+        </div> 
     </div>
 </template>
 <script>

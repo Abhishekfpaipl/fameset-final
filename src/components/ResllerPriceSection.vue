@@ -94,6 +94,7 @@ export default {
                                 { id: 11, name: "Business Accounts", included: false },
                                 { id: 12, name: "Reseller Accounts", included: false },
                             ],
+                            
                         },
                         {
                             id: 2,

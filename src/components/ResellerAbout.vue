@@ -12,13 +12,12 @@
             </p>
             <div class="p-2 row">
                 <div v-for="(data, index) in datas" :key="index" class="col-12 col-md-6 g-3">
-                    <div class="d-flex align-items-center border p-2" style=" min-height: 120px;">
-                        <i :class="data.icon" class="fs-2 mx-3"></i>
-                        <div class=" ms-2">
-                            <span class="fw-bold">{{ data.heading }}</span>
-                            <p>{{ data.text }}</p>
-                        </div>
+                    <div class="d-flex flex-column align-items-center border h-100 p-2">
+                        <i :class="data.icon" class="fs-2 mx-3" style="color:gold !important"></i>
+                        <p class="fw-bold">{{ data.heading }}</p>
+                        <p>{{ data.text }}</p>
                     </div>
+
                 </div>
             </div>
         </div>

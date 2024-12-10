@@ -8,7 +8,7 @@
         </p> 
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col" v-for="tool in tools" :key="tool.title">
-                <div class="card h-100 border-secondary bg-dark text-white" >
+                <div class="card h-100  brand-bg text-white" >
                     <div class="card-body text-start">
                         <div class="d-flex align-items-center">
                             <i :class="tool.icon" class="fs-3"></i>

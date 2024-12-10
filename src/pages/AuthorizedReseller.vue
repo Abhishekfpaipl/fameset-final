@@ -46,7 +46,7 @@
 
 <script>
 import BenefitSection from "@/components/BenefitSection.vue"
-import PriceSection from "@/components/ResllerPriceSection.vue"
+// import PriceSection from "@/components/ResllerPriceSection.vue"
 import ResellerProfitSection from "@/components/ResellerProfitSection.vue"
 import AccessSection from '@/components/AccessSection.vue';
 import FaqSection from "@/components/FaqSection.vue"
@@ -61,7 +61,7 @@ export default {
     name: 'CareerPage',
     components: {
         BenefitSection,
-        PriceSection,
+        // PriceSection,
         ResellerProfitSection,
         AccessSection,
         FaqSection,
@@ -75,9 +75,8 @@ export default {
     data() {
         return {
             sections: [
-                { id: 'Price', name: 'Price', component: 'PriceSection' },
+                // { id: 'Price', name: 'Price', component: 'PriceSection' },
                 { id: 'Cost', name: 'Cost', component: 'ResellerProfitSection' },
-                { id: 'Software', name: 'Software', component: 'AccessSection' },
                 { id: 'Opportunity', name: 'Opportunity', component: 'BusinessCounter' },
                 { id: 'Benefits', name: 'Benefits', component: 'BenefitSection' },
                 { id: 'Why Choose', name: 'Why Choose', component: 'BusinessSell' },
@@ -85,6 +84,7 @@ export default {
                 { id: 'Success Story', name: 'Success Story', component: 'BusinessSuccessStory' },
                 { id: 'FAQ', name: 'FAQ', component: 'FaqSection' },
                 { id: 'About', name: 'About', component: 'ResellerAbout' },
+                { id: 'Software', name: 'Software', component: 'AccessSection' },
             ],
             activeSection: '',
         }
