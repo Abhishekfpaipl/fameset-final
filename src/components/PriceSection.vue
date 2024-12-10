@@ -28,12 +28,12 @@
                             <p class="mb-0 "> <span class="smaller">Plus 18% gst</span></p>
                             <p><small class="text-capitalize">{{ plan.tag
                                     }}</small></p>
-                            <!-- <div class="d-flex justify-content-center align-items-center">
-                                        <p class="fw-light bg-dark d-inline-block px-4 rounded-3">
-                                            <span class="text-decoration-line-through text-white">{{ plan.mrp }}</span>
-                                            <span class="text-white"> ({{ getDiscount(plan) }}% discount)</span>
-                                        </p>
-                                    </div> -->
+                            <div v-if="plan.name === 'Elite'" class="d-flex justify-content-center align-items-center">
+                                <p class="fw-light d-inline-block px-4 rounded-3" style="background:var(--bg-glow) ;">
+                                    <span class="text-decoration-line-through text-dark">{{ plan.mrp }}</span>
+                                    <span class="text-dark"> ({{ getDiscount(plan) }}% discount)</span>
+                                </p>
+                            </div>
 
                             <ul class="list-group">
                                 <small class="text-start text-uppercase fw-bold my-2 text-white">{{ plan.key
@@ -87,8 +87,8 @@
 
                 <div class="d-md-none">
                     <!-- Nav Tabs -->
-                    <ul class="nav nav-tabs d-md-flex justify-content-center gap-5 border-bottom-0" id="planTabs"
-                        role="tablist">
+                    <ul class="nav nav-tabs d-md-flex justify-content-center gap-5 border-bottom-0 shadow rounded p-2"
+                        id="planTabs" role="tablist" style="background-color: black !important">
                         <li class="nav-item" v-for="(plan, index) in plans" :key="index" role="presentation">
                             <a class="btn nav-link text-white" :class="{ active: index === 1 }"
                                 :id="'plan-' + plan.id + '-tab'" data-bs-toggle="tab" :href="'#plan-' + plan.id"
@@ -122,7 +122,14 @@
                                     <p class="mb-0 card-title fs-3">₹ <span class="fw-bold">{{ plan.price }} </span></p>
                                     <p class="mb-0"><span class="smaller">Plus 18% GST</span></p>
                                     <p><small class="text-capitalize">{{ plan.tag }}</small></p>
-
+                                    <div v-if="plan.name === 'Elite'"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <p class="fw-light d-inline-block px-4 rounded-3"
+                                            style="background:var(--bg-glow) ;">
+                                            <span class="text-decoration-line-through text-dark">{{ plan.mrp }}</span>
+                                            <span class="text-dark"> ({{ getDiscount(plan) }}% discount)</span>
+                                        </p>
+                                    </div>
                                     <ul class="list-group">
                                         <small class="text-start text-uppercase fw-bold my-2 text-white">{{ plan.key
                                             }}</small>
@@ -191,31 +198,48 @@ export default {
                     description: "Start with our lite plan and upgrade only when you need additional features.",
                     button: "Get Started",
                     key: "key features",
-                    features: [
+                    features: [ 
                         {
-                            text: "Contact Details",
-                            tooltip: "Easily share your contact information like phone number, email, and address."
+                            text: "Profile Picture",
+                            tooltip: "Easily update and showcase your professional profile picture to represent yourself effectively."
+                        },
+                        {
+                            text: "Banner Image",
+                            tooltip: "Enhance your visual presence with custom banner images designed for impact."
                         },
                         {
                             text: "Social Profiles",
-                            tooltip: "Link your social media profiles to enhance your professional connections."
+                            tooltip: "Connect all your social profiles in one place for seamless networking."
                         },
                         {
-                            text: "Share",
-                            tooltip: "Share your digital business card instantly via email, social media, or messaging apps."
+                            text: "Bank Details",
+                            tooltip: "Securely manage and share your bank details for effortless transactions."
                         },
                         {
-                            text: "Qr Code",
-                            tooltip: "Generate a QR code for seamless sharing and access to your business card."
+                            text: "Contact Details",
+                            tooltip: "Ensure easy accessibility with your up-to-date contact details."
                         },
                         {
-                            text: "Fun Facts",
-                            tooltip: "Showcase unique and interesting facts about yourself or your business."
+                            text: "Websites",
+                            tooltip: "Showcase your online presence with fully customized and professional websites."
                         },
-                        {
-                            text: "Attributes",
-                            tooltip: "Highlight key skills or attributes that define your professional persona."
+                        { 
+                            text: "Multiple Files", 
+                            tooltip: "Organize and manage multiple files efficiently in one secure location."
+                        },
+                        { 
+                            text: "Share", 
+                            tooltip: "Share your content and updates effortlessly across platforms."
+                        },
+                        { 
+                            text: "QR Code", 
+                            tooltip: "Generate and use QR codes for quick and convenient access to your information."
+                        },
+                        { 
+                            text: "Account Match", 
+                            tooltip: "Find and link accounts seamlessly to optimize your online interactions."
                         }
+
                     ]
                 },
                 {
@@ -234,20 +258,28 @@ export default {
                             tooltip: "Access all the essential features included in the Lite plan for your digital card."
                         },
                         {
-                            text: "Skillset",
+                            text: "Skill Bars",
                             tooltip: "Display your professional skills and expertise prominently on your card."
                         },
                         {
-                            text: "Timeline",
-                            tooltip: "Showcase your career or project milestones in a visually appealing timeline."
+                            text: "Keywords",
+                            tooltip: "Display your professional skills and expertise prominently on your card."
                         },
                         {
-                            text: "Payment",
-                            tooltip: "Add secure payment links or QR codes to facilitate transactions directly from your card."
+                            text: "Brand Url",
+                            tooltip: "Display your professional skills and expertise prominently on your card."
                         },
                         {
-                            text: "Website Widget",
-                            tooltip: "Integrate your digital card seamlessly into your website for easy access."
+                            text: "Download",
+                            tooltip: "Display your professional skills and expertise prominently on your card."
+                        },
+                        {
+                            text: "Fun Facts",
+                            tooltip: "Showcase unique and interesting facts about yourself or your business."
+                        },
+                        {
+                            text: "Achievements",
+                            tooltip: "Highlight key skills or attributes that define your professional persona."
                         }
                     ]
                 },
@@ -267,12 +299,12 @@ export default {
                             tooltip: "Enjoy advanced features and premium benefits available in the Pro plan.",
                         },
                         {
-                            text: "Views",
-                            tooltip: "Track the number of times your digital card has been viewed by others.",
+                            text: "Reviews",
+                            tooltip: "Display your professional skills and expertise prominently on your card."
                         },
                         {
-                            text: "Achievements",
-                            tooltip: "Highlight your significant accomplishments to impress your audience.",
+                            text: "Timeline",
+                            tooltip: "Showcase your career or project milestones in a visually appealing timeline."
                         },
                     ],
                     comingSoonFeatures: [

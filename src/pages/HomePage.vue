@@ -166,14 +166,14 @@ export default {
                     id: 65,
                     icon: 'bi-whatsapp fs-4',
                     image: "/img/features/Reviews.png",
-                    title: "Users Reviews",
+                    title: "Reviews",
                     description: "Call prospects in just one click . Track and record conversations to ensure high compliance and productivity.",
                 },
                 {
                     id: 432,
                     icon: 'bi-magnet fs-4',
                     image: "/img/features/Account Views.png",
-                    title: 'Timeline Achievements',
+                    title: 'Timeline  ',
                     description: 'A detailed view of our project timelines and key milestones achieved.'
                 },
                 {
@@ -187,7 +187,7 @@ export default {
                     id: 1,
                     icon: 'bi-funnel fs-4',
                     image: "/img/features/Achievements.png",
-                    title: "Attributes",
+                    title: " Achievements",
                     description: "Highlighting the unique features and qualities that set us apart.",
                 }, 
                 {
@@ -201,21 +201,21 @@ export default {
                     id: 65,
                     icon: 'bi-whatsapp fs-4',
                     image: "/img/features/search.png",
-                    title: "Search Keywords",
+                    title: "Keywords",
                     description: "Highlighting the unique features and qualities that set us apart.",
                 },
                 {
                     id: 65,
                     icon: 'bi-whatsapp fs-4',
                     image: "/img/features/url.png",
-                    title: "Customise URL",
+                    title: "Brand URL",
                     description: "Highlighting the unique features and qualities that set us apart.",
                 },
                 {
                     id: 65,
                     icon: 'bi-whatsapp fs-4',
                     image: "/img/features/contactcard.png",
-                    title: "Download Contact",
+                    title: "Download  ",
                     description: "Highlighting the unique features and qualities that set us apart.",
                 },
 
@@ -250,13 +250,13 @@ export default {
                     title: "Testimonial",
                     description: "Call prospects in just one click . Track and record conversations to ensure high compliance and productivity.",
                 },
-                {
-                    id: 65,
-                    icon: 'bi-whatsapp fs-4',
-                    image: "/img/features/Testimonial.png",
-                    title: "Views",
-                    description: "Call prospects in just one click . Track and record conversations to ensure high compliance and productivity.",
-                },
+                // {
+                //     id: 65,
+                //     icon: 'bi-whatsapp fs-4',
+                //     image: "/img/features/views.png",
+                //     title: "Views",
+                //     description: "Call prospects in just one click . Track and record conversations to ensure high compliance and productivity.",
+                // },
             ],
             customers: [
                 {
