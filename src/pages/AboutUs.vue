@@ -1,6 +1,6 @@
 <template>
     <div class="text-white top-padding" style="background-color: black !important">
-        <TopSectionBanner /> 
+        <TopSectionBanner />
         <div class="container" v-observe>
             <SuccessStory :tests="tests" v-observe />
             <div class="my-5">
@@ -9,8 +9,9 @@
             </div>
         </div>
         <div class="">
-            <CustomCounter service="satisfied customers" :serviceCount="1000" category="years of expirence"
-                :categoryCount="10" place="projects completed" :placeCount="4000" image="/img/smile.svg"
+            <CustomCounter   service="happy customers" serviceAltText="till the date"
+                :serviceCount="1000" category="months of expirence" categoryAltText="newly launched" :categoryCount="10"
+                place="business categories" placeAltText="made for" :placeCount="4000" image="/img/setionBanner.jpg"
                 title="know about us" path="/" v-observe />
         </div>
         <div class="">

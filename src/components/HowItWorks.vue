@@ -1,7 +1,7 @@
 <template>
   <div class="container rounded my-5">
     <div class="how-it-works" :class="{ 'mobile-view': isMobile }">
-      <div v-for="(step, index) in steps" :key="index" class="step-container">
+      <div v-for="(step, index) in steps" :key="index" class="step-container" v-observe>
         <div class="step-number">{{ index + 1 }}</div>
         <div class="step-content px-2">
           <h3 class="text-start">{{ step.title }}</h3>

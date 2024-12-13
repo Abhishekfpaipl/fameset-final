@@ -1,10 +1,11 @@
 <template>
     <div class=" text-white" style="background-color:black;">
-        <div class="">
+        <TopSectionBanner />
+        <!-- <div class="">
             <img src="/img/careerBanner.jpg" alt="banner" class="d-none d-md-block"
                 style="width: 100%; height:700px; object-fit: cover; object-position: center;">
             <img src="/img/careerBanner.jpg" class="d-md-none d-block" alt="banner" style="width: 100%;">
-        </div>
+        </div> -->
 
         <div class="py-5">
             <div class="container">
@@ -77,8 +78,12 @@
 </template>
 
 <script>
+import TopSectionBanner from "@/components/TopSectionBanner.vue";
 export default {
     name: 'CareerPage',
+    components: {
+        TopSectionBanner, 
+    },
     data() {
         return {
             datas: [

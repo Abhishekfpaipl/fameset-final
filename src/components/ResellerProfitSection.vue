@@ -9,24 +9,25 @@
                         <div class="py-2 border-bottom fw-bold">{{ plan.name }}</div>
                         <div class="card-body text-center">
                             <div class="d-flex justify-content-center align-items-center gap-2">
-                                <p v-if="plan.price" class="mb-0 card-title smaller"><span class="fw-bold">{{
+                                <p v-if="plan.price" class="mb-0 card-title smaller"><span class="fw-bold">₹ {{
                                     plan.price }} </span></p>
                                 <p v-else class="mb-0 card-title smaller fw-bold">Custom</p>
                             </div>
-                            <p><small class="text-capitalize smaller">₹ / sale</small></p>
+                            <p><small class="text-capitalize smaller">sale</small></p>
                             <div v-if="plan.price" class="d-flex justify-content-center align-items-center">
                                 <p class="fw-bold d-inline-block px-4 rounded-3"
                                     style="background-color: gold !important">
                                     <span class="text-dark"> ({{ getDiscount(plan) }}% Off)</span>
                                 </p>
                             </div>
-                            <p v-else class="fw-light d-inline-block px-4 rounded-3" style="color: gold !important">Contact</p>
+                            <p v-else class="fw-light d-inline-block px-4 rounded-3" style="color: gold !important">
+                                Contact</p>
 
                             <ul v-if="plan.features" class="list-group">
                                 <small class="text-start text-uppercase fw-bold my-2 smaller"
                                     style="color:var(--brand-color) !important;">{{ plan.key
                                     }}</small>
-                                <li v-for="(feature, featureIndex) in plan.features.slice(0, 2)" :key="featureIndex"
+                                <li v-for="(feature, featureIndex) in plan.features" :key="featureIndex"
                                     class="px-0 d-flex justify-content-between list-group-item brand-bg text-white text-start text-capitalize border-0 smaller">
                                     <div class="">
                                         <i class="bi bi-check-circle" style="color:var(--brand-color) !important;"></i>
@@ -100,49 +101,22 @@ export default {
                             "tooltip": "This service is performed once for a specific result or outcome."
                         },
                         {
-                            "text": "100 Accounts Each",
+                            "text": "100 Accounts ",
+                            "tooltip": "Applies to 100 individual accounts per category or service."
+                        },
+                        {
+                            "text": "CRM Software",
+                            "tooltip": "Applies to 100 individual accounts per category or service."
+                        },
+                        {
+                            "text": "Traning",
                             "tooltip": "Applies to 100 individual accounts per category or service."
                         },
                         {
                             text: "Content Marketing",
                             tooltip: "Create and distribute engaging content to attract and retain audiences."
                         },
-                        {
-                            text: "Social Media Marketing (SMM)",
-                            tooltip: "Manage social media content and run targeted ad campaigns."
-                        },
-                        {
-                            text: "Email Marketing",
-                            tooltip: "Design and execute personalized email campaigns for better engagement."
-                        },
-                        {
-                            text: "Influencer Marketing",
-                            tooltip: "Partner with influencers to endorse products and reach new audiences."
-                        },
-                        {
-                            text: "Conversion Rate Optimization (CRO)",
-                            tooltip: "Optimize websites to increase conversion rates through data analysis."
-                        },
-                        {
-                            text: "Analytics and Reporting",
-                            tooltip: "Monitor and analyze marketing metrics to inform strategic decisions."
-                        },
-                        {
-                            text: "Online Reputation Management (ORM)",
-                            tooltip: "Manage online reviews and feedback to maintain a positive brand image."
-                        },
-                        {
-                            text: "Mobile Marketing",
-                            tooltip: "Optimize marketing strategies for mobile users and mobile-specific behaviors."
-                        },
-                        {
-                            text: "Customer Relationship Management (CRM)",
-                            tooltip: "Use CRM systems to manage leads and personalize marketing efforts."
-                        },
-                        {
-                            text: "Marketing Automation",
-                            tooltip: "Automate marketing tasks with tools like HubSpot, Marketo, or Mailchimp."
-                        },
+
                     ]
                 },
                 {
@@ -162,49 +136,18 @@ export default {
                             "tooltip": "This service is performed once for a specific result or outcome."
                         },
                         {
-                            "text": "100 Accounts Each",
+                            "text": "100 Accounts ",
                             "tooltip": "Applies to 100 individual accounts per category or service."
                         },
                         {
-                            text: "Content Marketing",
-                            tooltip: "Create and distribute engaging content to attract and retain audiences."
+                            "text": "CRM Software",
+                            "tooltip": "Applies to 100 individual accounts per category or service."
                         },
                         {
-                            text: "Social Media Marketing (SMM)",
-                            tooltip: "Manage social media content and run targeted ad campaigns."
+                            "text": "Traning",
+                            "tooltip": "Applies to 100 individual accounts per category or service."
                         },
-                        {
-                            text: "Email Marketing",
-                            tooltip: "Design and execute personalized email campaigns for better engagement."
-                        },
-                        {
-                            text: "Influencer Marketing",
-                            tooltip: "Partner with influencers to endorse products and reach new audiences."
-                        },
-                        {
-                            text: "Conversion Rate Optimization (CRO)",
-                            tooltip: "Optimize websites to increase conversion rates through data analysis."
-                        },
-                        {
-                            text: "Analytics and Reporting",
-                            tooltip: "Monitor and analyze marketing metrics to inform strategic decisions."
-                        },
-                        {
-                            text: "Online Reputation Management (ORM)",
-                            tooltip: "Manage online reviews and feedback to maintain a positive brand image."
-                        },
-                        {
-                            text: "Mobile Marketing",
-                            tooltip: "Optimize marketing strategies for mobile users and mobile-specific behaviors."
-                        },
-                        {
-                            text: "Customer Relationship Management (CRM)",
-                            tooltip: "Use CRM systems to manage leads and personalize marketing efforts."
-                        },
-                        {
-                            text: "Marketing Automation",
-                            tooltip: "Automate marketing tasks with tools like HubSpot, Marketo, or Mailchimp."
-                        },
+
                     ]
                 },
                 {
@@ -224,56 +167,25 @@ export default {
                             "tooltip": "This service is performed once for a specific result or outcome."
                         },
                         {
-                            "text": "100 Accounts Each",
+                            "text": "100 Accounts ",
                             "tooltip": "Applies to 100 individual accounts per category or service."
                         },
                         {
-                            text: "Content Marketing",
-                            tooltip: "Create and distribute engaging content to attract and retain audiences."
+                            "text": "CRM Software",
+                            "tooltip": "Applies to 100 individual accounts per category or service."
                         },
                         {
-                            text: "Social Media Marketing (SMM)",
-                            tooltip: "Manage social media content and run targeted ad campaigns."
+                            "text": "Traning",
+                            "tooltip": "Applies to 100 individual accounts per category or service."
                         },
-                        {
-                            text: "Email Marketing",
-                            tooltip: "Design and execute personalized email campaigns for better engagement."
-                        },
-                        {
-                            text: "Influencer Marketing",
-                            tooltip: "Partner with influencers to endorse products and reach new audiences."
-                        },
-                        {
-                            text: "Conversion Rate Optimization (CRO)",
-                            tooltip: "Optimize websites to increase conversion rates through data analysis."
-                        },
-                        {
-                            text: "Analytics and Reporting",
-                            tooltip: "Monitor and analyze marketing metrics to inform strategic decisions."
-                        },
-                        {
-                            text: "Online Reputation Management (ORM)",
-                            tooltip: "Manage online reviews and feedback to maintain a positive brand image."
-                        },
-                        {
-                            text: "Mobile Marketing",
-                            tooltip: "Optimize marketing strategies for mobile users and mobile-specific behaviors."
-                        },
-                        {
-                            text: "Customer Relationship Management (CRM)",
-                            tooltip: "Use CRM systems to manage leads and personalize marketing efforts."
-                        },
-                        {
-                            text: "Marketing Automation",
-                            tooltip: "Automate marketing tasks with tools like HubSpot, Marketo, or Mailchimp."
-                        },
+
                     ]
                 },
                 {
                     id: 64,
                     name: "All",
-                    price:"3,60,000",
-                    mrp:"9,00,000",
+                    price: "3,60,000",
+                    mrp: "9,00,000",
                     link: "/digital-marketing/",
                     tag: "/user/yearly/billed yearly",
                     description: "Enjoy our advanced offering for fast-growing businesses and startups.",
@@ -290,45 +202,14 @@ export default {
                             "tooltip": "Applies to 100 individual accounts per category or service."
                         },
                         {
-                            text: "Content Marketing",
-                            tooltip: "Create and distribute engaging content to attract and retain audiences."
+                            "text": "CRM Software",
+                            "tooltip": "Applies to 100 individual accounts per category or service."
                         },
                         {
-                            text: "Social Media Marketing (SMM)",
-                            tooltip: "Manage social media content and run targeted ad campaigns."
+                            "text": "Traning",
+                            "tooltip": "Applies to 100 individual accounts per category or service."
                         },
-                        {
-                            text: "Email Marketing",
-                            tooltip: "Design and execute personalized email campaigns for better engagement."
-                        },
-                        {
-                            text: "Influencer Marketing",
-                            tooltip: "Partner with influencers to endorse products and reach new audiences."
-                        },
-                        {
-                            text: "Conversion Rate Optimization (CRO)",
-                            tooltip: "Optimize websites to increase conversion rates through data analysis."
-                        },
-                        {
-                            text: "Analytics and Reporting",
-                            tooltip: "Monitor and analyze marketing metrics to inform strategic decisions."
-                        },
-                        {
-                            text: "Online Reputation Management (ORM)",
-                            tooltip: "Manage online reviews and feedback to maintain a positive brand image."
-                        },
-                        {
-                            text: "Mobile Marketing",
-                            tooltip: "Optimize marketing strategies for mobile users and mobile-specific behaviors."
-                        },
-                        {
-                            text: "Customer Relationship Management (CRM)",
-                            tooltip: "Use CRM systems to manage leads and personalize marketing efforts."
-                        },
-                        {
-                            text: "Marketing Automation",
-                            tooltip: "Automate marketing tasks with tools like HubSpot, Marketo, or Mailchimp."
-                        },
+
                     ]
                 }
             ]

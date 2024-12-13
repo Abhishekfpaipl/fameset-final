@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="border-bottom border-2" style="border-color: gold !important;">
         <div class="position-relative" style="width:100%; height:100%;">
             <!-- Images for desktop and mobile -->
             <img src="/img/setionBanner.jpg" alt="" class="d-none d-md-block"
@@ -43,8 +43,8 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); 
-    z-index: 1; 
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
 }
 
 .center-content {

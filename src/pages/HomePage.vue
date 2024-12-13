@@ -1,26 +1,25 @@
 <template>
     <div class="text-white brand-bg top-padding">
         <TopBanner />
-        <Banner brandColorOne="#125252" v-observe />
+        <Banner brandColorOne="#125252" />
         <div class="my-5">
-            <LeadManagement :values="leads" title="Incredible Features," subtitle=" that boost your fame!" v-observe />
+            <LeadManagement :values="leads" title="Incredible Features," subtitle=" that boost your fame!"/>
         </div>
         <div class="my-5">
-            <WhyChooseUs :description="whychooseUs" title="why choose us" v-observe />
+            <WhyChooseUs :description="whychooseUs" title="why choose us"/>
         </div>
 
         <div class="my-5">
-            <LeadManagement :values="featureSoon" title="Features Coming Soon" subtitle=" that boost your fame!"
-                v-observe />
+            <LeadManagement :values="featureSoon" title="Features Coming Soon" subtitle=" that boost your fame!"/>
         </div>
         <div class="my-5" id="second">
-            <PriceSection v-observe />
+            <PriceSection/>
         </div>
         <div class="my-5">
-            <StepsForRegistration v-observe />
+            <StepsForRegistration/>
         </div>
         <div class="my-5">
-            <SalesFunnel v-observe />
+            <SalesFunnel/>
         </div>
         <div class="my-5">
             <AutoScrolling v-observe />

@@ -50,9 +50,11 @@ export default {
 .form-control {
   box-shadow: none !important;
 }
+
 .form-control:focus {
-  border-color:white !important;
+  border-color: white !important;
 }
+
 .method1 {
   background: linear-gradient(90deg, rgba(254, 242, 159, 1) 0%, rgba(210, 163, 73, 1) 50%, rgba(254, 242, 159, 1) 100%);
   -webkit-background-clip: text;
@@ -175,5 +177,34 @@ export default {
 .slide {
   display: inline-block;
   animation: slideTop 1.5s ease-in-out infinite;
+}
+
+
+.before-enter {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.enter {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes rotate {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.rotate {
+  display: inline-block;
+  animation: rotate 1.5s ease-in-out infinite;
 }
 </style>

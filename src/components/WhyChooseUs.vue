@@ -129,20 +129,5 @@ export default {
         font-size:140px !important;
     }
 }
-@keyframes rotate {
 
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.15);
-    }
-}
-
-.rotate {
-    display: inline-block;
-    animation: rotate 1.5s ease-in-out infinite;
-}
 </style>

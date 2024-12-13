@@ -26,17 +26,17 @@ export default {
                 {
                     data: 12,
                     info: 'K',
-                    label: 'Business Categories Covered by Fameset'
+                    label: 'Business Categories Covered'
                 },
                 {
-                    data: 19,
+                    data: 150,
                     info: '',
-                    label: 'Countries Reached with Fameset'
+                    label: 'Countries Reached'
                 },
                 {
                     data: 8,
                     info: 'B',
-                    label: 'Billions of People Using Fameset'
+                    label: 'Useful for Billions of People'
                 }, 
             ]
 

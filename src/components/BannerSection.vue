@@ -1,7 +1,7 @@
-<template lang="">
+<template >
     <div>
         <div class="container-fluid  text-white" style="background-color:black !important ;">
-            <div class="row py-5">
+            <div class="row py-5" v-observe>
                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
                     <div class="" style="width:1000px; max-width:70%">
                         <img src="/img/businessbanner.png" class="w-100" >

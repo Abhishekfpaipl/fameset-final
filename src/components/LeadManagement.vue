@@ -5,7 +5,7 @@
             <p class="text-center text-capitalize fs-4">{{ subtitle }}</p>
         </div>
         <div class="row row-cols-2 row-cols-md-1 row-cols-lg-4 g-3 justify-content-center">
-            <div class="col" v-for="(lead, index) in values" :key="index">
+            <div class="col" v-for="(lead, index) in values" :key="index"  v-observe >
                 <div class="position-relative w-100 d-flex justify-content-center align-items-center flex-fill">
                     <div class="card position-relative w-100 p-2 d-flex flex-column text-white">
                         <div class="image text-center">

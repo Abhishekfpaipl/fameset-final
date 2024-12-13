@@ -2,7 +2,7 @@
     <div class="text-white top-padding" style="background-color: black;">
         <CarouselBanner />
         <ResllerImage />
-        <div class="text-center  py-5 text-bg-light">
+        <div class="text-center text-white py-5 ">
             <div class="container">
                 <p class="fs-1 fw-bold mb-0 text-capitalize">Become our authorized reseller</p>
                 <p class="fs-5 fw-bold text-capitalize">Partnered with us and start your own business</p>

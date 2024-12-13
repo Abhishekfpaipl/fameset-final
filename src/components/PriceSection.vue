@@ -5,8 +5,7 @@
             <small>Bigin's promise to you is simple: No forced multi-year contracts, no hidden charges. You don't need
                 to enter your credit card information to get started. Cancel anytime!</small>
 
-            <div class="my-3">
-
+            <div class="my-5">
                 <div class="d-none d-md-flex justify-content-center gap-5">
                     <div v-for="(plan, index) in plans" :key="index"
                         class="card mb-3 p-3 py-4 text-white rounded border border-2 test-border"
@@ -15,10 +14,8 @@
                             { border: index === 1 ? '3px solid gold !important' : '' }
                         ]" style="background-color:black !important ;">
 
-                        <div v-if="index === 1" class="position-absolute start-0 m-2 ms-0"
-                            style="font-size: 12px; top: 1.5%;">
-                            <span class='text-dark p-1 px-2 rounded-end-3'
-                                style=" background-color: gold;">Recommended</span>
+                        <div v-if="index === 1" class="position-absolute rotate mb-3" style="font-size: 12px;top: -1%; left:38% ;">
+                            <span class='text-dark p-1 px-2 rounded text-uppercase fw-bold' style=" background-color: gold;">Recommended</span>
                         </div>
 
                         <div class="py-2 border-bottom fw-bold">{{
@@ -80,7 +77,7 @@
                             <div class="d-flex justify-content-center gap-2 my-3">
                                 <button class="btn fw-bold text-white w-100 brand-btn" @click="enquiry(plan.name)">{{
                                     plan.button
-                                    }}</button>
+                                }}</button>
                             </div>
                         </div>
                     </div>
@@ -101,7 +98,7 @@
                     </ul>
 
                     <!-- Tab Contents -->
-                    <div class="tab-content mt-4">
+                    <div class="tab-content mt-5">
                         <div v-for="(plan, index) in plans" :key="'content-' + index" :id="'plan-' + plan.id"
                             :class="{ 'show active': index === 1 }" class="tab-pane fade" role="tabpanel"
                             :aria-labelledby="'plan-' + plan.id">
@@ -111,9 +108,9 @@
                                     { backgroundColor: index === 1 ? 'black !important' : '' },
                                     { border: index === 1 ? '3px solid gold !important' : '' }
                                 ]" style="background-color:black !important ;">
-                                <div v-if="index === 1" class="position-absolute start-0 m-2 ms-0"
-                                    style="font-size: 12px; top: 1.5%;">
-                                    <span class='text-dark p-1 px-2 rounded-end-3'
+                                <div v-if="index === 1" class="position-absolute rotate"
+                                    style="font-size: 12px; top: -1%;left:33%; right:auto;">
+                                    <span class='text-dark p-1 px-2 rounded text-uppercase fw-bold'
                                         style="background-color: gold;">Recommended</span>
                                 </div>
 
@@ -365,7 +362,7 @@ export default {
             return 0;
         },
         enquiry(name) {
-            const phoneNumber = "8802172121"; 
+            const phoneNumber = "8802172121";
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hello, I would like to enquire about your services ${name}`;
             window.open(whatsappUrl, "_blank");
         }
