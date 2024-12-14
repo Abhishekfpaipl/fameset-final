@@ -39,8 +39,7 @@
 
         <div class="py-5">
             <HomeTestimonialSection />
-        </div>
-        <BottomShareIcons />
+        </div> 
     </div>
 </template>
 
@@ -56,7 +55,6 @@ import SalesFunnel from "@/components/SalesFunnel.vue";
 // import BusinessCounter from "@/components/BusinessCounter.vue";
 import WhyChooseUs from "@/components/WhyChooseUs.vue";
 // import TempFaqs from "@/components/business-site/TempFaqs.vue";
-import BottomShareIcons from "@/components/BottomShareIcons.vue";
 import HomeTestimonialSection from "@/components/HomeTestimonialSection.vue";
 export default {
     name: "ListYourBusiness",
@@ -71,8 +69,7 @@ export default {
         SalesFunnel,
         // BusinessCounter,
         WhyChooseUs,
-        // TempFaqs,
-        BottomShareIcons,
+        // TempFaqs, 
         HomeTestimonialSection,
     },
     data() {

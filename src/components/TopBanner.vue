@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="position-relative" style="width:auto; height: 100vh; object-fit: cover;">
+        <div class="position-relative" style="width:100%; height:90vh ; object-fit: cover;">
             <img src="/img/deskbg.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
             <div class="center-content">
                 <h1 class="text-capitalize method1">

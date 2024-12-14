@@ -206,5 +206,30 @@ export default {
 .rotate {
   display: inline-block;
   animation: rotate 1.5s ease-in-out infinite;
+} 
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+} 
+.icon-shake:hover {
+    animation: shake 0.5s ease-in-out;
+    animation-iteration-count: 1;
 }
 </style>

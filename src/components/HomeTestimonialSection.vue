@@ -179,7 +179,7 @@ export default {
                     time: 'Used for 1 month',
                     name: 'Simran Batra',
                     subtitle: 'Director at Batra Consulting',
-                    review: 'Sharing my digital card via social profiles is super quick. The fun facts section adds a personal touch, making it more relatable.'
+                    review: 'Sharing my fameset account via social profiles is super quick. The fun facts section adds a personal touch, making it more relatable.'
                 },
                 {
                     image: 'img/customers/5.jpeg',
@@ -197,7 +197,7 @@ export default {
                     time: 'within 2 weeks',
                     name: 'Priya Sharma',
                     subtitle: 'Sales Executive at NexGen Realty',
-                    review: 'This digital business card made me stand out at networking events. The ability to track hearts and promotes is so motivating.'
+                    review: 'This fameset account made me stand out at networking events. The ability to track hearts and promotes is so motivating.'
                 },
             ],
             cards2: [
@@ -253,7 +253,7 @@ export default {
                     time: 'within 15 days',
                     name: 'Ritik Roy',
                     subtitle: 'Event Planner',
-                    review: 'The reactions and hearts features provide instant feedback on my promotions. The digital business card is sleek and modern.'
+                    review: 'The reactions and hearts features provide instant feedback on my promotions. The fameset account is sleek and modern.'
                 },
                 {
                     image: 'img/customers/14.jpeg',
@@ -328,7 +328,7 @@ export default {
                     time: 'Used for 1 month',
                     name: 'Kabir Sen',
                     subtitle: 'Architect',
-                    review: 'The digital card is aesthetically designed. My clients appreciate the attributes and skills sections—it’s professional and impressive.'
+                    review: 'The fameset account is aesthetically designed. My clients appreciate the attributes and skills sections—it’s professional and impressive.'
                 },
                 {
                     image: 'img/customers/21.jpg',
@@ -337,7 +337,7 @@ export default {
                     time: 'within 20 days',
                     name: 'Vivek Kumar',
                     subtitle: 'Entrepreneur',
-                    review: 'The easy sharing options and interactive features have helped me expand my network. The digital business card is a must-have!'
+                    review: 'The easy sharing options and interactive features have helped me expand my network. The fameset account is a must-have!'
                 }
             ]
         };

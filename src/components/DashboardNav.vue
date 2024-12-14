@@ -3,24 +3,29 @@
         <div class="containerr d-flex justify-content-between align-items-center" ref="topnav">
             <div class="w-100 d-flex align-items-center justify-content-between gap-3">
                 <router-link to="/" class="text-decoration-none text-dark d-flex align-items-center">
-                    <img :src="`${publicPath}${img}`" style="width: 50px; object-fit: contain;">
+                    <img :src="`${publicPath}${img}`" style="width: 40px; object-fit: contain;">
                     <div class="d-flex flex-column align-items-start method1">
-                        <span class="text-uppercase fw-bold fs-4 lh-1">Fameset</span> 
+                        <span class="text-uppercase fw-bold fs-4 lh-1">Fameset</span>
                     </div>
                 </router-link>
                 <div class="d-flex align-items-center gap-2 slide" data-bs-toggle="modal" data-bs-target="#queryModal">
-                    <i class="bi bi-headset fs-3 text-white "></i>
+                    <i class="bi bi-headset fs-3 method1 "></i>
                     <p class="text-white mb-1 d-md-block d-none">Contact</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <BottomShareIcons />
 </template>
 
 <script>
+import BottomShareIcons from "@/components/BottomShareIcons.vue";
 export default {
     name: 'ProductTopnav',
+    components: {
+        BottomShareIcons,
+    },
     data() {
         return {
             publicPath: process.env.BASE_URL,

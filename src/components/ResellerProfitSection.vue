@@ -3,8 +3,8 @@
         <div class="container">
 
             <div class="row row-cols-1 row-cols-md-4 my-3">
-                <div class="col" v-for="(plan, index) in plans" :key="index">
-                    <div class="card mb-3 px-3 py-2 rounded-0 brand-bg text-white"
+                <div class="col" v-for="(plan, index) in plans" :key="index" v-observe>
+                    <div class="card mb-3 px-3 py-2 rounded-0 brand-bg text-white h-100"
                         :class="{ 'recommended': index === 2 }" style="">
                         <div class="py-2 border-bottom fw-bold">{{ plan.name }}</div>
                         <div class="card-body text-center">

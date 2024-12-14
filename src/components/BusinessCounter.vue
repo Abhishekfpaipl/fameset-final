@@ -2,7 +2,7 @@
     <div class="container-fluid text-dark bg-ligh py-5">
 
         <div class="row row-cols-1 row-cols-md-3 g-2">
-            <div v-for="(item, index) in fav" :key="index" class="col">
+            <div v-for="(item, index) in fav" :key="index" class="col" v-observe>
                 <div class="p-2 card brand-bg text-white shadow">
                     <p class="fw-bold fs-1 mb-0 d-flex justify-content-center align-items-center"
                         style="color:var(--brand-color) !important;">

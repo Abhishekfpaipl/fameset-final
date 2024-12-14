@@ -11,9 +11,9 @@
                                 <p class="fw-bold small mb-0 text-ellipsis1">{{ service.title }}</p>
                                 <p class="smaller mb-0 text-ellipsis3">{{ service.description }} </p>
                             </div>
-                            <div class="d-flex justify-content-center align-items-center rounded-circle overflow-hidden order-md-2 p-1 rotate bg-dark"
+                            <div class="d-flex justify-content-center align-items-center rounded-circle overflow-hidden order-md-2 p-1 rotate brand-bg"
                                 style="min-width:70px; height:70px; ">
-                                <i class="bi fs-2 text-dark method1" :class="service.icon"></i>
+                                <i class="bi fs-2 method1" :class="service.icon"></i>
                             </div>
                         </div>
                     </div>
@@ -29,9 +29,9 @@
                 <div class="col-lg-4 row row-cols-1 g-3 mt-0">
                     <div v-for="(service, index) in servicesRight" :key="index" class="col" v-observe>
                         <div class="d-flex justify-content-start align-items-center text-white p-2">
-                            <div class="d-flex justify-content-center align-items-center rounded-circle overflow-hidden p-1 rotate bg-dark"
+                            <div class="d-flex justify-content-center align-items-center rounded-circle overflow-hidden p-1 rotate brand-bg"
                                 style="min-width:70px; height:70px; ">
-                                <i class="bi fs-2 text-dark method1" :class="service.icon"></i>
+                                <i class="bi fs-2   method1" :class="service.icon"></i>
                             </div>
                             <div class="text-start card-body ms-3 p-0">
                                 <p class="fw-bold small mb-0 text-ellipsis1">{{ service.title }}</p>

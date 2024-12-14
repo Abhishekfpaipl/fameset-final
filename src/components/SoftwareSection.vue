@@ -7,11 +7,11 @@
             With your Covisor Biz account, you gain access to a range of software and marketing tools designed to grow your business upto 5x.
         </p> 
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col" v-for="tool in tools" :key="tool.title">
+            <div class="col" v-for="tool in tools" :key="tool.title" v-observe>
                 <div class="card h-100  brand-bg text-white" >
                     <div class="card-body text-start">
                         <div class="d-flex align-items-center">
-                            <i :class="tool.icon" class="fs-3"></i>
+                            <i :class="tool.icon" class="fs-3 icon-shake"></i>
                             <span class="ms-3 text-capitalize">{{ tool.title }}</span>
                         </div>
                         <p class="card-text smaller">{{ tool.description }}</p>

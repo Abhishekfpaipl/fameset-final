@@ -8,17 +8,17 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-md-start align-items-center"> 
-                        <div class="text-start mt-5 mt-md-0"> 
-                            <p class="fs-1 fw-bold m-0 text-uppercase">fameset</p>
+                        <div class="text-md-start text-center mt-5 mt-md-0"> 
+                            <p class="fs-1 fw-bold m-0 text-uppercase">fameset account</p>
                         </div>
-                        <h3 class="mt-3 text-start text-capitalize">Attract and retain customers effortlessly with fameset</h3>
-                        <small class="text-start">Unlock the power of real, trusted reviews proven to drive significant revenue growth for your business.</small>
+                        <h3 class="mt-3 text-md-start text-center text-capitalize">Attract and retain customers effortlessly with your fameset account</h3>
+                        <small class="text-md-start text-center">Unlock the power of real, trusted reviews proven to drive significant revenue growth for your business.</small>
                         <div class="mt-3 text-center text-md-start">
                             <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Stay ahead in your market.</p>
                             <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Make a good impression.</p>
-                            <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Boost your public image.</p>
-                            <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Enhance your network.</p>
                             <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Maximize your business.</p>
+                            <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Enhance your network.</p>
+                            <p class="my-1"><i class="bi bi-check2-square me-2 text-warning"></i> Boost your fame.</p>
                         </div> 
                         <RouterLink to=" ">
                             <div class="btn my-4 fs-5 fw-bold text-white brand-btn text-capitalize" data-bs-toggle="modal"
@@ -26,7 +26,7 @@
                                 Get started
                             </div>
                         </RouterLink>
-                        <a href="#second" class><i class="bi bi-chevron-down fs-1" style="color:var(--bg-tertiary)"></i></a> 
+                        <a href="#second" class><i class="bi bi-chevron-down fs-1 slide" style="color:var(--bg-tertiary)"></i></a> 
                 </div>
             </div>
         </div>

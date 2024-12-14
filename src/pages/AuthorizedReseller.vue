@@ -2,7 +2,7 @@
     <div class="text-white top-padding" style="background-color: black;">
         <CarouselBanner />
         <ResllerImage />
-        <div class="text-center text-white py-5 ">
+        <div class="text-center text-white py-5">
             <div class="container">
                 <p class="fs-1 fw-bold mb-0 text-capitalize">Become our authorized reseller</p>
                 <p class="fs-5 fw-bold text-capitalize">Partnered with us and start your own business</p>
@@ -11,14 +11,10 @@
                     individuals look for ways to update and modernize their professional presence, digital business
                     cards have become an essential tool. Resellers can take advantage of this trend by offering
                     customizable, shareable, and eco-friendly business cards to a wide range of potential clients.
-
-                    Digital business cards provide a modern, interactive solution for individuals and companies to share
-                    contact details, social profiles, and professional information. As a reseller, you can offer
-                    personalized digital cards, integrate unique features such as QR codes, payment links, social media
-                    sharing, and analytics tools that help clients track card views and engagement.</p>
+                </p>
             </div>
         </div>
-        <div class="py-5" v-observe>
+        <div class="py-5">
             <div class="sticky-nav my-4">
                 <div class="d-flex gap-3 p-3 py-2 overflow-x-scroll border-top border-bottom border-secondary"
                     id="scroll" style="background-color:black !important; white-space: nowrap;">
@@ -43,12 +39,11 @@
     </div>
 </template>
 
-
 <script>
 import BenefitSection from "@/components/BenefitSection.vue"
-// import PriceSection from "@/components/ResllerPriceSection.vue"
 import ResellerProfitSection from "@/components/ResellerProfitSection.vue"
-import AccessSection from '@/components/AccessSection.vue';
+import EligibilitySection from "@/components/EligibilitySection.vue"
+import SoftwareSection from '@/components/SoftwareSection.vue';
 import FaqSection from "@/components/FaqSection.vue"
 import ResellerAbout from "@/components/ResellerAbout.vue"
 import BusinessSuccessStory from '@/components/BusinessSuccessStory.vue';
@@ -61,9 +56,9 @@ export default {
     name: 'CareerPage',
     components: {
         BenefitSection,
-        // PriceSection,
         ResellerProfitSection,
-        AccessSection,
+        EligibilitySection,
+        SoftwareSection,
         FaqSection,
         ResellerAbout,
         BusinessSuccessStory,
@@ -75,8 +70,8 @@ export default {
     data() {
         return {
             sections: [
-                // { id: 'Price', name: 'Price', component: 'PriceSection' },
                 { id: 'Cost', name: 'Cost', component: 'ResellerProfitSection' },
+                { id: 'EligibilitySection', name: 'Eligibility', component: 'EligibilitySection' },
                 { id: 'Opportunity', name: 'Opportunity', component: 'BusinessCounter' },
                 { id: 'Benefits', name: 'Benefits', component: 'BenefitSection' },
                 { id: 'Why Choose', name: 'Why Choose', component: 'BusinessSell' },
@@ -84,10 +79,10 @@ export default {
                 { id: 'Success Story', name: 'Success Story', component: 'BusinessSuccessStory' },
                 { id: 'FAQ', name: 'FAQ', component: 'FaqSection' },
                 { id: 'About', name: 'About', component: 'ResellerAbout' },
-                { id: 'Software', name: 'Software', component: 'AccessSection' },
+                { id: 'Software', name: 'Software', component: 'SoftwareSection' },
             ],
             activeSection: '',
-        }
+        };
     },
     mounted() {
         window.addEventListener('scroll', this.handleScroll);
@@ -99,40 +94,47 @@ export default {
         scrollToSection(id) {
             const el = document.getElementById(id);
             if (el) {
-                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                window.scrollTo({
+                    top: el.offsetTop - 70, // Offset to account for sticky header
+                    behavior: 'smooth',
+                });
             }
         },
         handleScroll() {
             const scrollPosition = window.scrollY;
+            console.log(scrollPosition)
             this.sections.forEach(section => {
                 const el = document.getElementById(section.id);
-                if (el && scrollPosition >= el.offsetTop - 200) {
-                    this.activeSection = section.id;
+                if (el) {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top <= 150 && rect.bottom >= 150) {
+                        this.activeSection = section.id;
+                    }
                 }
             });
-        },
+        }
     }
 }
 </script>
 
-
 <style scoped>
 .nav-link {
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 5px 10px;
 }
 
 .nav-link.active {
-    border-bottom: 2px solid var(--brand-color);
+    border-bottom: 3px solid var(--brand-color); /* Thicker border for visibility */
+    font-weight: 600;
     color: var(--brand-color) !important;
-    font-weight: 600 !important;
 }
 
 .sticky-nav {
     position: sticky;
-    top: 70.5px !important;
+    top: 70px !important; /* Adjusted for sticky header */
     z-index: 9;
     background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 </style>

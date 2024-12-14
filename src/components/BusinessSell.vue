@@ -1,7 +1,7 @@
 <template>
   <div class="container my-5">
     <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col" v-for="(reason, index) in reasons" :key="index">
+      <div class="col" v-for="(reason, index) in reasons" :key="index" v-observe>
         <div class="card h-100 hover-scale brand-bg text-white">
           <div class="card-body d-flex flex-column">
             <div class="icon-wrapper mb-3">

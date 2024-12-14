@@ -115,7 +115,7 @@ export default {
                     title: "8. Contact Us",
                     content: `If you have questions or concerns about this Privacy Policy, please reach out to us:<br>
                             <strong>Fameset</strong><br>
-                            Email: <a href="mailto:support@fameset.com">support@fameset.in</a><br>
+                            Email: <a href="mailto:support@fameset.com" class="text-decoration-none text-white">support@fameset.in</a><br>
                             Phone: +91-8802172121<br>
                             Address: 2nd Floor, Block B1/632, Janakpuri, 110058, Delhi, India`
                 }

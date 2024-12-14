@@ -17,15 +17,15 @@
         <div class="modal fade" id="queryModal" tabindex="-1" aria-labelledby="queryModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="d-flex justify-content-center align-items-center">
-                    <div class="rounded-circle wh-60 text-bg-dark d-flex justify-content-center align-items-center"
-                        data-bs-dismiss="modal" style="padding: 0px 6px !important;">
-                        <i class="bi bi-x fs-3 method1"></i>
+                    <div class="rounded-circle wh-60 d-flex justify-content-center align-items-center"
+                        data-bs-dismiss="modal" style="padding: 0px 6px !important;background: var(--bg-glow);">
+                        <i class="bi bi-x fs-4 text-dark"></i>
                     </div>
                 </div>
                 <div class="modal-content">
                     <div class="modal-header d-flex justify-content-between align-items-center brand-bg">
                         <h1 class="modal-title fs-5 text-white" id="queryModalLabel">Enquiry Now</h1>
-                        <div class="d-flex gap-3 align-items-center">
+                        <div class="d-flex gap-4 align-items-center">
                             <i class="bi bi-telephone method1 fs-4" @click="openDialer()"></i>
                             <i class="bi bi-whatsapp method1 fs-4" @click="openWhatsapp()"></i>
                         </div>

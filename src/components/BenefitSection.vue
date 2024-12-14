@@ -2,7 +2,7 @@
     <div class="container px-3 px-md-0">
         <div class="row d-flex justify-content-center pb-5 pt-2">
             <div class="col-lg-4 row row-cols-1 g-3 mt-0">
-                <div v-for="(service, index) in servicesLeft" :key="index" class="col">
+                <div v-for="(service, index) in servicesLeft" :key="index" class="col" v-observe>
                     <div class="d-flex align-items-start">
                         <i class="bi fs-4 pe-4" :class="service.icon"></i>
                         <div class="d-flex flex-column text-start flex-fill">
@@ -20,7 +20,7 @@
 
 
             <div class="col-lg-4 row row-cols-1 g-3 mt-0">
-                <div v-for="(service, index) in servicesRight" :key="index" class="col">
+                <div v-for="(service, index) in servicesRight" :key="index" class="col" v-observe>
                     <div class="d-flex align-items-start">
                         <i class="bi fs-5 pe-4" :class="service.icon"></i>
                         <div class="d-flex flex-column text-start flex-fill">

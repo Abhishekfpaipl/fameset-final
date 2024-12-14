@@ -10,9 +10,9 @@
         <div class="py-5">
             <div class="container">
                 <h1 class="text-center text-warning mb-4 text-capitalize">Employee Benefits</h1>
-                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
                     <div v-for="(data, index) in works" :key="index" class="col">
-                        <div class="d-flex flex-column justify-content-center align-items-center border my-1 py-2"
+                        <div class="d-flex flex-column justify-content-center align-items-center border my-1 p-2 h-100"
                             style="background-color: black !important; ">
                             <i :class="data.icon" class="fs-4 p-1"></i>
                             <p class="fw-bold mb-1 text-capitalize">{{ data.heading }}</p>
