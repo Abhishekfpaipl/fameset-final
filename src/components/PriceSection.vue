@@ -2,8 +2,7 @@
     <div class="brandText my-3 py-3">
         <div class="container">
             <h1 class="text-center text-capitalize">Fameset Pricing.</h1>
-            <small>Bigin's promise to you is simple: No forced multi-year contracts, no hidden charges. You don't need
-                to enter your credit card information to get started. Cancel anytime!</small>
+            <small>No forced multi-year contracts | No hidden charges | No Credit Card Required | Cancel anytime</small>
 
             <div class="my-5">
                 <div class="d-none d-md-flex justify-content-center gap-5">
@@ -14,8 +13,10 @@
                             { border: index === 1 ? '3px solid gold !important' : '' }
                         ]" style="background-color:black !important ;">
 
-                        <div v-if="index === 1" class="position-absolute rotate mb-3" style="font-size: 12px;top: -1%; left:38% ;">
-                            <span class='text-dark p-1 px-2 rounded text-uppercase fw-bold' style=" background-color: gold;">Recommended</span>
+                        <div v-if="index === 1" class="position-absolute rotate mb-3"
+                            style="font-size: 12px;top: -1%; left:38% ;">
+                            <span class='text-dark p-1 px-2 rounded text-uppercase fw-bold'
+                                style=" background-color: gold;">Recommended</span>
                         </div>
 
                         <div class="py-2 border-bottom fw-bold">{{
@@ -75,7 +76,7 @@
                             style="background-color:black !important ;">
                             <p class="card-text text-capitalize smaller">{{ plan.description }}</p>
                             <div class="d-flex justify-content-center gap-2 my-3">
-                                <button class="btn fw-bold text-white w-100 brand-btn" @click="enquiry(plan.name)">{{
+                                <button class="btn fw-bold text-dark w-100" style="background-color: gold !important" @click="enquiry(plan.name)">{{
                                     plan.button
                                 }}</button>
                             </div>
@@ -168,8 +169,8 @@
                                     style="background-color:black !important ;">
                                     <p class="card-text text-capitalize smaller">{{ plan.description }}</p>
                                     <div class="d-flex justify-content-center gap-2 my-3">
-                                        <button class="btn fw-bold text-white w-100 brand-btn"
-                                            @click="enquiry(plan.name)">{{
+                                        <button class="btn fw-bold text-dark w-100"
+                                            @click="enquiry(plan.name)" style="background-color: gold !important">{{
                                                 plan.button
                                             }}</button>
                                     </div>
@@ -199,12 +200,28 @@ export default {
                     button: "Get Started",
                     key: "key features",
                     features: [
+
+
+
+
                         {
                             text: "Profile Picture",
-                            tooltip: "Easily update and showcase your professional profile picture to represent yourself effectively."
+                            tooltip: "showcase your professional profile picture to represent yourself effectively."
                         },
                         {
-                            text: "Banner Image",
+                            text: "Profile Name",
+                            tooltip: "showcase your professional profile picture to represent yourself effectively"
+                        },
+                        {
+                            text: "Short Discription",
+                            tooltip: "showcase your professional profile discription to represent yourself effectively."
+                        },
+                        {
+                            text: "Direct Contacts",
+                            tooltip: "Enhance your visual presence with custom banner images designed for impact."
+                        },
+                        {
+                            text: "Download Contacts",
                             tooltip: "Enhance your visual presence with custom banner images designed for impact."
                         },
                         {
@@ -224,21 +241,38 @@ export default {
                             tooltip: "Showcase your online presence with fully customized and professional websites."
                         },
                         {
-                            text: "Multiple Files",
+                            text: "Link Multiple Files",
                             tooltip: "Organize and manage multiple files efficiently in one secure location."
                         },
                         {
-                            text: "Share",
+                            text: "Direct Share",
                             tooltip: "Share your content and updates effortlessly across platforms."
                         },
                         {
-                            text: "QR Code",
+                            text: "QR Code Download",
                             tooltip: "Generate and use QR codes for quick and convenient access to your information."
                         },
                         {
-                            text: "Account Match",
-                            tooltip: "Find and link accounts seamlessly to optimize your online interactions."
-                        }
+                            text: "Bank Details",
+                            tooltip: "Generate and use QR codes for quick and convenient access to your information."
+                        },
+                        {
+                            text: "Business Details",
+                            tooltip: "Generate and use QR codes for quick and convenient access to your information."
+                        },
+                        {
+                            text: "GST Details",
+                            tooltip: "Generate and use QR codes for quick and convenient access to your information."
+                        },
+                        {
+                            text: "Install App Icon",
+                            tooltip: "Generate and use QR codes for quick and convenient access to your information."
+                        },
+                        {
+                            text: "Reviews",
+                            tooltip: "Display your professional skills and expertise prominently on your card."
+                        },
+
 
                     ]
                 },
@@ -255,22 +289,22 @@ export default {
                     features: [
                         {
                             text: "All features of lite plan",
-                            tooltip: "Access all the essential features included in the Lite plan for your digital card."
+                            tooltip: "Access all the essential features included in the Lite plan."
+                        },
+                        {
+                            text: "Organizations",
+                            tooltip: "Display the organizations you have joined."
+                        },
+                        {
+                            text: "Account Match",
+                            tooltip: "Find and link accounts seamlessly to optimize your online interactions."
+                        },
+                        {
+                            text: "Banner Image",
+                            tooltip: "Enhance your visual presence with your own banner image."
                         },
                         {
                             text: "Skill Bars",
-                            tooltip: "Display your professional skills and expertise prominently on your card."
-                        },
-                        {
-                            text: "Keywords",
-                            tooltip: "Display your professional skills and expertise prominently on your card."
-                        },
-                        {
-                            text: "Brand Url",
-                            tooltip: "Display your professional skills and expertise prominently on your card."
-                        },
-                        {
-                            text: "Download",
                             tooltip: "Display your professional skills and expertise prominently on your card."
                         },
                         {
@@ -278,16 +312,20 @@ export default {
                             tooltip: "Showcase unique and interesting facts about yourself or your business."
                         },
                         {
+                            text: "Showcase",
+                            tooltip: "Showcase your career or project milestones in a visually appealing timeline."
+                        },
+                        {
                             text: "Achievements",
                             tooltip: "Highlight key skills or attributes that define your professional persona."
-                        }
+                        },
                     ]
                 },
                 {
                     id: 3,
                     name: "Elite",
-                    price: "5,000",
-                    mrp: "12,500",
+                    price: "6,000",
+                    mrp: "12,000",
                     tag: "/account/year",
                     description: "Enjoy our advanced offering for fast-growing businesses and Networking.",
                     button: "Get Started",
@@ -299,12 +337,20 @@ export default {
                             tooltip: "Enjoy advanced features and premium benefits available in the Pro plan.",
                         },
                         {
-                            text: "Reviews",
-                            tooltip: "Display your professional skills and expertise prominently on your card."
+                            text: "Verification badge",
+                            tooltip: "Get a trusted fameset verification badge ."
                         },
                         {
-                            text: "Timeline",
-                            tooltip: "Showcase your career or project milestones in a visually appealing timeline."
+                            text: "Customized Banner Image",
+                            tooltip: "Customize your banner image as per your business."
+                        },
+                        {
+                            text: "Search Engine Keywords",
+                            tooltip: "Add custom keywords for search engine shortlisting."
+                        },
+                        {
+                            text: "Custom Brand Url",
+                            tooltip: "Customize your url with your brand name."
                         },
                     ],
                     comingSoonFeatures: [

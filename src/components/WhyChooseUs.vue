@@ -86,13 +86,13 @@ export default {
             "servicesRight": [
                 {
                     "id": 1,
-                    "title": "Websites",
+                    "title": "Link Websites",
                     "icon": "bi-globe",
                     "description": "Showcase your online presence with fully customized and professional websites."
                 },
                 {
                     "id": 2,
-                    "title": "Multiple Files",
+                    "title": "Link Multiple Files",
                     "icon": "bi-file-earmark",
                     "description": "Organize and manage multiple files efficiently in one secure location."
                 },

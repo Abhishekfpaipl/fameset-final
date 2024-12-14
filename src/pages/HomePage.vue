@@ -169,7 +169,7 @@ export default {
                     id: 432,
                     icon: 'bi-magnet fs-4',
                     image: "/img/features/Account Views.png",
-                    title: 'Timeline  ',
+                    title: 'Showcase',
                     description: 'A detailed view of our project timelines and key milestones achieved.'
                 },
                 {

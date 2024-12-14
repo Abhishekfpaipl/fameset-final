@@ -112,10 +112,10 @@ export default {
                             "text": "Traning",
                             "tooltip": "Applies to 100 individual accounts per category or service."
                         },
-                        {
-                            text: "Content Marketing",
-                            tooltip: "Create and distribute engaging content to attract and retain audiences."
-                        },
+                        // {
+                        //     text: "Content Marketing",
+                        //     tooltip: "Create and distribute engaging content to attract and retain audiences."
+                        // },
 
                     ]
                 },

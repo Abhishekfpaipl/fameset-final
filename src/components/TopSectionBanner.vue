@@ -66,7 +66,7 @@ export default {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 3px;
     /* Border height */
     background: linear-gradient(90deg,
             rgba(254, 242, 159, 1) 0%,

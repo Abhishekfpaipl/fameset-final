@@ -38,24 +38,24 @@
                                     placeholder="Name*" v-model="name" required>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control bg-transparent text-white custom-placeholder"
+                                <input type="tel" class="form-control bg-transparent text-white custom-placeholder"
                                     placeholder="Mobile*" v-model="number" required>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control bg-transparent text-white custom-placeholder"
+                                <input type="email" class="form-control bg-transparent text-white custom-placeholder"
                                     placeholder="Email*" v-model="email" required>
                             </div>
                             <div class=" mb-3">
                                 <select class="p-2 w-100 rounded bg-transparent custom-select" v-model="selectedOption">
                                     <option value="" class="">I'm looking for</option>
-                                    <option value="Lite (1000)">Lite (1000)</option>
-                                    <option value="Pro (3000)">Pro (3000)</option>
-                                    <option value="Elite (5000)">Elite (5000)</option>
+                                    <option value="Lite (1000)">Lite (₹ 1,000)</option>
+                                    <option value="Pro (3000)">Pro (₹ 3,000)</option>
+                                    <option value="Elite (5000)">Elite (₹ 6,000)</option>
                                 </select>
                             </div>
                             <div class="mb-3">
                                 <textarea v-model="query" rows="2"
-                                    class="form-control flex-fill bg-transparent custom-placeholder"
+                                    class="form-control flex-fill bg-transparent custom-placeholder text-white"
                                     placeholder="Type your message..." required>
                                 </textarea>
                             </div>
@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
 </template>
 <script>
@@ -83,13 +83,32 @@ export default {
     },
     methods: {
         submitQuery() {
-            console.log('Submit Query')
-            const data = {
-                name: this.name,
-                email: this.email,
-                query: this.query,
+            // Validation: Check if all required fields are filled
+            if (!this.name || !this.email || !this.number || !this.selectedOption || !this.query) {
+                alert("Please fill all required fields.");
+                return;
             }
-            this.$store.dispatch('submitQuery', data)
+
+            // Serialize data into a user-friendly message
+            const message = `
+        Hello,
+        Here are my details:
+        Name: ${this.name}
+        Email: ${this.email}
+        Mobile: ${this.number}
+        Package: ${this.selectedOption}
+        Query: ${this.query}
+    `;
+
+            // Encode message for URL
+            const encodedMessage = encodeURIComponent(message.trim());
+
+            // WhatsApp URL with encoded message
+            const phoneNumber = "8802172121";
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+            // Open WhatsApp in a new tab
+            window.open(whatsappUrl, "_blank");
         },
         openDialer() {
             const phoneNumber = 918802172121;

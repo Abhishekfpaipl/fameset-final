@@ -4,7 +4,7 @@
             <div class="d-flex overflow-x-scroll gap-3 my-3 p-2 px-3 rounded" id="scroll">
                 <li class="nav-item border border-secondary rounded" role="presentation" v-for="(price, index) in faqs"
                     :key="index">
-                    <button class="nav-link text-white bg-dark " style="white-space: nowrap"
+                    <button class="nav-link text-white brand-bg" style="white-space: nowrap;"
                         :class="{ 'active': index === activeTabIndex }" :id="'tab-' + index" data-bs-toggle="pill"
                         :data-bs-target="'#content-' + index" type="button" role="tab"
                         :aria-controls="'content-' + index" :aria-selected="index === activeTabIndex"
