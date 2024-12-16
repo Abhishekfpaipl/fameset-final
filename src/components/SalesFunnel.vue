@@ -4,11 +4,11 @@
             <h1 class="text-center text-capitalize mb-4">Required Steps for Account Setup</h1>
             <div class="d-flex flex-column m-auto align-items-start" style="max-width: 500px;">
                 <div v-for="(lead, index) in values" :key="index" class="funnel-step"
-                    :style="{ width: calculateWidth(index) }" v-observe>
-                    <div class="card py-3 d-flex flex-column text-white"
+                    :style="{ width: calculateWidth(index) }" >
+                    <div class="card py-3 d-flex flex-column text-white" v-observe
                         style="background-color: black; border: 2px solid gold;">
                         <div class="image d-flex justify-content-between align-items-center">
-                            <div class="d-flex gap-2 px-2"> 
+                            <div class="d-flex gap-2 px-2">  
                                 <p class="mb-0 fw-bold">{{ values.length - index }}</p>
                                 <p class="ms-2 mb-0 fw-bold">{{ lead.title }}</p>
                             </div>
